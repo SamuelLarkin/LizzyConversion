@@ -1,5 +1,5 @@
-Up: PortageMachineTranslation!_PortageII
-Previous: UsingPhrasetablesInCanoe!_UsingPhrasetables
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [UsingPhrasetables](UsingPhrasetablesInCanoe.md)
 Next: ConfidenceEstimation
 
 -------------------------
@@ -12,7 +12,7 @@ lowercase tokenized reference translations, BLEU score can be computed using the
 |   bleumain test_en.out test_en.ref1 test_en.ref1 test_en.ref3
 
 BLEU score can also be calculated by the "official" NIST script
-(`mteval-v11b.pl`, available at http://www.nist.gov/speech/tools/), which differs from `bleumain` in that it expects detokenized, SGML-encoded text as input. (It is also much slower!)
+(`mteval-v11b.pl`, available at http://www.nist.gov/speech/tools/), which differs from `bleumain` in that it expects detokenized, SGML-encoded text as input. (It is also much [)](slower.md)
 
 //Bleumain works only on tokenized text; to calculate the "official" //NIST BLEU score, use the `run-bleu` script on postprocessed output //from canoe like this:
 //|   run-bleu test_fr.tok test_en.txt test_en.tcref1 test_en.tcref2 //test_en.tcref3
@@ -40,6 +40,6 @@ Finally, most tools will tokenize your inputs (translation and references) or ap
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII
-Previous: UsingPhrasetablesInCanoe!_UsingPhrasetables
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [UsingPhrasetables](UsingPhrasetablesInCanoe.md)
 Next: ConfidenceEstimation

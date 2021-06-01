@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedProgrammerReference!_ForProgrammers
-Previous: PORTAGE_sharedMakeNotes!_UsingMake
-Next: PORTAGE_sharedAnnotatedBibliography!_AnnotatedBibliography
+Up: [PortageII](PortageMachineTranslation.md) / [ForProgrammers](PORTAGE_sharedProgrammerReference.md)
+Previous: [UsingMake](PORTAGE_sharedMakeNotes.md)
+Next: [AnnotatedBibliography](PORTAGE_sharedAnnotatedBibliography.md)
 
 -------------------------
 
@@ -8,16 +8,16 @@ Next: PORTAGE_sharedAnnotatedBibliography!_AnnotatedBibliography
 
 The guidelines presented here represent conventions we would like all programmers to follow.  These are not hard-and-fast rules, but please adhere to these as much as possible when you contribute to Portage or PORTAGE shared.  If you wish to add to these guidelines, feel free to discuss it with the other project members, and add them if there is a consensus.
 
-* PORTAGE_sharedProgrammingGuidelines!_The_PORTAGE_environment_variable#ThePORTAGEenvironmentvariable
-* PORTAGE_sharedProgrammingGuidelines!_C_plus_plus_conventions#Cconventions
-* PORTAGE_sharedProgrammingGuidelines!_Script_conventions#Scriptconventions
-* PORTAGE_sharedProgrammingGuidelines!_Documentation_conventions#Documentationconventions
-* PORTAGE_sharedProgrammingGuidelines!_Formatting_conventions#Formattingconventions
-* PORTAGE_sharedProgrammingGuidelines!_Unit_testing#Unittesting
-* PORTAGE_sharedProgrammingGuidelines!_Regression_testing#Regressiontesting
-* PORTAGE_sharedProgrammingGuidelines!_Git_diff#Gitdiff
-* PORTAGE_sharedProgrammingGuidelines!_Feature_and_model_naming_conventions#Featureandmodelnamingconventions
-* PORTAGE_sharedProgrammingGuidelines!_Help_messages#Helpmessages
+* [The_PORTAGE_environment_variable#ThePORTAGEenvironmentvariable](PORTAGE_sharedProgrammingGuidelines.md)
+* [C_plus_plus_conventions#Cconventions](PORTAGE_sharedProgrammingGuidelines.md)
+* [Script_conventions#Scriptconventions](PORTAGE_sharedProgrammingGuidelines.md)
+* [Documentation_conventions#Documentationconventions](PORTAGE_sharedProgrammingGuidelines.md)
+* [Formatting_conventions#Formattingconventions](PORTAGE_sharedProgrammingGuidelines.md)
+* [Unit_testing#Unittesting](PORTAGE_sharedProgrammingGuidelines.md)
+* [Regression_testing#Regressiontesting](PORTAGE_sharedProgrammingGuidelines.md)
+* [Git_diff#Gitdiff](PORTAGE_sharedProgrammingGuidelines.md)
+* [Feature_and_model_naming_conventions#Featureandmodelnamingconventions](PORTAGE_sharedProgrammingGuidelines.md)
+* [Help_messages#Helpmessages](PORTAGE_sharedProgrammingGuidelines.md)
 
 
 ### The PORTAGE environment variable
@@ -96,6 +96,6 @@ Every program should produce a useful help message when invoked with `-h`.  This
 -------------------------
 
 
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedProgrammerReference!_ForProgrammers
-Previous: PORTAGE_sharedMakeNotes!_UsingMake
-Next: PORTAGE_sharedAnnotatedBibliography!_AnnotatedBibliography
+Up: [PortageII](PortageMachineTranslation.md) / [ForProgrammers](PORTAGE_sharedProgrammerReference.md)
+Previous: [UsingMake](PORTAGE_sharedMakeNotes.md)
+Next: [AnnotatedBibliography](PORTAGE_sharedAnnotatedBibliography.md)

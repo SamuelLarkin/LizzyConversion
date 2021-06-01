@@ -1,6 +1,6 @@
-Up PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedOverview!_Background
-Next: PORTAGE_sharedWhereToFindThings!_WhereToFindThings
+Up [PortageII](PortageMachineTranslation.md)
+Previous: [Background](PORTAGE_sharedOverview.md)
+Next: [WhereToFindThings](PORTAGE_sharedWhereToFindThings.md)
 
 -------------------------
 
@@ -24,7 +24,7 @@ Advanced topics:
 
 -------------------------
 
-Up PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedOverview!_Background
-Next: PORTAGE_sharedWhereToFindThings!_WhereToFindThings
+Up [PortageII](PortageMachineTranslation.md)
+Previous: [Background](PORTAGE_sharedOverview.md)
+Next: [WhereToFindThings](PORTAGE_sharedWhereToFindThings.md)
 

@@ -1,5 +1,5 @@
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedMagicStreams!_MagicStreams
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [MagicStreams](PORTAGE_sharedMagicStreams.md)
 Next: PortageLiveCustomizationPlugins
 
 -----------------------
@@ -10,9 +10,9 @@ Next: PortageLiveCustomizationPlugins
 
 ### Overview
 
-This manual describes how to build a live translation server using PORTAGE shared, called "Portage''''Live". The rationale for doing this on virtual machines is laid out in PORTAGE_sharedAnnotatedBibliography!_Paul_et_al2009#Pauletal2009. Virtualization makes it possible to port PORTAGE shared to a variety of operating systems with little effort, and to run several instances of PORTAGE shared on the same machine. For instance, Portage Live can run concurrently on a single state-of-the-art desktop or laptop computer with other applications; it can also be used in a network for distributed translation processing.
+This manual describes how to build a live translation server using PORTAGE shared, called "Portage''''Live". The rationale for doing this on virtual machines is laid out in [Paul_et_al2009#Pauletal2009.](PORTAGE_sharedAnnotatedBibliography.md) Virtualization makes it possible to port PORTAGE shared to a variety of operating systems with little effort, and to run several instances of PORTAGE shared on the same machine. For instance, Portage Live can run concurrently on a single state-of-the-art desktop or laptop computer with other applications; it can also be used in a network for distributed translation processing.
 
-The virtualization of PORTAGE shared was made feasible by two technological innovations for the data structures that take up the most memory in a typical machine translation system, the phrase tables and the language models (LM''''s).  First, we store them in a memory-efficient structure called a tightly-packed trie PORTAGE_sharedAnnotatedBibliography!_Germann_et_al2009#Germannetal2009. For instance, an LM encoded as a tightly packed trie takes up only about a quarter of the RAM that would be occupied by an LM represented in the standard ARPA format. 
+The virtualization of PORTAGE shared was made feasible by two technological innovations for the data structures that take up the most memory in a typical machine translation system, the phrase tables and the language models (LM''''s).  First, we store them in a memory-efficient structure called a tightly-packed trie [Germann_et_al2009#Germannetal2009.](PORTAGE_sharedAnnotatedBibliography.md) For instance, an LM encoded as a tightly packed trie takes up only about a quarter of the RAM that would be occupied by an LM represented in the standard ARPA format. 
 Second, we use the memory-mapped IO mechanism provided by most operating systems to access the tightly packed models.  Thus, unlike with in-memory applications, a tightly packed LM doesn't need to be completely loaded into memory, and may need only 10-15% of the RAM required by the standard representation. In practice, the decoder with tightly packed tries is ready to translate in about two seconds (whereas the in-memory decoder takes 1-2 minutes to load). As relevant pages are loaded into memory, translation is slower at first, but almost the same throughput is achieved once the relevant pages are in physical memory. Most significant, pages loaded for a previous request typically remain in memory, so the system stays highly responsive after the first query.  Tightly-packed models also provide a significant edge on multi-core machines: when multiple decoder instances run in parallel with the same models, they use shared memory to access the models, so that pages loaded for one instance are available to all others at no extra cost.
 
 To create a Portage''''Live application, one must obtain a bilingual,
@@ -26,7 +26,7 @@ First, you need to compile and install PORTAGE shared. The instructions for this
 
 ### Training PORTAGE shared in the Framework
 
-Once you have installed PORTAGE shared, you must train a system using your parallel corpora, preferably using our experimental framework.  The document `framework/tutorial.pdf` gives a tutorial on training models and decoding in the current framework; read this first, and then apply the same methods on your own data.  For background information, you can also read PORTAGE_sharedTextProcessing!_TextProcessing, which describes how to preprocess the bilingual and unilingual training data prior to model training; the section PORTAGE_sharedFileFormats!_TextFileFormats has helpful related information about file formats. Finally, PORTAGE_sharedTrainingModels!_ConstructingModels describes how to train the different kinds of models, and how to find a reasonable weight on each of these models. 
+Once you have installed PORTAGE shared, you must train a system using your parallel corpora, preferably using our experimental framework.  The document `framework/tutorial.pdf` gives a tutorial on training models and decoding in the current framework; read this first, and then apply the same methods on your own data.  For background information, you can also read [TextProcessing,](PORTAGE_sharedTextProcessing.md) which describes how to preprocess the bilingual and unilingual training data prior to model training; the section [TextFileFormats](PORTAGE_sharedFileFormats.md) has helpful related information about file formats. Finally, [ConstructingModels](PORTAGE_sharedTrainingModels.md) describes how to train the different kinds of models, and how to find a reasonable weight on each of these models. 
 
 
 ### The Runtime File Layout
@@ -184,6 +184,6 @@ If you need to extend the function call, you can do so through our API.  You sho
 
 -----------------------
 
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedMagicStreams!_MagicStreams
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [MagicStreams](PORTAGE_sharedMagicStreams.md)
 Next: PortageLiveCustomizationPlugins

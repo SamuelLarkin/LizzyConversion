@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII
+Up: [PortageII](PortageMachineTranslation.md)
 Previous: ConfidenceEstimation
-Next: PORTAGE_sharedMagicStreams!_MagicStreams
+Next: [MagicStreams](PORTAGE_sharedMagicStreams.md)
 
 -------------------------
 
@@ -82,6 +82,6 @@ Rescoring is fairly expensive and does not always yield improvements in quality/
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII
+Up: [PortageII](PortageMachineTranslation.md)
 Previous: ConfidenceEstimation
-Next: PORTAGE_sharedMagicStreams!_MagicStreams
+Next: [MagicStreams](PORTAGE_sharedMagicStreams.md)

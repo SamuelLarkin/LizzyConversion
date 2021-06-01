@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedWordAlignmentFormats!_WordAlignmentFormats
-Down: PORTAGE_sharedTrainingLanguageModels!_LanguageModels
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [WordAlignmentFormats](PORTAGE_sharedWordAlignmentFormats.md)
+Down: [LanguageModels](PORTAGE_sharedTrainingLanguageModels.md)
 
 -------------------------
 
@@ -10,35 +10,35 @@ Down: PORTAGE_sharedTrainingLanguageModels!_LanguageModels
 
 Here are the models you need to build to run PORTAGE shared:
 
-* PORTAGE_sharedTrainingLanguageModels!_LanguageModels
-** PORTAGE_sharedTrainingLanguageModels!_Training_anLM_usingSRILM#TraininganLMusingSRILM
-** PORTAGE_sharedTrainingLanguageModels!_Training_anLM_usingMITLM#TraininganLMusingMITLM
-** PORTAGE_sharedTrainingLanguageModels!_Training_anLM_usingIRSTLM#TraininganLMusingIRSTLM
-** PORTAGE_sharedTrainingLanguageModels!_TheBinLM_format#TheBinLMformat
-** PORTAGE_sharedTrainingLanguageModels!_TheTPLM_format#TheTPLMformat
-** PORTAGE_sharedTrainingLanguageModels!_DynamicMappingLM#DynamicMappingLM
-** PORTAGE_sharedTrainingLanguageModels!_OpenVocabularyLM#OpenVocabularyLM
-** PORTAGE_sharedTrainingLanguageModels!_MixtureModelLM#MixtureModelLM
-** '''New!''' PORTAGE_sharedTrainingLanguageModels!_CoarseLM#CoarseLM
-** '''New!''' PORTAGE_sharedTrainingLanguageModels!_CoarseBiLM#CoarseBiLM
+* [LanguageModels](PORTAGE_sharedTrainingLanguageModels.md)
+** [Training_anLM_usingSRILM#TraininganLMusingSRILM](PORTAGE_sharedTrainingLanguageModels.md)
+** [Training_anLM_usingMITLM#TraininganLMusingMITLM](PORTAGE_sharedTrainingLanguageModels.md)
+** [Training_anLM_usingIRSTLM#TraininganLMusingIRSTLM](PORTAGE_sharedTrainingLanguageModels.md)
+** [TheBinLM_format#TheBinLMformat](PORTAGE_sharedTrainingLanguageModels.md)
+** [TheTPLM_format#TheTPLMformat](PORTAGE_sharedTrainingLanguageModels.md)
+** [DynamicMappingLM#DynamicMappingLM](PORTAGE_sharedTrainingLanguageModels.md)
+** [OpenVocabularyLM#OpenVocabularyLM](PORTAGE_sharedTrainingLanguageModels.md)
+** [MixtureModelLM#MixtureModelLM](PORTAGE_sharedTrainingLanguageModels.md)
+** [''']('''New.md) [CoarseLM#CoarseLM](PORTAGE_sharedTrainingLanguageModels.md)
+** [''']('''New.md) [CoarseBiLM#CoarseBiLM](PORTAGE_sharedTrainingLanguageModels.md)
 
-* PORTAGE_sharedTrainingOtherModels!_TranslationModels
-** PORTAGE_sharedTrainingOtherModels!_Phrase_tables_based_on_IBM2_word_alignment_models#PhrasetablesbasedonIBM2wordalignmentmodels
-** PORTAGE_sharedTrainingOtherModels!_Phrase_tables_based_on_HMM_word_alignment_models#PhrasetablesbasedonHMMwordalignmentmodels
-** PORTAGE_sharedTrainingOtherModels!_Phrase_tables_based_on_IBM4_word_alignment_models#PhrasetablesbasedonIBM4wordalignmentmodels
-** PORTAGE_sharedTrainingOtherModels!_Merged_phrase_tables#Mergedphrasetables
-** PORTAGE_sharedTrainingOtherModels!_TheTPPT_format#TheTPPTformat
-* PORTAGE_sharedTrainingOtherModels!_LexicalizedDistortionModels#LexicalizedDistortionModels
-* PORTAGE_sharedTrainingOtherModels!_HierarchicalLexicalizedDistortionModels#HierarchicalLexicalizedDistortionModels
-* '''New!''' PORTAGE_sharedTrainingOtherModels!_SparseModels#SparseModels
-* '''New!''' PORTAGE_sharedTrainingOtherModels!_NeuralNetworkJointModels#NeuralNetworkJointModels
-* PORTAGE_sharedTrainingOtherModels!_TruecasingModels#TruecasingModels
-* PORTAGE_sharedTrainingOtherModels!_Adding_a_lexicon_to_a_System#AddingALexiconToASystem
+* [TranslationModels](PORTAGE_sharedTrainingOtherModels.md)
+** [Phrase_tables_based_on_IBM2_word_alignment_models#PhrasetablesbasedonIBM2wordalignmentmodels](PORTAGE_sharedTrainingOtherModels.md)
+** [Phrase_tables_based_on_HMM_word_alignment_models#PhrasetablesbasedonHMMwordalignmentmodels](PORTAGE_sharedTrainingOtherModels.md)
+** [Phrase_tables_based_on_IBM4_word_alignment_models#PhrasetablesbasedonIBM4wordalignmentmodels](PORTAGE_sharedTrainingOtherModels.md)
+** [Merged_phrase_tables#Mergedphrasetables](PORTAGE_sharedTrainingOtherModels.md)
+** [TheTPPT_format#TheTPPTformat](PORTAGE_sharedTrainingOtherModels.md)
+* [LexicalizedDistortionModels#LexicalizedDistortionModels](PORTAGE_sharedTrainingOtherModels.md)
+* [HierarchicalLexicalizedDistortionModels#HierarchicalLexicalizedDistortionModels](PORTAGE_sharedTrainingOtherModels.md)
+* [''']('''New.md) [SparseModels#SparseModels](PORTAGE_sharedTrainingOtherModels.md)
+* [''']('''New.md) [NeuralNetworkJointModels#NeuralNetworkJointModels](PORTAGE_sharedTrainingOtherModels.md)
+* [TruecasingModels#TruecasingModels](PORTAGE_sharedTrainingOtherModels.md)
+* [Adding_a_lexicon_to_a_System#AddingALexiconToASystem](PORTAGE_sharedTrainingOtherModels.md)
 
 * TightlyPackedTries
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedWordAlignmentFormats!_WordAlignmentFormats
-Down: PORTAGE_sharedTrainingLanguageModels!_LanguageModels
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [WordAlignmentFormats](PORTAGE_sharedWordAlignmentFormats.md)
+Down: [LanguageModels](PORTAGE_sharedTrainingLanguageModels.md)

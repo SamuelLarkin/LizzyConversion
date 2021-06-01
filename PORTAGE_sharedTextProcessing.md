@@ -1,5 +1,5 @@
-Up PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedWhereToFindThings!_WhereToFindThings
+Up [PortageII](PortageMachineTranslation.md)
+Previous: [WhereToFindThings](PORTAGE_sharedWhereToFindThings.md)
 Down: TMXProcessing
 
 -------------------------
@@ -10,35 +10,35 @@ Down: TMXProcessing
 
 Text processing is necessary in order to turn raw source and target text into a format suitable for model training, and also to prepare new source text for translation. Here are the steps:
 
-* PORTAGE_sharedTextProcessing!_Preprocessing#Preprocessing raw corpora
-** Alternative: TMXProcessing!_Extracting_text_from_a_TMX
-* PORTAGE_sharedTextProcessing!_Tokenizing#Tokenizing plain text
-* PORTAGE_sharedTextProcessing!_Aligning#Aligning tokenized text
-* PORTAGE_sharedTextProcessing!_Lowercasing#Lowercasing tokenized text
-* PORTAGE_sharedTextProcessing!_MarkingUp#MarkingUp tokenized text
-* PORTAGE_sharedTextProcessing!_EncodingConsiderations#EncodingConsiderations
+* [Preprocessing#Preprocessing](PORTAGE_sharedTextProcessing.md) raw corpora
+** Alternative: [Extracting_text_from_a_TMX](TMXProcessing.md)
+* [Tokenizing#Tokenizing](PORTAGE_sharedTextProcessing.md) plain text
+* [Aligning#Aligning](PORTAGE_sharedTextProcessing.md) tokenized text
+* [Lowercasing#Lowercasing](PORTAGE_sharedTextProcessing.md) tokenized text
+* [MarkingUp#MarkingUp](PORTAGE_sharedTextProcessing.md) tokenized text
+* [EncodingConsiderations#EncodingConsiderations](PORTAGE_sharedTextProcessing.md)
 
-The first two steps must be performed in this order, but the order of later steps can vary depending on the application. The PORTAGE_sharedFileFormats!_FileFormats section describes the input and output formats for all steps.
+The first two steps must be performed in this order, but the order of later steps can vary depending on the application. The [FileFormats](PORTAGE_sharedFileFormats.md) section describes the input and output formats for all steps.
 
 ### Preprocessing
 
 This is a cleaning step to convert raw text into a normalized
-PORTAGE_sharedFileFormats!_PlainText#PlainText format that later steps can handle. Preprocessing tends to be specific to each corpus, so if you need to preprocess a new corpus you will probably have to write your own program, but you can use the ones below as examples.
+[PlainText#PlainText](PORTAGE_sharedFileFormats.md) format that later steps can handle. Preprocessing tends to be specific to each corpus, so if you need to preprocess a new corpus you will probably have to write your own program, but you can use the ones below as examples.
 
-The first and most important preprocessing step is to clean up UTF-8 text of many source of noise that are common. We wrote a script to do so: `clean-utf8-text.pl`, which we call automatically in our TMXProcessing!tmx_prepro module and in the default `preprocess_plugin` used by Portage''''''Live.
+The first and most important preprocessing step is to clean up UTF-8 text of many source of noise that are common. We wrote a script to do so: `clean-utf8-text.pl`, which we call automatically in our [tmx_prepro](TMXProcessing.md) module and in the default `preprocess_plugin` used by Portage''''''Live.
 |   clean-utf8-text.pl < in.raw > in.clean
 will remove control characters and normalize spaces and hyphens for better processing by the rest of the PORTAGE shared suite.
 
 Some older sample preprocessing scripts are still available, for extracting text from very specific formats we've dealt with in the past: `prep-hans.pl`, `prep-hans-html.pl`, `prep-and-tok-europarl.pl`. They can be used as examples to write scripts adapted to your own data, but they are very old and handle only latin-1 encoded text, while we now require utf-8.
 
-If your corpus is stored in a translation memory of some kind, export it to the TMX format and refer to TMXProcessing for extracting PORTAGE_sharedFileFormats!_PlainText#PlainText from your TMX.
+If your corpus is stored in a translation memory of some kind, export it to the TMX format and refer to TMXProcessing for extracting [PlainText#PlainText](PORTAGE_sharedFileFormats.md) from your TMX.
 
 If your corpus exists as a complex collection of documents in various formats, you might consider acquiring commercial alignment tools, many of which can create translation memories from a large number of document formats, and then export them in the TMX format. This is by far the easiest way to build your training corpus for PORTAGE shared.
 
 ### Tokenizing
 
-Tokenizing converts PORTAGE_sharedFileFormats!_PlainText#PlainText into 
-PORTAGE_sharedFileFormats!_TokenizedText#TokenizedText by splitting running text into whitespace-separated tokens, and identifying sentence boundaries. For English and French, this mostly means separating punctuation from words.
+Tokenizing converts [PlainText#PlainText](PORTAGE_sharedFileFormats.md) into 
+[TokenizedText#TokenizedText](PORTAGE_sharedFileFormats.md) by splitting running text into whitespace-separated tokens, and identifying sentence boundaries. For English and French, this mostly means separating punctuation from words.
 Example (English/French encoded in utf-8):
 |   utokenize.pl -lang=en hans-file_en.txt hans-file_en.tok
 |   utokenize.pl -lang=fr hans-file_fr.txt hans-file_fr.tok
@@ -51,7 +51,7 @@ As mentioned above, the tokenizer can do sentence boundary identification. It ha
 
 ### Aligning
 
-Given sentence-split, PORTAGE_sharedFileFormats!_TokenizedText#TokenizedText (possibly containing markup) in two languages, sentence alignment identifies correspondences between translated sentences, and writes the results as PORTAGE_sharedFileFormats!_AlignedText#AlignedText.
+Given sentence-split, [TokenizedText#TokenizedText](PORTAGE_sharedFileFormats.md) (possibly containing markup) in two languages, sentence alignment identifies correspondences between translated sentences, and writes the results as [AlignedText#AlignedText.](PORTAGE_sharedFileFormats.md)
 
 Example using Moore's aligner (not supplied with PORTAGE shared):
    moore-aligner.pl dir-containing-tokenized-files
@@ -80,7 +80,7 @@ or, if you have ICU:
 
 ### Marking Up
 
-Various entities in the text can be encoded as Portage_sharedFileFormats!_MarkedUpText#MarkedUpText. There are three uses for markup in the system:
+Various entities in the text can be encoded as [MarkedUpText#MarkedUpText.](Portage_sharedFileFormats.md) There are three uses for markup in the system:
 
 * To encode parallel structure (section boundaries, timestamps, etc) in order to help the alignment program (ssal). This markup is typically removed by the aligner when it writes its output.
 
@@ -104,6 +104,6 @@ However, it is still noteworthy that except for pre- and post-processing (such a
 
 -------------------------
 
-Up PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedWhereToFindThings!_WhereToFindThings
+Up [PortageII](PortageMachineTranslation.md)
+Previous: [WhereToFindThings](PORTAGE_sharedWhereToFindThings.md)
 Down: TMXProcessing

@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedEvaluation!_Evaluation
-Next: PORTAGE_sharedPerformanceConsiderations!_Performance
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [Evaluation](PORTAGE_sharedEvaluation.md)
+Next: [Performance](PORTAGE_sharedPerformanceConsiderations.md)
 
 ---------
 
@@ -10,6 +10,6 @@ The user manual for the CE module has not been converted to the format of this m
 
 ---------
 
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedEvaluation!_Evaluation
-Next: PORTAGE_sharedPerformanceConsiderations!_Performance
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [Evaluation](PORTAGE_sharedEvaluation.md)
+Next: [Performance](PORTAGE_sharedPerformanceConsiderations.md)

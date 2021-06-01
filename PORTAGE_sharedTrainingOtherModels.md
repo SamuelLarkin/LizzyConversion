@@ -1,5 +1,5 @@
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedTrainingModels!_Models
-Previous: PORTAGE_sharedTrainingLanguageModels!_LanguageModels
+Up: [PortageII](PortageMachineTranslation.md) / [Models](PORTAGE_sharedTrainingModels.md)
+Previous: [LanguageModels](PORTAGE_sharedTrainingLanguageModels.md)
 Next: TightlyPackedTries
 
 -------------------------
@@ -8,18 +8,18 @@ Next: TightlyPackedTries
 
 ## Training: Constructing Other Models
 
-* PORTAGE_sharedTrainingOtherModels!_TranslationModels#TranslationModels
-** PORTAGE_sharedTrainingOtherModels!_Phrase_tables_based_on_IBM2_word_alignment_models#PhrasetablesbasedonIBM2wordalignmentmodels
-** PORTAGE_sharedTrainingOtherModels!_Phrase_tables_based_on_HMM_word_alignment_models#PhrasetablesbasedonHMMwordalignmentmodels
-** PORTAGE_sharedTrainingOtherModels!_Phrase_tables_based_on_IBM4_word_alignment_models#PhrasetablesbasedonIBM4wordalignmentmodels
-** PORTAGE_sharedTrainingOtherModels!_Merged_phrase_tables#Mergedphrasetables
-** PORTAGE_sharedTrainingOtherModels!_TheTPPT_format#TheTPPTformat
-* PORTAGE_sharedTrainingOtherModels!_LexicalizedDistortionModels#LexicalizedDistortionModels
-* PORTAGE_sharedTrainingOtherModels!_HierarchicalLexicalizedDistortionModels#HierarchicalLexicalizedDistortionModels
-* '''New!''' PORTAGE_sharedTrainingOtherModels!_SparseModels#SparseModels
-* '''New!''' PORTAGE_sharedTrainingOtherModels!_NeuralNetworkJointModels#NeuralNetworkJointModels
-* PORTAGE_sharedTrainingOtherModels!_TruecasingModels#TruecasingModels
-* PORTAGE_sharedTrainingOtherModels!_Adding_a_lexicon_to_a_System#AddingALexiconToASystem
+* [TranslationModels#TranslationModels](PORTAGE_sharedTrainingOtherModels.md)
+** [Phrase_tables_based_on_IBM2_word_alignment_models#PhrasetablesbasedonIBM2wordalignmentmodels](PORTAGE_sharedTrainingOtherModels.md)
+** [Phrase_tables_based_on_HMM_word_alignment_models#PhrasetablesbasedonHMMwordalignmentmodels](PORTAGE_sharedTrainingOtherModels.md)
+** [Phrase_tables_based_on_IBM4_word_alignment_models#PhrasetablesbasedonIBM4wordalignmentmodels](PORTAGE_sharedTrainingOtherModels.md)
+** [Merged_phrase_tables#Mergedphrasetables](PORTAGE_sharedTrainingOtherModels.md)
+** [TheTPPT_format#TheTPPTformat](PORTAGE_sharedTrainingOtherModels.md)
+* [LexicalizedDistortionModels#LexicalizedDistortionModels](PORTAGE_sharedTrainingOtherModels.md)
+* [HierarchicalLexicalizedDistortionModels#HierarchicalLexicalizedDistortionModels](PORTAGE_sharedTrainingOtherModels.md)
+* [''']('''New.md) [SparseModels#SparseModels](PORTAGE_sharedTrainingOtherModels.md)
+* [''']('''New.md) [NeuralNetworkJointModels#NeuralNetworkJointModels](PORTAGE_sharedTrainingOtherModels.md)
+* [TruecasingModels#TruecasingModels](PORTAGE_sharedTrainingOtherModels.md)
+* [Adding_a_lexicon_to_a_System#AddingALexiconToASystem](PORTAGE_sharedTrainingOtherModels.md)
 
 ### Translation Models
 
@@ -28,7 +28,7 @@ Next: TightlyPackedTries
 Training translation models is done in two steps: first train IBM models
 in both directions, then generate phrase tables using the models. Assuming
 the current directory contains a set of files named `file*_fr.al` and
-`file*_en.al` containing PORTAGE_sharedFileFormats!_AlignedText#AlignedText, the following is a basic training process:
+`file*_en.al` containing [AlignedText#AlignedText,](PORTAGE_sharedFileFormats.md) the following is a basic training process:
 |   train_ibm -v  -s ibm1.fr_given_en.gz ibm2.fr_given_en.gz file* \
 |      >& log.train_ibm.fr_given_en
 |   train_ibm -vr -s ibm1.en_given_fr.gz ibm2.en_given_fr.gz file* \
@@ -118,14 +118,14 @@ HLDM''''s give much more interesting results, and should be considered for regul
 
 ### Sparse Models
 
-With PORTAGE shared 3.0, we introduce sparse models, including the original sparse features of PORTAGE_sharedAnnotatedBibliography!_Hopkins_andMay2011#HopkinsandMay2011 as adapted for Portage by PORTAGE_sharedAnnotatedBibliography!_Cherry_andFoster2012#CherryandFoster2012revisited,
-as well as the Discriminative Reodering model of PORTAGE_sharedAnnotatedBibliography!_Cherry2013#Cherry2013, which helps PORTAGE shared make better choices in word ordering during the decoding process.
+With PORTAGE shared 3.0, we introduce sparse models, including the original sparse features of [Hopkins_andMay2011#HopkinsandMay2011](PORTAGE_sharedAnnotatedBibliography.md) as adapted for Portage by [Cherry_andFoster2012#CherryandFoster2012revisited,](PORTAGE_sharedAnnotatedBibliography.md)
+as well as the Discriminative Reodering model of [Cherry2013#Cherry2013,](PORTAGE_sharedAnnotatedBibliography.md) which helps PORTAGE shared make better choices in word ordering during the decoding process.
 
 Sparse features contribute a significant improvement to the quality of the translations produced by PORTAGE shared and should always be used. See `tutorial.pdf` in `framework` for instructions on how to train them.
 
 ### Neural Network Joint Models
 
-In the last couple years, deep learning and neural networks have been shaking the world of natural language processing, including SMT. PORTAGE_sharedAnnotatedBibliography!_Devlin_et_al2014#Devlinetal2014 presents the first successful attempt at improving SMT output using neural networks. The NRC has reproduced the results in the Research version of Portage (see PORTAGE_sharedAnnotatedBibliography!_Foster2016_addeddum_toDevlin#Foster2016addendumtoDevlin) and is continuing leading-edge research in the uses of deep learning to improve SMT.
+In the last couple years, deep learning and neural networks have been shaking the world of natural language processing, including SMT. [Devlin_et_al2014#Devlinetal2014](PORTAGE_sharedAnnotatedBibliography.md) presents the first successful attempt at improving SMT output using neural networks. The NRC has reproduced the results in the Research version of Portage (see [Foster2016_addeddum_toDevlin#Foster2016addendumtoDevlin)](PORTAGE_sharedAnnotatedBibliography.md) and is continuing leading-edge research in the uses of deep learning to improve SMT.
 
 The main model that has come out of this work so far is the Neural Network Joint Model (NNJM), which uses a deep learning approach to improve how target words are chosen to translate source text, taking into account up to 11 source words and 3 target words all at the same time.
 
@@ -160,6 +160,6 @@ There are three ways to add a bitext lexicon to a system.
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedTrainingModels!_Models
-Previous: PORTAGE_sharedTrainingLanguageModels!_LanguageModels
+Up: [PortageII](PortageMachineTranslation.md) / [Models](PORTAGE_sharedTrainingModels.md)
+Previous: [LanguageModels](PORTAGE_sharedTrainingLanguageModels.md)
 Next: TightlyPackedTries

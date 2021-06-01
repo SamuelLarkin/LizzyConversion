@@ -1,5 +1,5 @@
-Up: PortageMachineTranslation!_PortageII
-Previous: TrainingEuroparl!RequirementsForTrainingAMidSizeSystem
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [RequirementsForTrainingAMidSizeSystem](TrainingEuroparl.md)
 
 -------------------------
 
@@ -48,7 +48,7 @@ If you have some translations from the new domain/client, there are ways of trai
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII
-Previous: TrainingEuroparl!RequirementsForTrainingAMidSizeSystem
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [RequirementsForTrainingAMidSizeSystem](TrainingEuroparl.md)
 
 

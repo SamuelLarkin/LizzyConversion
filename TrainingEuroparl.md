@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedAnnotatedBibliography!_AnnotatedBibliography
-Next: PORTAGE_sharedFAQ!FrequentlyAskedQuestions
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [AnnotatedBibliography](PORTAGE_sharedAnnotatedBibliography.md)
+Next: [FrequentlyAskedQuestions](PORTAGE_sharedFAQ.md)
 
 -------------------------
 
@@ -228,6 +228,6 @@ You can find out how much resources that was required by running the following c
 
 --------------
 
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedAnnotatedBibliography!_AnnotatedBibliography
-Next: PORTAGE_sharedFAQ!FrequentlyAskedQuestions
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [AnnotatedBibliography](PORTAGE_sharedAnnotatedBibliography.md)
+Next: [FrequentlyAskedQuestions](PORTAGE_sharedFAQ.md)

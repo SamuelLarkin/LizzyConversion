@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII
-/ PORTAGE_sharedTextProcessing!_TextProcessing
-Next: PORTAGE_sharedFileFormats!_TextFileFormats
+Up: [PortageII](PortageMachineTranslation.md)
+/ [TextProcessing](PORTAGE_sharedTextProcessing.md)
+Next: [TextFileFormats](PORTAGE_sharedFileFormats.md)
 
 -------------------------
 
@@ -12,11 +12,11 @@ This page of the user manual can help you understand what that module does.
 
 ## The TMX file format
 
-This section describes how to process a TMX file to extract corpora in a format usable by PORTAGE shared for training or testing.  TMX stands for Translation Memory Xchange format; it is the standard format for exporting data from a translation memory: see https://www.gala-global.org/resources/industry-standards!GALAIndustryStandards. Along with a fair amount of mark-up information, a TMX file contains sentences in one language (the source language) in parallel with their translations in one or more other language(s) (the target language(s)).
+This section describes how to process a TMX file to extract corpora in a format usable by PORTAGE shared for training or testing.  TMX stands for Translation Memory Xchange format; it is the standard format for exporting data from a translation memory: see [GALAIndustryStandards.](https://www.gala-global.org/resources/industry-standards.md) Along with a fair amount of mark-up information, a TMX file contains sentences in one language (the source language) in parallel with their translations in one or more other language(s) (the target language(s)).
 
 By contrast, PORTAGE shared requires all source-language sentences to be in one file and all target-language sentences to be in another.  Only one target language is allowed.  The two files must be line-aligned, with one  sentence or segment per line, preferably in UTF-8 (UTF-16 is not supported).
 
-Once you've extracted a parallel corpus from your TMX file, see PORTAGE_sharedTextProcessing!_TextProcessing for the rest of the processing pipeline.
+Once you've extracted a parallel corpus from your TMX file, see [TextProcessing](PORTAGE_sharedTextProcessing.md) for the rest of the processing pipeline.
 
 ## Extracting your parallel corpora
 
@@ -86,12 +86,12 @@ The TMX specification can be found here:
 |   TMX is XML-compliant.  [...]  However, a "valid" TMX file must
 |   conform to the TMX DTD, and any suspicious TMX file should be
 |   verified against the TMX DTD using a validating XML parser.
-The TMX DTD can be found here: https://www.gala-global.org/sites/default/files/uploads/pdfs/tmx14%20%281%29.dtd!tmx14.dtd.
+The TMX DTD can be found here: [tmx14.dtd.](https://www.gala-global.org/sites/default/files/uploads/pdfs/tmx14%20%281%29.dtd.md)
 
 ### XML Specification
 
 Following the XML specification, your TMX should not contain non-printing characters.
-http://www.w3.org/TR/1998/REC-xml-19980210.html#NT-Char!XML_Valid_Char
+[XML_Valid_Char](http://www.w3.org/TR/1998/REC-xml-19980210.html#NT-Char.md)
 
 |   Legal characters are tab, carriage return, line feed, and the
 |   legal graphic characters of Unicode and ISO/IEC 10646.
@@ -103,7 +103,7 @@ http://www.w3.org/TR/1998/REC-xml-19980210.html#NT-Char!XML_Valid_Char
 ### Validating your TMX
 
 You should validate your TMX files.  At the time of writing, the current DTD for TMX can be found at:
-http://www.lisa.org/fileadmin/standards/tmx1.4/tmx14.dtd.txt!tmx14.dtd
+[tmx14.dtd](http://www.lisa.org/fileadmin/standards/tmx1.4/tmx14.dtd.txt.md)
 
 Obtain tmx14.dtd:
 | curl -o tmx14.dtd -k https://www.gala-global.org/sites/default/files/uploads/pdfs/tmx14%20%281%29.dtd
@@ -124,6 +124,6 @@ In the past, we have encountered problems with TMX files having embedded ASCII c
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII
-/ PORTAGE_sharedTextProcessing!_TextProcessing
-Next: PORTAGE_sharedFileFormats!_TextFileFormats
+Up: [PortageII](PortageMachineTranslation.md)
+/ [TextProcessing](PORTAGE_sharedTextProcessing.md)
+Next: [TextFileFormats](PORTAGE_sharedFileFormats.md)

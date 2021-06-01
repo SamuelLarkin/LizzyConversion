@@ -1,5 +1,5 @@
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedTrainingModels!_Models
-Next: PORTAGE_sharedTrainingOtherModels!_OtherModels
+Up: [PortageII](PortageMachineTranslation.md) / [Models](PORTAGE_sharedTrainingModels.md)
+Next: [OtherModels](PORTAGE_sharedTrainingOtherModels.md)
 
 -------------------------
 
@@ -7,24 +7,24 @@ Next: PORTAGE_sharedTrainingOtherModels!_OtherModels
 
 ## Training: Constructing Language Models
 
-* PORTAGE_sharedTrainingLanguageModels!_Training_anLM_usingSRILM#TraininganLMusingSRILM
-* PORTAGE_sharedTrainingLanguageModels!_Training_anLM_usingMITLM#TraininganLMusingMITLM
-* PORTAGE_sharedTrainingLanguageModels!_Training_anLM_usingIRSTLM#TraininganLMusingIRSTLM
-* PORTAGE_sharedTrainingLanguageModels!_TheBinLM_format#TheBinLMformat
-* PORTAGE_sharedTrainingLanguageModels!_TheTPLM_format#TheTPLMformat
-* PORTAGE_sharedTrainingLanguageModels!_DynamicMappingLM#DynamicMappingLM
-* PORTAGE_sharedTrainingLanguageModels!_OpenVocabularyLM#OpenVocabularyLM
-* PORTAGE_sharedTrainingLanguageModels!_MixtureModelLM#MixtureModelLM
-* '''New!''' PORTAGE_sharedTrainingLanguageModels!_CoarseLM#CoarseLM
-* '''New!''' PORTAGE_sharedTrainingLanguageModels!_CoarseBiLM#CoarseBiLM
+* [Training_anLM_usingSRILM#TraininganLMusingSRILM](PORTAGE_sharedTrainingLanguageModels.md)
+* [Training_anLM_usingMITLM#TraininganLMusingMITLM](PORTAGE_sharedTrainingLanguageModels.md)
+* [Training_anLM_usingIRSTLM#TraininganLMusingIRSTLM](PORTAGE_sharedTrainingLanguageModels.md)
+* [TheBinLM_format#TheBinLMformat](PORTAGE_sharedTrainingLanguageModels.md)
+* [TheTPLM_format#TheTPLMformat](PORTAGE_sharedTrainingLanguageModels.md)
+* [DynamicMappingLM#DynamicMappingLM](PORTAGE_sharedTrainingLanguageModels.md)
+* [OpenVocabularyLM#OpenVocabularyLM](PORTAGE_sharedTrainingLanguageModels.md)
+* [MixtureModelLM#MixtureModelLM](PORTAGE_sharedTrainingLanguageModels.md)
+* [''']('''New.md) [CoarseLM#CoarseLM](PORTAGE_sharedTrainingLanguageModels.md)
+* [''']('''New.md) [CoarseBiLM#CoarseBiLM](PORTAGE_sharedTrainingLanguageModels.md)
 
 Language models can be trained using any language modeling toolkit that generates Doug Paul's ARPA LM file format.  If your licensing requirements permit it, we recommend SRILM, since that's the toolkit that works best for us.  If you can't use SRILM, MITLM works very well too.  IRSTLM also works reasonably well, but has yielded lower BLEU scores in our experiments.  We provide instructions for these three toolkits below, and more complete examples in the experimental framework in `framework`.  Follow the instructions of your own toolkit if you use a different one.
 
 ### Training an LM using SRILM
 
 SRILM's default is for the corpus to be contained in a single text file, so the easiest thing to do is concatenate everything.
-The format is standard PORTAGE_sharedFileFormats!_TokenizedText#TokenizedText - ''but without angle-bracket markup''!
-PORTAGE_sharedFileFormats!_AlignedText#AlignedText will also work, but will give different models, because multiple sentences can occur on a single line.
+The format is standard [TokenizedText#TokenizedText](PORTAGE_sharedFileFormats.md) - ''but without angle-bracket markup''!
+[AlignedText#AlignedText](PORTAGE_sharedFileFormats.md) will also work, but will give different models, because multiple sentences can occur on a single line.
 
 Examples:
    ngram-count -text corpus.en -lm lm.en
@@ -40,7 +40,7 @@ If you have sufficient computing resources, especially memory, you might want to
 To save space, just like with PORTAGE shared programs, simply add the `.gz` extension to any input or output filename, and SRILM software will compress/decompress it on the fly.  Be warned, however, that the process might crash when it tries to open its output file if you're at the limit of your memory resources; to avoid this problem, make sure you have twice as much swap space as RAM, or produce models uncompressed and compress them manually afterwards.
 
 // If your corpora are very large, see 
-// PORTAGE_sharedVeryLargeLanguageModels!_VeryLargeLanguageModels for  // information on pushing the limits of SRILM.
+// [VeryLargeLanguageModels](PORTAGE_sharedVeryLargeLanguageModels.md) for  // information on pushing the limits of SRILM.
 
 ### Training an LM using MITLM
 
@@ -72,7 +72,7 @@ To create a Bin LM file from a standard ARPA LM file:
 or
 |   arpalm2binlm lm.en.gz lm.en.binlm.gz
 
-All programs in PORTAGE shared which use LM files support this format.  They are recognized as such automatically, regardless of file name or extension.  And they are written to and read from disk in such a way that you can keep them compressed, as are almost all files in PortageMachineTranslation!PORTAGE_shared.
+All programs in PORTAGE shared which use LM files support this format.  They are recognized as such automatically, regardless of file name or extension.  And they are written to and read from disk in such a way that you can keep them compressed, as are almost all files in [PORTAGE_shared.](PortageMachineTranslation.md)
 
 ### The TPLM format
 
@@ -156,20 +156,20 @@ The mixture model's name should contain `srcfile` to distinguish it from models 
 
 A frequently useful modification to the above procedure is to include the whole parallel training corpus as an additional component. 
 
-There are many other ways to use mixture models within PORTAGE shared. See the `README` file in `src/adaptation` for details (or `doc/README.adaptation`), and PORTAGE_sharedAnnotatedBibliography!_Foster_andKuhn2007#FosterandKuhn2007 for a high-level description.
+There are many other ways to use mixture models within PORTAGE shared. See the `README` file in `src/adaptation` for details (or `doc/README.adaptation`), and [Foster_andKuhn2007#FosterandKuhn2007](PORTAGE_sharedAnnotatedBibliography.md) for a high-level description.
 
 ### Coarse LM
 
-The coarse LM is a new model introduced with PORTAGE shared 3.0 which can improve translations by taking into account longer distance information during decoding. Instead of modelling sequences of words, as regular LM''''''s do, they model sequences of word classes. Since word-class sequences are much less sparse than word sequences, we can reasonably train 8-gram coarse LM''''''s and maintain good decoding speed while getting a useful boost in quality (PORTAGE_sharedAnnotatedBibliography!_Stewart_et_al2014#Stewartetal2014).
+The coarse LM is a new model introduced with PORTAGE shared 3.0 which can improve translations by taking into account longer distance information during decoding. Instead of modelling sequences of words, as regular LM''''''s do, they model sequences of word classes. Since word-class sequences are much less sparse than word sequences, we can reasonably train 8-gram coarse LM''''''s and maintain good decoding speed while getting a useful boost in quality [Stewart_et_al2014#Stewartetal2014).]((PORTAGE_sharedAnnotatedBibliography.md)
 
 To train coarse LM''''''s, you must be using our framework. They are now enabled by default, with two models being trained: one 200-class coarse LM, and one 800-class coarse LM: we found empirically that combining these two granularities gives the best results.
 
 ### Coarse Bi LM
 
-The coarse Bi''''''LM feature is a language model that takes into account both the source and target language, looking at coarse classes of words instead of individual words, potentially improving translation quality (PORTAGE_sharedAnnotatedBibliography!_Stewart_et_al2014#Stewartetal2014). Training of these models requires the framework, as it is fairly complex to do. With PORTAGE shared 3.0, we don't enable them by default, because they are fairly expensive and don't yield enough benefits. But you can still try them by uncommenting the line that read `USE_BILM = 1`.
+The coarse Bi''''''LM feature is a language model that takes into account both the source and target language, looking at coarse classes of words instead of individual words, potentially improving translation quality [Stewart_et_al2014#Stewartetal2014).]((PORTAGE_sharedAnnotatedBibliography.md) Training of these models requires the framework, as it is fairly complex to do. With PORTAGE shared 3.0, we don't enable them by default, because they are fairly expensive and don't yield enough benefits. But you can still try them by uncommenting the line that read `USE_BILM = 1`.
 
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedTrainingModels!_Models
-Next: PORTAGE_sharedTrainingOtherModels!_OtherModels
+Up: [PortageII](PortageMachineTranslation.md) / [Models](PORTAGE_sharedTrainingModels.md)
+Next: [OtherModels](PORTAGE_sharedTrainingOtherModels.md)

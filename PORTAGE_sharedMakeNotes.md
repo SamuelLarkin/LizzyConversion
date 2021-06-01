@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedProgrammerReference!_ForProgrammers
-Previous: PORTAGE_sharedWritingCode!_WritingCode
-Next: PORTAGE_sharedProgrammingGuidelines!_ProgrammingGuidelines
+Up: [PortageII](PortageMachineTranslation.md) / [ForProgrammers](PORTAGE_sharedProgrammerReference.md)
+Previous: [WritingCode](PORTAGE_sharedWritingCode.md)
+Next: [ProgrammingGuidelines](PORTAGE_sharedProgrammingGuidelines.md)
 
 -------
 
@@ -45,6 +45,6 @@ Caveat: do not specify more than one such target at a time - running "`make -j 5
 
 --------
 
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedProgrammerReference!_ForProgrammers
-Previous: PORTAGE_sharedWritingCode!_WritingCode
-Next: PORTAGE_sharedProgrammingGuidelines!_ProgrammingGuidelines
+Up: [PortageII](PortageMachineTranslation.md) / [ForProgrammers](PORTAGE_sharedProgrammerReference.md)
+Previous: [WritingCode](PORTAGE_sharedWritingCode.md)
+Next: [ProgrammingGuidelines](PORTAGE_sharedProgrammingGuidelines.md)

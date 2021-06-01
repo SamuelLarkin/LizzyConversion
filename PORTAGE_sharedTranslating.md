@@ -1,6 +1,6 @@
-Up PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedTrainingOptimizingWeights!_OptimizingWeights
-Down: PORTAGE_sharedTranslatingDecoding!_Decoding
+Up [PortageII](PortageMachineTranslation.md)
+Previous: [OptimizingWeights](PORTAGE_sharedTrainingOptimizingWeights.md)
+Down: [Decoding](PORTAGE_sharedTranslatingDecoding.md)
 
 -------------------------
 
@@ -9,19 +9,19 @@ Down: PORTAGE_sharedTranslatingDecoding!_Decoding
 ## Translating
 
 Source texts to be translated by PORTAGE shared must be in
-PORTAGE_sharedFileFormats!_TokenizedText#TokenizedText or
-PORTAGE_sharedFileFormats!_MarkedUpText#MarkedUpText formats; the
-PORTAGE_sharedTextProcessing!_TextProcessing#TextProcessing section describes the required processing steps. Translation itself consists of three main steps, of which the last two are optional: decoding, rescoring, and postprocessing.
+[TokenizedText#TokenizedText](PORTAGE_sharedFileFormats.md) or
+[MarkedUpText#MarkedUpText](PORTAGE_sharedFileFormats.md) formats; the
+[TextProcessing#TextProcessing](PORTAGE_sharedTextProcessing.md) section describes the required processing steps. Translation itself consists of three main steps, of which the last two are optional: decoding, rescoring, and postprocessing.
 
-* PORTAGE_sharedTranslatingDecoding!_Decoding
-* PORTAGE_sharedTranslatingRescoringNbestLists!_RescoringNbestLists
-* PORTAGE_sharedTranslatingPostprocessing!_Postprocessing
+* [Decoding](PORTAGE_sharedTranslatingDecoding.md)
+* [RescoringNbestLists](PORTAGE_sharedTranslatingRescoringNbestLists.md)
+* [Postprocessing](PORTAGE_sharedTranslatingPostprocessing.md)
 
-* Detailed notes on PORTAGE_sharedDecoderSearchAlgorithmsAndDataStructures!_TheDecoderSearchAlgorithmsAndDataStructures
+* Detailed notes on [TheDecoderSearchAlgorithmsAndDataStructures](PORTAGE_sharedDecoderSearchAlgorithmsAndDataStructures.md)
 * Notes about UsingPhrasetablesInCanoe
 
 -------------------------
 
-Up PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedTrainingOptimizingWeights!_OptimizingWeights
-Down: PORTAGE_sharedTranslatingDecoding!_Decoding
+Up [PortageII](PortageMachineTranslation.md)
+Previous: [OptimizingWeights](PORTAGE_sharedTrainingOptimizingWeights.md)
+Down: [Decoding](PORTAGE_sharedTranslatingDecoding.md)

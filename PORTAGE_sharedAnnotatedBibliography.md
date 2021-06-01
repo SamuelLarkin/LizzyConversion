@@ -1,60 +1,60 @@
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedProgrammingGuidelines!_ProgrammingGuidelines
-Next: TrainingEuroparl!RequirementsForTrainingAMidSizeSystem
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [ProgrammingGuidelines](PORTAGE_sharedProgrammingGuidelines.md)
+Next: [RequirementsForTrainingAMidSizeSystem](TrainingEuroparl.md)
 
 --------
 
-* PORTAGE_sharedAnnotatedBibliography!_AGoodTextbook_aboutSMT#AGoodTextbookaboutStatisticalMachineTranslationSMT
+* [AGoodTextbook_aboutSMT#AGoodTextbookaboutStatisticalMachineTranslationSMT](PORTAGE_sharedAnnotatedBibliography.md)
 * Introductory Papers about SMT
-** PORTAGE_sharedAnnotatedBibliography!_Brown_et_al_1993#Brownetal1993
-** PORTAGE_sharedAnnotatedBibliography!_Goodman_2001#Goodman2001
-** PORTAGE_sharedAnnotatedBibliography!_PHARAOHManual#PHARAOHManual
-** PORTAGE_sharedAnnotatedBibliography!_BLEUPaper#BLEUPaper
-** PORTAGE_sharedAnnotatedBibliography!_Koehn_et_al_2003#Koehnetal2003
-** PORTAGE_sharedAnnotatedBibliography!_Marcu_andWong_2002#MarcuandWong2002
-** PORTAGE_sharedAnnotatedBibliography!_Och_andNey_2004#OchandNey2004
-** PORTAGE_sharedAnnotatedBibliography!_Och_andNey_2002#OchandNey2002
-** PORTAGE_sharedAnnotatedBibliography!_Och_2003#Och2003
-** PORTAGE_sharedAnnotatedBibliography!_OchUeffing_andNey_2001#OchUeffingandNey2001
-** PORTAGE_sharedAnnotatedBibliography!_UeffingOch_andNey_2002#UeffingOchandNey2002
-** PORTAGE_sharedAnnotatedBibliography!_Knight_1999#Knight1999
-** PORTAGE_sharedAnnotatedBibliography!_Germann_et_al_2001#Germannetal2001
-** PORTAGE_sharedAnnotatedBibliography!_JHUWorkshop_2003#JHUWorkshop2003
-** PORTAGE_sharedAnnotatedBibliography!_Och_andNey_2003#OchandNey2003
+** [Brown_et_al_1993#Brownetal1993](PORTAGE_sharedAnnotatedBibliography.md)
+** [Goodman_2001#Goodman2001](PORTAGE_sharedAnnotatedBibliography.md)
+** [PHARAOHManual#PHARAOHManual](PORTAGE_sharedAnnotatedBibliography.md)
+** [BLEUPaper#BLEUPaper](PORTAGE_sharedAnnotatedBibliography.md)
+** [Koehn_et_al_2003#Koehnetal2003](PORTAGE_sharedAnnotatedBibliography.md)
+** [Marcu_andWong_2002#MarcuandWong2002](PORTAGE_sharedAnnotatedBibliography.md)
+** [Och_andNey_2004#OchandNey2004](PORTAGE_sharedAnnotatedBibliography.md)
+** [Och_andNey_2002#OchandNey2002](PORTAGE_sharedAnnotatedBibliography.md)
+** [Och_2003#Och2003](PORTAGE_sharedAnnotatedBibliography.md)
+** [OchUeffing_andNey_2001#OchUeffingandNey2001](PORTAGE_sharedAnnotatedBibliography.md)
+** [UeffingOch_andNey_2002#UeffingOchandNey2002](PORTAGE_sharedAnnotatedBibliography.md)
+** [Knight_1999#Knight1999](PORTAGE_sharedAnnotatedBibliography.md)
+** [Germann_et_al_2001#Germannetal2001](PORTAGE_sharedAnnotatedBibliography.md)
+** [JHUWorkshop_2003#JHUWorkshop2003](PORTAGE_sharedAnnotatedBibliography.md)
+** [Och_andNey_2003#OchandNey2003](PORTAGE_sharedAnnotatedBibliography.md)
 * Specialized Papers about SMT
-** PORTAGE_sharedAnnotatedBibliography!_Badr_et_al2007#Badretal2007
-** PORTAGE_sharedAnnotatedBibliography!_Bisazza_et_al2011#Bisazzaetal2011
-** PORTAGE_sharedAnnotatedBibliography!_Chen_et_al2009#Chenetal2009
-** PORTAGE_sharedAnnotatedBibliography!_Cherry_andFoster2012#CherryandFoster2012
-** PORTAGE_sharedAnnotatedBibliography!_Cherry_et_al2012#Cherryetal2012
-** PORTAGE_sharedAnnotatedBibliography!_Foster_et_al2006#Fosteretal2006
-** PORTAGE_sharedAnnotatedBibliography!_Foster_andKuhn2007#FosterandKuhn2007
-** PORTAGE_sharedAnnotatedBibliography!_Foster_andKuhn2009#FosterandKuhn2009
-** PORTAGE_sharedAnnotatedBibliography!_Fraser_andMarcu2007#FraserandMarcu2007
-** PORTAGE_sharedAnnotatedBibliography!_Galley_andManning2008#GalleyandManning2008
-** PORTAGE_sharedAnnotatedBibliography!_Germann_et_al2009#Germannetal2009
-** PORTAGE_sharedAnnotatedBibliography!_Guzman_et_al2009#Guzmanetal2009
-** PORTAGE_sharedAnnotatedBibliography!_He2007#He2007
-** PORTAGE_sharedAnnotatedBibliography!_Huang_andChiang2007#HuangandChiang2007
-** PORTAGE_sharedAnnotatedBibliography!_Johnson_et_al2007#Johnsonetal2007
-** PORTAGE_sharedAnnotatedBibliography!_Koehn_et_al2007#Koehnetal2007
-** PORTAGE_sharedAnnotatedBibliography!_Kuhn_andDeMori1990_2#KuhnandDeMori19902
-** PORTAGE_sharedAnnotatedBibliography!_Kumar_andByrne2004#KumarandByrne2004
-** PORTAGE_sharedAnnotatedBibliography!_Liang_et_al2006#Liangetal2006
-** PORTAGE_sharedAnnotatedBibliography!_Mangu_et_al1999#Manguetal1999
-** PORTAGE_sharedAnnotatedBibliography!_Niehues_et_al2011#Niehuesetal2011
-** PORTAGE_sharedAnnotatedBibliography!_Paul_et_al2009#Pauletal2009
-** PORTAGE_sharedAnnotatedBibliography!_Simard_andIsabelle2009#SimardandIsabelle2009
-** PORTAGE_sharedAnnotatedBibliography!_Ueffing_andNey2005#UeffingandNey2005
-** PORTAGE_sharedAnnotatedBibliography!_Zens_andNey2004#ZensandNey2004
-** PORTAGE_sharedAnnotatedBibliography!_Zens_andNey2006#ZensandNey2006
+** [Badr_et_al2007#Badretal2007](PORTAGE_sharedAnnotatedBibliography.md)
+** [Bisazza_et_al2011#Bisazzaetal2011](PORTAGE_sharedAnnotatedBibliography.md)
+** [Chen_et_al2009#Chenetal2009](PORTAGE_sharedAnnotatedBibliography.md)
+** [Cherry_andFoster2012#CherryandFoster2012](PORTAGE_sharedAnnotatedBibliography.md)
+** [Cherry_et_al2012#Cherryetal2012](PORTAGE_sharedAnnotatedBibliography.md)
+** [Foster_et_al2006#Fosteretal2006](PORTAGE_sharedAnnotatedBibliography.md)
+** [Foster_andKuhn2007#FosterandKuhn2007](PORTAGE_sharedAnnotatedBibliography.md)
+** [Foster_andKuhn2009#FosterandKuhn2009](PORTAGE_sharedAnnotatedBibliography.md)
+** [Fraser_andMarcu2007#FraserandMarcu2007](PORTAGE_sharedAnnotatedBibliography.md)
+** [Galley_andManning2008#GalleyandManning2008](PORTAGE_sharedAnnotatedBibliography.md)
+** [Germann_et_al2009#Germannetal2009](PORTAGE_sharedAnnotatedBibliography.md)
+** [Guzman_et_al2009#Guzmanetal2009](PORTAGE_sharedAnnotatedBibliography.md)
+** [He2007#He2007](PORTAGE_sharedAnnotatedBibliography.md)
+** [Huang_andChiang2007#HuangandChiang2007](PORTAGE_sharedAnnotatedBibliography.md)
+** [Johnson_et_al2007#Johnsonetal2007](PORTAGE_sharedAnnotatedBibliography.md)
+** [Koehn_et_al2007#Koehnetal2007](PORTAGE_sharedAnnotatedBibliography.md)
+** [Kuhn_andDeMori1990_2#KuhnandDeMori19902](PORTAGE_sharedAnnotatedBibliography.md)
+** [Kumar_andByrne2004#KumarandByrne2004](PORTAGE_sharedAnnotatedBibliography.md)
+** [Liang_et_al2006#Liangetal2006](PORTAGE_sharedAnnotatedBibliography.md)
+** [Mangu_et_al1999#Manguetal1999](PORTAGE_sharedAnnotatedBibliography.md)
+** [Niehues_et_al2011#Niehuesetal2011](PORTAGE_sharedAnnotatedBibliography.md)
+** [Paul_et_al2009#Pauletal2009](PORTAGE_sharedAnnotatedBibliography.md)
+** [Simard_andIsabelle2009#SimardandIsabelle2009](PORTAGE_sharedAnnotatedBibliography.md)
+** [Ueffing_andNey2005#UeffingandNey2005](PORTAGE_sharedAnnotatedBibliography.md)
+** [Zens_andNey2004#ZensandNey2004](PORTAGE_sharedAnnotatedBibliography.md)
+** [Zens_andNey2006#ZensandNey2006](PORTAGE_sharedAnnotatedBibliography.md)
 * Papers about features added in Portage''''II 3.0
-** PORTAGE_sharedAnnotatedBibliography!_Hopkins_andMay2011#HopkinsandMay2011
-** PORTAGE_sharedAnnotatedBibliography!_Cherry_andFoster2012revisited#CherryandFoster2012revisited
-** PORTAGE_sharedAnnotatedBibliography!_Cherry2013#Cherry2013
-** PORTAGE_sharedAnnotatedBibliography!_Stewart_et_al2014#Stewartetal2014
-** PORTAGE_sharedAnnotatedBibliography!_Devlin_et_al2014#Devlinetal2014
-** PORTAGE_sharedAnnotatedBibliography!_Foster2016_addeddum_toDevlin#Foster2016addendumtoDevlin
+** [Hopkins_andMay2011#HopkinsandMay2011](PORTAGE_sharedAnnotatedBibliography.md)
+** [Cherry_andFoster2012revisited#CherryandFoster2012revisited](PORTAGE_sharedAnnotatedBibliography.md)
+** [Cherry2013#Cherry2013](PORTAGE_sharedAnnotatedBibliography.md)
+** [Stewart_et_al2014#Stewartetal2014](PORTAGE_sharedAnnotatedBibliography.md)
+** [Devlin_et_al2014#Devlinetal2014](PORTAGE_sharedAnnotatedBibliography.md)
+** [Foster2016_addeddum_toDevlin#Foster2016addendumtoDevlin](PORTAGE_sharedAnnotatedBibliography.md)
 
 ## A Good Textbook about Statistical Machine Translation (SMT)
 
@@ -99,7 +99,7 @@ Modern linguistic theories of language use tree structures to represent sentence
 The order in which these papers are listed is the order recommended for a reader unfamiliar with SMT.
 
 ### Brown et al 1993
-"The Mathematics of Statistical Machine Translation: Parameter Estimation", by Peter Brown, Stephen Della Pietra, Vincent Della Pietra, and Robert Mercer. Computational Linguistics, 1993, V. 19(2), pp. 263-311 (http://aclweb.org/anthology-new/J/J93/#2000!ComputationalLinguistics2000).
+"The Mathematics of Statistical Machine Translation: Parameter Estimation", by Peter Brown, Stephen Della Pietra, Vincent Della Pietra, and Robert Mercer. Computational Linguistics, 1993, V. 19(2), pp. 263-311 [ComputationalLinguistics2000).]((http://aclweb.org/anthology-new/J/J93/#2000.md)
 
 This paper is the best available introduction to SMT. It was written by the group of IBM researchers who launched modern SMT in the early 1990s. Shortly afterwards, most of them left IBM to work at one of the earliest hedge funds, Renaissance Technologies. Though Renaissance Technologies is very secretive, it is considered to be one of the most successful funds in the industry (according to the "Economist" magazine of Feb. 17, 2005, it yielded returns of more than 40% for over a decade). Thus, the authors of this paper are undoubtedly far too rich to consider returning to work on SMT. Their departure from research caused SMT to lie fallow for a few years until the statistical approach to MT was revived by German and American researchers in the late 1990s (1997-9).
 
@@ -110,74 +110,74 @@ The major innovation in the field since this paper was published is the developm
 A note for Canadians: these American researchers at IBM carried out all their research on translation between English and French, because the highest-quality bilingual corpus available for them to do research on was the Canadian Hansard, the official record of Canadian parliamentary proceedings. Thus, the experimental work described in this paper depended entirely on data generated in Canada.
 
 ### Goodman 2001
-"A Bit of Progress in Language Modeling (Extended Version)", by Joshua Goodman. Microsoft Technical Report 2001-72, Aug. 2001 (http://research.microsoft.com/en-us/um/people/joshuago/publications.htm!GoodmanPublications).
+"A Bit of Progress in Language Modeling (Extended Version)", by Joshua Goodman. Microsoft Technical Report 2001-72, Aug. 2001 [GoodmanPublications).]((http://research.microsoft.com/en-us/um/people/joshuago/publications.htm.md)
 
 The most complete survey available of modern language modeling techniques, which are based on N-grams. Although this paper is extremely well-written, in a sardonic style, a reader who is primarily interested in SMT may find that it contains far more information than he or she really needs. Unless the reader is deeply interested in language modeling, we recommend that he or she read just enough of the introductory sections to understand the basic concept of N-gram language modeling, and then stop.
 
 ### PHARAOH Manual
-"PHARAOH - a Beam Search Decoder for Phrase-Based Statistical Machine Translation Models (User Manual and Description)" by Philipp Koehn. USC Information Sciences Institute, Dec. 2003 (http://www.isi.edu/licensed-sw/pharaoh/!PharaohWebPage).
+"PHARAOH - a Beam Search Decoder for Phrase-Based Statistical Machine Translation Models (User Manual and Description)" by Philipp Koehn. USC Information Sciences Institute, Dec. 2003 [PharaohWebPage).]((http://www.isi.edu/licensed-sw/pharaoh/.md)
 
 Explains in readable fashion how the decoder of a typical phrase-based SMT system works. The decoder is the system component that actually carries out translation. It does this by growing each target-language hypothesis in continuous left-to-right order from sequences of words called phrases in the source sentence. Each phrase consists of a contiguous sequence of source-language words, but the phrases themselves may be "bitten off" in any order (as far as the source is concerned). For instance, the first few words at the start of a target hypothesis might be translations of words 3-5 in the source, the next few words in the hypothesis might be translations of source words 6-7, the ones after that translations of source words 1-2, and so on. Thus translation is strictly left-to-right as far as the target hypothesis is concerned (making it easy to obtain an N-gram target language model score from a partial hypothesis), but quite free as far as the source is concerned (except that once a group of source words has been translated, it cannot be used again - the words have been consumed). The paper also contains a short introduction to phrase-based SMT, describing the state of the art at the time it was written. We recommend reading this paper before others, published earlier and listed below, because it is much easier to understand phrase-based SMT once you know how it is implemented in a practical system.
 
 ### BLEU Paper
-"BLEU: a Method for Automatic Evaluation of Machine Translation" by Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu. Proc. ACL, July 2002 (http://aclweb.org/anthology-new/P/P02/!ACL02Proceedings).
+"BLEU: a Method for Automatic Evaluation of Machine Translation" by Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu. Proc. ACL, July 2002 [ACL02Proceedings).]((http://aclweb.org/anthology-new/P/P02/.md)
 
 The practical development of an SMT system requires metrics for MT quality that can be applied automatically. The SMT community's solution to this problem has been to develop metrics that measure the similarity of the computer-generated translations for the sentences in a given source text with reference translations for the same sentences generated by a professional human translator. These automatic metrics typically compare the choices of words, bigrams, trigrams and so on made by the SMT system in the target language  with those made by the human translator. One of the most frequently employed metrics of this type is called BLEU, originally defined in this paper. New variants of BLEU appear quite often, so always verify that the version you are using for experiments is the appropriate one.
 
 NOTE: all metrics of the same type as BLEU share a potential pitfall: suppose that the single reference translation of a sentence into English is "The man was very rude", system A's translation was "He expressed himself with utter tactlessness", and system B's translation was "The man was very polite". Under any metric based on N-gram overlaps, A will receive the lowest possible score, while B will receive a high score. To minimize the impact of this kind of faulty scoring, there should ideally be several different reference translations, made by translators with different writing styles.
 
 ### Koehn et al 2003
-"Statistical Phrase-Based Translation" by Philipp Koehn, Franz Josef Och, and Daniel Marcu. NAACL, 2003 (http://aclweb.org/anthology-new/N/N03/!NAACL03Proceedings).
+"Statistical Phrase-Based Translation" by Philipp Koehn, Franz Josef Och, and Daniel Marcu. NAACL, 2003 [NAACL03Proceedings).]((http://aclweb.org/anthology-new/N/N03/.md)
 
 This paper defines phrase-based SMT. It also describes the "diag-and" phrase extraction algorithm that almost all research groups (including NRC) now use to extract phrase pairs from sentence-aligned bilingual training data for phrase-based SMT. The algorithm, which is somewhat complex, begins by training IBM models, which are used to generate word alignments betwen words in each source sentence and its matching target sentence. Phrase pairs are extracted by analyzing the patterns formed by groups of word alignments. There are some interesting research results over several language pairs showing that performance appears to be relatively insensitive to word alignment quality and to increases in the maximum phrase length allowed (abopve three words); allowing only syntactically motivated phrases appears to degrade performance.
 
 ### Marcu and Wong 2002
-"A Phrase-Based, Joint Probability Model for Statistical Machine Translation" by Daniel Marcu and William Wong. EMNLP, 2002 (http://aclweb.org/anthology-new/W/W02/#1000!EMNLP02Proceedings).
+"A Phrase-Based, Joint Probability Model for Statistical Machine Translation" by Daniel Marcu and William Wong. EMNLP, 2002 [EMNLP02Proceedings).]((http://aclweb.org/anthology-new/W/W02/#1000.md)
 
 This is another phrase extraction algorithm, different from Koehn's "diag-and" procedure, proposed by researchers at ISI. Unlike "diag-and", it does not involve training IBM models as a first step. Somewhat more elegant than "diag-and" in conception, it does not appear to work as well in practice, and is rarely used.
 
 ### Och and Ney 2004
-"The Alignment Template Approach to Statistical Machine Translation" by Franz Josef Och and Hermann Ney. Computational Linguistics, V. 30, no. 4, Oct. 2004 (http://aclweb.org/anthology-new/J/J04/!ComputationalLinguistics2004).
+"The Alignment Template Approach to Statistical Machine Translation" by Franz Josef Och and Hermann Ney. Computational Linguistics, V. 30, no. 4, Oct. 2004 [ComputationalLinguistics2004).]((http://aclweb.org/anthology-new/J/J04/.md)
 
 This paper was an early step on the road to phrase-based SMT.  In 1998, the first author (Och) had originated the idea underlying phrase-based SMT, with its potential for modeling many-to-many relations with words, in his Diplomarbeit at the University of Erlangen-Nürnberg. The "alignment template" system described in the paper performed significantly better than others in the 2002 NIST Chinese-English MT evaluation, leading to widespread interest in this class of models among other researchers.
 
 ### Och and Ney 2002
-"Discriminative Training and Maximum Entropy Models for Statistical Machine Translation" by Franz Josef Och and Hermann Ney. Proc. ACL, July 2002 (http://aclweb.org/anthology-new/P/P02/!ACL02Proceedings).
+"Discriminative Training and Maximum Entropy Models for Statistical Machine Translation" by Franz Josef Och and Hermann Ney. Proc. ACL, July 2002 [ACL02Proceedings).]((http://aclweb.org/anthology-new/P/P02/.md)
 
 Shows how information sources for SMT can be treated as feature functions, making it easy to add new information sources. A key reference for people who want to understand how weights on the components of a loglinear combination model can be set so as to maximize the logprob of the model on a given set of data.
 
 ### Och 2003
-"Minimum Error Rate Training in Statistical Machine Translation" by Franz Josef Och. Proc. ACL, July 2003 (http://aclweb.org/anthology-new/P/P03/!ACL03Proceedings).
+"Minimum Error Rate Training in Statistical Machine Translation" by Franz Josef Och. Proc. ACL, July 2003 [ACL03Proceedings).]((http://aclweb.org/anthology-new/P/P03/.md)
 
 In this paper, Franz Josef Och extends the discussion in the previous paper to show how to maximize arbitrary functions of a loglinear combination. The results in this paper show, for instance, how the weights in a loglinear model for SMT can be set so as to yield a locally optimal BLEU score. The experiments described in the paper show that significantly better results can be obtained if the criterion of system performance (e.g., BLEU) is taken into account during training. The original Portage system's weight optimization modules (COW and the rescoring module) were based on ideas expressed in this paper.
 
 ### Och, Ueffing and Ney 2001
-"An Efficient A* Search Algorithm for Statistical Machine Translation" by Franz Josef Och, Nicola Ueffing, and Hermann Ney. Proc. Data-Driven Machine Translation Workshop, July 2001 (http://aclweb.org/anthology-new/W/W01/#1400!WorkshopProceedings).
+"An Efficient A* Search Algorithm for Statistical Machine Translation" by Franz Josef Och, Nicola Ueffing, and Hermann Ney. Proc. Data-Driven Machine Translation Workshop, July 2001 [WorkshopProceedings).]((http://aclweb.org/anthology-new/W/W01/#1400.md)
 
 This paper argues for using the A* search algorithm for SMT decoding; it was a step towards today's SMT search algorithms. One of its contributions was to insist on the importance of including future costs in search, which today's SMT systems do.
 
 ### Ueffing, Och and Ney 2002
-"Generation of Word Graphs in Statistical Machine Translation" by Nicola Ueffing, Franz Josef Och, and Hermann Ney. EMNLP, July 2002 (http://aclweb.org/anthology-new/W/W02/#1000!EMNLP02Proceedings).
+"Generation of Word Graphs in Statistical Machine Translation" by Nicola Ueffing, Franz Josef Och, and Hermann Ney. EMNLP, July 2002 [EMNLP02Proceedings).]((http://aclweb.org/anthology-new/W/W02/#1000.md)
 
 The first paper that described how SMT decoding can generate word graphs (also known as word lattices). Word graphs had been used in other domains (e.g., in automatic speech recognition) but not in SMT. The paper describes how the search algorithm should be designed so that word graphs are generated - for instance, it shows how hypotheses are recombined during search. It also describes how word graphs can be rescored, and how N-best lists can be extracted from word graphs. Finally, it compares word graphs and N-best lists in terms of oracle error rates - i.e., how good is the best hypothesis contained in a word graph, vs. the best hypothesis in an N-best list? The metric employed is word error rate (BLEU hadn't been invented yet). Incidentally, the system used for the paper wasn't phrase-based: it was a word-based system that used IBM model 4.
 
 ### Knight 1999
-"Decoding Complexity in Word-Replacement Translation Models" by Kevin Knight. "Squibs and Discussion" column, Computational Linguistics, V. 25, no. 4, 1999 (http://aclweb.org/anthology-new/J/J99/#4000!ComputationalLinguistics99).
+"Decoding Complexity in Word-Replacement Translation Models" by Kevin Knight. "Squibs and Discussion" column, Computational Linguistics, V. 25, no. 4, 1999 [ComputationalLinguistics99).]((http://aclweb.org/anthology-new/J/J99/#4000.md)
 
 Proves that word-replacement machine translation (e.g., machine translation employing IBM model 1) is NP-complete (if arbitrary word reordering is allowed).
 
 ### Germann et al 2001
-"Fast Decoding and Optimal Decoding for Machine Translation" by Ulrich Germann, Michael Jahr, Kevin Knight, Daniel Marcu, and Kenji Yamada. Proc. ACL, 2001 (http://aclweb.org/anthology-new/P/P01/!ACL01Proceedings).
+"Fast Decoding and Optimal Decoding for Machine Translation" by Ulrich Germann, Michael Jahr, Kevin Knight, Daniel Marcu, and Kenji Yamada. Proc. ACL, 2001 [ACL01Proceedings).]((http://aclweb.org/anthology-new/P/P01/.md)
 
 Looks at the question: do the errors made by today's SMT systems arise mainly because the best translations were not generated during greedy search, or because they were seen but wrongly discarded because of defective models? The paper concludes on the basis of experimental evidence for a system based on IBM model 4 that there is a higher proportion of model errors than search errors. Thus, if you believe the experimental evidence in the paper, you will conclude that the compromises embedded in the greedy search algorithms in today's SMT systems to deal with the NP-completeness of the task (see Kevin Knight NP-completeness paper) are acceptable, and SMT research should focus on better models.
 
 ### JHU Workshop 2003
-"Final Report of the Johns Hopkins 2003 Summer Workshop on Syntax for Statistical Machine Translation (revised version)" by Franz Josef Och, Daniel Gildea, et al. Feb. 2004 (http://www.clsp.jhu.edu/ws03/groups/translate!JHUWorkshop03).
+"Final Report of the Johns Hopkins 2003 Summer Workshop on Syntax for Statistical Machine Translation (revised version)" by Franz Josef Och, Daniel Gildea, et al. Feb. 2004 [JHUWorkshop03).]((http://www.clsp.jhu.edu/ws03/groups/translate.md)
 
 The proceedings of a JHU workshop designed to find ways of using syntactic information to improve SMT performance, attended by the top SMT researchers. The most striking result of the workshop was that the most brilliant minds in the field were unable to show any improvement yielded by syntax. The only major improvement in BLEU score came from the incorporation of information from IBM model 1 (an entirely statistical, non-syntactic model). A possible explanation for the failure of syntax to help performance is that in the workshop, all new information sources were introduced as features for rescoring, rather than for decoding. Thus, perhaps syntax was applied too late in the translation process to help. Alternatively, perhaps syntax is useless for SMT - a conclusion favoured by Franz Josef Och.
 
 ### Och and Ney 2003
-"A Systematic Comparison of Various Alignment Methods" by Franz Josef Och and Hermann Ney. Computational Linguistics, 2003 (http://aclweb.org/anthology-new/J/J03/!ComputationalLinguistics03).
+"A Systematic Comparison of Various Alignment Methods" by Franz Josef Och and Hermann Ney. Computational Linguistics, 2003 [ComputationalLinguistics03).]((http://aclweb.org/anthology-new/J/J03/.md)
 
 This paper looks at a variety of statistical and heuristic methods for computing word alignments, including the five IBM word alignment models and the hidden Markov model (HMM) approach to word alignment. The paper also presents a new model, which the authors call Model 6 and which is a log-linear combination of an HMM and IBM Model 4; this model yields the best results among those compared. The paper shows the superiority of all the statistical methods to the heuristic ones tried; among the statistical methods, those incorporating both first-order dependence between word positions and a fertility model work best. The evaluation criterion used in the paper is alignment error rate (AER) measured against two hand-aligned corpora, one drawn from the German-English Verbmobil task and one from the French-English Hansard task. The paper provides an excellent, clear summary of the word alignment techniques it describes. Its weakness is evaluation: subsequent work has shown that AER is unreliable as an indication of the quality of translations produced by the SMT system trained on a given set of alignments, and the paper presents no direct comparison of translation quality yielded by each of the techniques described. 
 
@@ -187,8 +187,8 @@ These specialized papers are listed in alphabetical order by first author.
 They were chosen for inclusion here because they are related to recent features in PORTAGE shared.
 
 ### Badr et al 2007
-"Manageable Phrase-Based Statistical Machine Translation Model" by Ghada Badr, Eric Joanis, Samuel Larkin, and Roland Kuhn. Proc. of CORES Conference on Computer Recognition Systems, Oct. 2007 (http://nparc.cisti-icist.nrc-cnrc.gc.ca/npsi/ctrl?action=shwart&index=an&req=8913961&lang=en!FullPaperPDF,
-http://nparc.cisti-icist.nrc-cnrc.gc.ca/npsi/ctrl?action=shwart&index=an&req=9183591&lang=en!ExpandedTechReportPDF).
+"Manageable Phrase-Based Statistical Machine Translation Model" by Ghada Badr, Eric Joanis, Samuel Larkin, and Roland Kuhn. Proc. of CORES Conference on Computer Recognition Systems, Oct. 2007 [FullPaperPDF,]((http://nparc.cisti-icist.nrc-cnrc.gc.ca/npsi/ctrl?action=shwart&index=an&req=8913961&lang=en.md)
+[ExpandedTechReportPDF).](http://nparc.cisti-icist.nrc-cnrc.gc.ca/npsi/ctrl?action=shwart&index=an&req=9183591&lang=en.md)
 
 A state-of-the-art phrase-based SMT system contains one or more N-gram language models (LM''''''s) and one or more phrase translation models (TM''''''s), which together have a memory footprint up to several gigabytes. This paper suggests keeping an N-gram only if all the words it contains can occur together in the translation of at least one source sentence. Typical LM filtering uses one global vocabulary; this technique efficiently keeps track of a separate vocabulary for each input sentence to translate. In experiments on a large Chinese-English task, the technique yielded significant reductions in the amount of information loaded during translation (up to 58% reduction for LM''''''s, and up to 75% reduction for TM''''''s).
 
@@ -202,7 +202,7 @@ This paper discusses an adaptation strategy where there is a single phrase table
 ### Chen et al 2009
 "Phrase Translation Model Enhanced with Association based Features"
 by Boxing Chen, George Foster and Roland Kuhn.
-Machine Translation Summit XII, 2009 (http://www.mt-archive.info/MTS-2009-TOC.htm!MTSummitProceedings).
+Machine Translation Summit XII, 2009 [MTSummitProceedings).]((http://www.mt-archive.info/MTS-2009-TOC.htm.md)
 
 This paper suggests several "association" feature functions for scoring phrase pairs, based for the most part not on explicit alignment between the two phrases but on their occurrence in aligned sentences. That is, if a source phrase S and a target phrase T co-occur in aligned sentences more often than chance would predict, the (S,T) phrase pair will be "rewarded" by the association features. The association features are highly correlated; it turns out that there is a gain in using two of them rather than one, but no gain for using more than two. Using two of the association features, Chinese-English performance improvements for a small data condition are in the range 0.7-0.8 BLEU, and for a large data condition 0.6-0.7 BLEU. 
 
@@ -211,7 +211,7 @@ This paper suggests several "association" feature functions for scoring phrase p
 by Colin Cherry and George Foster.
 NAACL 2012.
 
-See PORTAGE_sharedAnnotatedBibliography!_Cherry_andFoster2012revisited#CherryandFoster2012revisited below for a second presentation of this paper, adding details about sparse features as included in Portage''''II 3.0.
+See [Cherry_andFoster2012revisited#CherryandFoster2012revisited](PORTAGE_sharedAnnotatedBibliography.md) below for a second presentation of this paper, adding details about sparse features as included in Portage''''II 3.0.
 
 In the opinion of the writer (R. Kuhn, June 2012) the work described in this paper will eventually be seen as one of the most important contributions of NRC's team to statistical machine translation (SMT). SMT systems utilize several different information sources, traditionally called "features", to tell them which possible translations of a given source-language sentence into the target language are good and which are bad. Each of the features contributes to the overall score of a translation hypothesis. Since some features provide very accurate information about translation quality, and others only weak information, the features are assigned fixed weights before translation starts. To perform well, the assignment of weights to features must reflect the quality of the information from each feature. 
 
@@ -226,28 +226,28 @@ WMT 2012.
 
 This paper describes the type of Hierarchical Lexicalized Distortion Model (HLDM) currently implemented in PORTAGE shared. The concept of an HLDM goes back to the 2008 paper "A Simple and Effective Hierarchical Phrase Reordering Model"
 by Galley & Manning
-(PORTAGE_sharedAnnotatedBibliography!Galley_andManning2008#GalleyandManning2008).
+[Galley_andManning2008#GalleyandManning2008).]((PORTAGE_sharedAnnotatedBibliography.md)
 The basic idea is to model the reordering of words that occurs during translation not by tracking the movement of the actual phrases into which a source sentence was segmented, but by tracking the movement of the longest possible phrases that COULD have been used to generate the translation. This "keeping track" is done by a permutation parser. The current paper is highly technical; much of it is recommended reading only for people who are deeply interested in parsing. The permutation parser described here is a more efficient version of the parser underlying Galley & Manning's HLDM; it also removes the possibility for mismatch between behaviour during HLDM training and use of the HLDM during translation (this mismatch can happen with the Galley & Manning HLDM in certain scenarios). In practice, there is little difference between the BLEU results obtained from the Galley & Manning version of HLDM and the new version presented here, but the latter requires slightly less computation. The paper also shows how the new type of HLDM can correctly enforce ITG constraints that were not always enforced by an older "coverage vector" approach (this aspect of the paper will not be of great interest to typical users of PORTAGE shared). 
 
 ### Foster et al 2006
-"Phrasetable Smoothing for Statistical Machine Translation" by George Foster, Roland Kuhn and Howard Johnson. Proc. Empirical Methods in Natural Language Processing (EMNLP) 2006 (http://www.aclweb.org/anthology-new/W/W06/#1600!EMNLP06Proceedings).
+"Phrasetable Smoothing for Statistical Machine Translation" by George Foster, Roland Kuhn and Howard Johnson. Proc. Empirical Methods in Natural Language Processing (EMNLP) 2006 [EMNLP06Proceedings).]((http://www.aclweb.org/anthology-new/W/W06/#1600.md)
 
 When estimating probabilities from data, it is often a good idea to "smooth" the estimated probabilities to account for randomness in the observations - especially if there have not been many observations. For instance, suppose I know there are four possible types of ducks in a certain region (A-D), and in the course of an afternoon, I have observed 10 different ducks on a lake in that region: 5 were of type A, 4 were of type B, and 1 was of type C. On the basis of these observations, the unsmoothed estimated probabilities of the different types would be 50% for type A, 40% for type B, 10% for type C, and 0% for type D. This is clearly unreasonable - on the basis of these 10 observations, would you be willing to bet $100 that if you went back to the lake the next afternoon, you will not observe any type D duck, or that exactly half the ducks you observe will be of type A? Several smoothing methods exist for obtaining more reasonable probability estimates in cases like this, where the number of observations isn't much bigger (or is perhaps even smaller) than the number of different things that could possibly be observed. Application of a smoothing method to the duck data would yield an estimate for the probability of A that was lower than 50%, and a probability for D that was higher than 0%.
 
 The two key components of a phrase-based SMT system like PORTAGE shared are the target language model, which assigns scores to proposed sequences of target-language words, and the phrase table, which stores counts of co-occurrences of source-language and target-language phrases. Data stored in the phrase table yields conditional probability estimates - for instance, if source phrase s1 occurs 3 times, once co-occurring with target phrase t1 and twice with target phrase t2, one might estimate P(t1|s1) as 33%, and P(t2|s1) as 67%. There is a large literature about smoothing for language modeling. Strangely, this Foster et al. 2006 paper appears to be the first systematic study of methods for smoothing probabilities estimated from phrase tables (even though the number of observations per phrase in the phrase table is typically very small, implying that phrase table smoothing is highly desirable). Several different smoothing methods are tried; some are "black-box" (they only use counts of phrases and phrase pairs), some are "glass-block" (they decompose the source and target phrases into their constituent phrases). Two experimental settings were used: European language pairs with small training corpora, and Chinese-to-English translation with a large corpus. In both settings, phrase table smoothing led to an improvement of at least 1 BLEU point. 
 
 ### Foster and Kuhn 2007
-"Mixture-Model Adaptation for SMT" by George Foster and Roland Kuhn. Proc. Second SMT Workshop, 2007 (http://www.statmt.org/wmt07/proceedings.html!WMT07Proceedings).
+"Mixture-Model Adaptation for SMT" by George Foster and Roland Kuhn. Proc. Second SMT Workshop, 2007 [WMT07Proceedings).]((http://www.statmt.org/wmt07/proceedings.html.md)
 
 This paper examines how to adapt an SMT system to a new domain, using weights that depend on the distance of the source text to be translated to corpora used to train the mixture components. Many variations of this approach are investigated. The best methods achieve gains of approximately one percentage point over a state-of-the-art non-adapted baseline system.
 
 ### Foster and Kuhn 2009
-"Stabilizing minimum error rate training" by George Foster and Roland Kuhn. Proc. Fourth SMT Workshop, 2009 (http://aclweb.org/anthology-new/W/W09/#0400!WMT09Proceedings).
+"Stabilizing minimum error rate training" by George Foster and Roland Kuhn. Proc. Fourth SMT Workshop, 2009 [WMT09Proceedings).]((http://aclweb.org/anthology-new/W/W09/#0400.md)
 
 The method most commonly used for determining feature weights in an SMT system is Och's minimum error rate training (MERT) procedure. Unfortunately, MERT tends to be unstable, especially when the number of features is large or when the features are highly correlated. This paper analyzes variations in MERT's behaviour by supplying different random seeds to a core component of MERT, Powell's algorithm. It looks at several strategies for obtaining more reliable MERT results, the simplest of which is to run MERT several times with different random seeds and then pick the weights that give the best result on a held-out corpus. The paper also proposes some other approaches to improving MERT, which also yield good results and are less expensive than the simple approach. 
 
 ### Fraser and Marcu 2007
-"Measuring Word Alignment Quality for Statistical Machine Translation" by Alexander Fraser and Daniel Marcu.  Computational Linguistics 33(3)  (http://aclweb.org/anthology-new/J/J07/#3000!ComputationalLinguistics07).
+"Measuring Word Alignment Quality for Statistical Machine Translation" by Alexander Fraser and Daniel Marcu.  Computational Linguistics 33(3)  [ComputationalLinguistics07).]((http://aclweb.org/anthology-new/J/J07/#3000.md)
 
 A frustrating aspect of training SMT systems is that the quality of the word alignments produced in the early stages of training does not seem to correlate with the quality of translations produced by the system. The authors argue that this is due to use of AER as a measure of the quality of word alignment; according to them, AER favours precision at the expense of recall. They argue instead for the use of the F-measure, showing experimentally that if the alpha parameter of this measure is properly tuned, the F-measure for a set of word alignments correlates quite well with the BLEU score of the resulting SMT system. 
 
@@ -261,7 +261,7 @@ This paper builds on earlier work on lexicalized reordering models in which each
 The solution proposed here is to classify orientations based on the longest phrases that MIGHT have been used to cover the source sentence in the past. In this model, by the time the second system in the example translates "a mangé" as "ate", "chat" is part of a block of translated words that includes "noir", so the insertion of "ate" counts as M. The authors point out that the older approach often ended up with a very high proportion of D orientations - e.g., 80% in their Chinese-English data - and thus D ends up being an uninformative default category. The new Hierarchical Lexicalized Distortion Model (HLDM) described here usually increases the proportion of M and S orientations. Experiments in the paper show that HLDM yields significant improvements for Arabic-English and Chinese-English. 
 
 ### Germann et al 2009
-"Tightly Packed Tries: How to Fit Large Models into Memory, and Make them Load Fast, Too" by Ulrich Germann, Eric Joanis, and Samuel Larkin. Proc. NAACL HLT Workshop on Software Engineering, Testing, and Quality Assurance for Natural Language Processing, 2009 (http://aclweb.org/anthology-new/W/W09/#1500!SETQA_NLP_Proceedings).
+"Tightly Packed Tries: How to Fit Large Models into Memory, and Make them Load Fast, Too" by Ulrich Germann, Eric Joanis, and Samuel Larkin. Proc. NAACL HLT Workshop on Software Engineering, Testing, and Quality Assurance for Natural Language Processing, 2009 [SETQA_NLP_Proceedings).]((http://aclweb.org/anthology-new/W/W09/#1500.md)
 
 This paper describes tightly packed tries, a data structure used by PORTAGE shared to store language models and phrase tables - including gigantic ones - as compactly as possible; they can also be used to store many other types of NLP data. Tightly packed tries store data more compactly than flat text files compressed with the gzip utility. They support memory mapping and thus allow very short load times and memory mapping between processes. This paper may be read in conjunction with Paul et al 2009 (below), which describes Portage Live: a VM version of PORTAGE shared made possible by the use of tightly packed tries. 
 
@@ -273,26 +273,26 @@ MT Summit XII, 2009.
 This paper studies the relationship between the number of unaligned words in a phrase pair and translation quality. As one would expect, phrase pairs with more unaligned words tend to be of lower quality. The authors introduced two new features based on phrase pairs, the number of unaligned source words and the number of unaligned target words. Introduction of these two features improved BLEU by up to +2. 
 
 ### He 2007
-"Using Word Dependent Transition Models in HMM based Word Alignment for Statistical Machine Translation" by Xiaodong He. ACL07 2nd SMT Workshop (http://www.statmt.org/wmt07/proceedings.html!WMT07Proceedings).
+"Using Word Dependent Transition Models in HMM based Word Alignment for Statistical Machine Translation" by Xiaodong He. ACL07 2nd SMT Workshop [WMT07Proceedings).]((http://www.statmt.org/wmt07/proceedings.html.md)
 
 In a traditional HMM for word alignment, the HMM transition probability depends only on the jump width from the last state to the next state. This paper proposes that transition probabilities be conditioned on the identity of the current source word. In order to compensate for data sparsity, a maximum a posteriori (MAP) framework is proposed, in which word-dependent transition probabilities are smoothed with the word-independent probabilities. The authors obtain a 13% reduction in AER on a Hansard task over a conventional HMM baseline. On the English-French track of the NAACL 2006 Europarl evaluation workshop (688K sentences of training data), the word-dependent HMM yields nearly 1% of BLEU improvement over the baseline HMM, and 0.8% over IBM model 4. However, the improvement is smaller when tested on out-of-domain data: 0.5% improvement over both the baseline HMM and IBM model 4.
 
 ### Huang and Chiang 2007
-"Forest Rescoring: Faster Decoding with Integrated Language Models" by Liang Huang and David Chiang. Proc. ACL, 2007 (http://aclweb.org/anthology-new/P/P07/!ACL07Proceedings).
+"Forest Rescoring: Faster Decoding with Integrated Language Models" by Liang Huang and David Chiang. Proc. ACL, 2007 [ACL07Proceedings).]((http://aclweb.org/anthology-new/P/P07/.md)
 
 This paper shows how to achieve an order-of-magnitude speedup in SMT beam-search decoding by avoiding a priori the expansion of nodes in the search graph that would be pruned latter anyway.  Two methods for doing this are introduced, called cube pruning and cube growing.
 
 ### Johnson et al 2007
 "Improving Translation Quality by Discarding
 Most of the Phrasetable" by Howard Johnson, Joel Martin, George Foster, and Roland Kuhn. Proc. Conf. on Empirical Methods for Natural Language Processing and Conf. on Computational Natural
-Language Learning (EMNLP-CONLL), 2007 (http://www.aclweb.org/anthology-new/D/D07/!EMNLP07Proceedings).
+Language Learning (EMNLP-CONLL), 2007 [EMNLP07Proceedings).]((http://www.aclweb.org/anthology-new/D/D07/.md)
 
 The two key components of a phrase-based SMT system like PORTAGE shared are the target language model, which assigns scores to proposed sequences of target-language words, and the phrase table, which stores counts of co-occurrences of source-language and target-language phrases. Data stored in the phrase table yields conditional probability estimates - for instance, if source phrase s1 occurs 3 times, once co-occurring with target phrase t1 and twice with target phrase t2, one might estimate P(t1|s1) as 33%, and P(t2|s1) as 67%. This influential paper showed that by applying a statistical significance test (Fisher's exact test), it is possible to discard information about a high proportion of the phrase pairs stored in the phrase table - in some cases, up to 90% of them - without incurring any loss in BLEU score. Sometimes, the pruned phrase table even yields a higher BLEU score than the original one (though this is less likely to happen when smoothing is being applied - see Foster et al 2006, above, for a description of smoothing). 
 
 ### Koehn et al 2007 
-"Edinburgh System Description for the 2005 IWSLT Speech Transcription Evaluation" by Philipp Koehn, Amittai Axelrod, Alexandra Birch Mayne, Chris Callison-Burch, Miles Osborne, and David Talbot. MT Eval Workshop 2005 (http://www.is.cs.cmu.edu/iwslt2005/proceedings.html!IWSLT05Proceedings).
+"Edinburgh System Description for the 2005 IWSLT Speech Transcription Evaluation" by Philipp Koehn, Amittai Axelrod, Alexandra Birch Mayne, Chris Callison-Burch, Miles Osborne, and David Talbot. MT Eval Workshop 2005 [IWSLT05Proceedings).]((http://www.is.cs.cmu.edu/iwslt2005/proceedings.html.md)
 
-Also "Moses: Open Source Toolkit for Statistical Machine Translation" by Philipp Koehn, Hieu Hoang, Alexandra Birch, Chris Callison-Burch, Marcello Federico, Nicola Bertoldi, Brooke Cowan, Wade Shen, Christine Moran, Richard Zens, Chris Dyer, Ondrej Bojar, Alexandra Constantin and Evan Herbst. Proc. ACL Demo and Poster Sessions, 2007 (http://aclweb.org/anthology-new/P/P07/#2000!ACL07Proceedings).
+Also "Moses: Open Source Toolkit for Statistical Machine Translation" by Philipp Koehn, Hieu Hoang, Alexandra Birch, Chris Callison-Burch, Marcello Federico, Nicola Bertoldi, Brooke Cowan, Wade Shen, Christine Moran, Richard Zens, Chris Dyer, Ondrej Bojar, Alexandra Constantin and Evan Herbst. Proc. ACL Demo and Poster Sessions, 2007 [ACL07Proceedings).]((http://aclweb.org/anthology-new/P/P07/#2000.md)
 
 The second of these two papers provides a very brief overview of Moses, the open-source SMT toolkit. It touches on some key features of Moses. These include the ability to create a factored representation of words (e.g., a word might be associated with its part of speech and its lemma), confusion network decoding (which can be used, for instance, when the imput to the SMT system comes from a speech recognizer), and the use of extremely efficient data structures for storing the translation model and the language model. It briefly mentions lexicalized distortion, but the first paper is a better reference for that topic. "Lexicalized" distortion is a bit of a misnomer, since it doesn't involve conditioning on individual words but rather, conditioning on phrases or phrase pairs. The basic idea is this: a phrase pair in the training data can be classified into three categories with respect to the phrase pair that precedes it, and into three categories with respect to the phrase pair that follows it. In both cases, these categories are monotone, swap (the current phrase pair switched positions with the other one), or discontinuous (the current phrase pair and the other one were originally not contiguous). If during training, we record for each phrase pair its category with respect to the preceding and following phrase pair, we can estimate the probability that during decoding, it will have a given orientation with respect to the preceding and following phrase pairs. Many variations of this idea are also possible; most of them lead to performance improvements in most situations. PORTAGE shared incorporates a version of lexicalized distortion. 
 
@@ -303,18 +303,18 @@ The probability that a word will appear in a running text depends not only on th
 
 ### Kumar and Byrne 2004
 "Minimum Bayes-Risk Decoding for Statistical Machine Translation" by Shankar Kumar and
-William Byrne (2004). Proc. HLT-NAACL 2004 (http://aclweb.org/anthology-new/N/N04/!HLT-NAACL04Proceedings).
+William Byrne (2004). Proc. HLT-NAACL 2004 [HLT-NAACL04Proceedings).]((http://aclweb.org/anthology-new/N/N04/.md)
 
 The authors show how to carry out Minimum Bayes Risk (MBR) decoding. The aim of this approach is to
 minimize expected loss of translation errors under loss functions that measure translation performance. Thus, MBR decoding can be used to tune SMT performance for a specific metric, such as BLEU. This can be done in the context of rescoring N-best lists, resulting in selection of the translation hypothesis that is closest on average to all the other hypotheses, with closeness measured by the metric of interest. Thus, MBR rescoring results in selection of a consensus translation.
 
 ### Liang et al 2006
-"Alignment by Agreement" by Percy Liang, Ben Taskar, and Dan Klein. Proc. HLT-NAACL 2006 (http://aclweb.org/anthology-new/N/N06/!HLT-NAACL06Proceedings).
+"Alignment by Agreement" by Percy Liang, Ben Taskar, and Dan Klein. Proc. HLT-NAACL 2006 [HLT-NAACL06Proceedings).]((http://aclweb.org/anthology-new/N/N06/.md)
 
 The authors train two asymmetric HMM models for word alignment between two languages E and F, one in the direction P(F|E) and the other in the direction P(E|F). Instead of just intersecting the predictions of these two models after training, they have devised a training method that encourages agreement of the models during training. They test their joint training method on the English-French NAACL 2003 shared task, involving a training set of 1.1 million Canadian Hansard sentences. Compared to the standard approach of intersecting predictions obtained from independently-trained models, they obtained a 32% reduction in AER. The gain in BLEU was more modest: as measured by training on 100K English-French sentences from Europarl and testing on 3K Europarl sentences, the BLEU score for their method was 0.3051 as compared to 0.3035 obtained by the use of IBM model 4.
 
 ### Mangu et al 1999
-"Finding Consensus Among Words: Lattice-Based Word Error Minimization" by Lidia Mangu, Eric Brill, and Andreas Stolcke. Proc. Eurospeech 1999 (http://isca-speech.org/archive/eurospeech_1999/e99_0495.html!OnlineAbstract).
+"Finding Consensus Among Words: Lattice-Based Word Error Minimization" by Lidia Mangu, Eric Brill, and Andreas Stolcke. Proc. Eurospeech 1999 [OnlineAbstract).]((http://isca-speech.org/archive/eurospeech_1999/e99_0495.html.md)
 
 The paper describes an algorithm for finding the hypothesis in a lattice that minimizes the word error rate (WER). This is done by finding a complete alignment of all the words in the lattice, identifying mutually supporting and competing word hypotheses. A new sentence hypothesis is formed by concatenating the words with maximal posterior probabilities. Expensive!
 
@@ -326,22 +326,22 @@ Proceedings of the 6th Workshop on Statistical Machine Translation, 2011.
 This describes Karlsruhe's "bilingual language model". This language model is a clever way of applying extra source-side contextual information (beyond phrase boundaries) at decoding time without disrupting the current architecture of systems like PORTAGE shared. That is, search is the same as in our current system; it is based on phrase pairs. The bilingual language model score, calculated from the sequence of bilingual tokens in the translation hypothesis, is an additional feature function. Each bilingual token consists of a target-language word and the source words it was aligned to in the training data. Source words that aren't aligned to target words are ignored in this model; unaligned target words are just bilingual tokens that happen to have an empty source side. Incorporation of wide-span source-side POS information (potentially much wider than the span of either side of a typical phrase pair) also becomes straightforward with this approach. Improvements for German-English were in the range +0.15-1.0 BLEU (for the word-based version), and for Arabic-English, around +1 BLEU for the word-based version and +1.7 for the (word+POS) version. However, for the WMT 2011 experiments described in the paper, the bilingual LM component only contributed improvement in the range +0.1-0.4 BLEU. An interesting side-effect of using a bilingual LM is that the average length of phrase pairs used for decoding tends to shrink, since the system now has another mechanism for incorporating information about source-side context besides using longer phrase pairs whose statistics may be less reliably estimated than the statistics for short phrases.
 
 ### Paul et al 2009
-"Portage Live: Delivering Machine Translation Technology via Virtualization" by Patrick Paul, Samuel Larkin, Ulrich Germann, Eric Joanis, and Roland Kuhn. Proc. MT Summit XII, 2009 (http://www.mt-archive.info/MTS-2009-TOC.htm!MTSummitProceedings).
+"Portage Live: Delivering Machine Translation Technology via Virtualization" by Patrick Paul, Samuel Larkin, Ulrich Germann, Eric Joanis, and Roland Kuhn. Proc. MT Summit XII, 2009 [MTSummitProceedings).]((http://www.mt-archive.info/MTS-2009-TOC.htm.md)
 
 Virtualization makes it possible to port state-of-the-art machine translation technology, such as PORTAGE shared, to a variety of operating systems with little effort, and to run several instances of the translation decoder on the same machine. This paper describes Portage Live, a virtualized version of PORTAGE shared. Portage Live can run concurrently on a single state-of-the-art desktop or laptop computer with other applications; it can also be used in a network for distributed translation processing. The virtualization of PORTAGE shared was made possible by encoding PORTAGE shared's phrase tables and language models in a data structure called a tightly packed try. Tightly packed tries are described in Germann et al. 2009 (above); it is strongly recommended that the Portage Live paper be read in conjunction with the Germann et al one. Thanks to tightly packed tries, even very large models for translation can be fitted into a reasonable amount of memory; loading of these models is very fast. To summarize, this paper shows how to virtualize PORTAGE shared, allowing fast transfer of new technology to existing and potential customers without significant investments in porting software between operating systems.
 
 ### Simard and Isabelle 2009
-"Phrase-based Machine Translation in a Computer-assisted Translation Environment" by Michel Simard and Pierre Isabelle. Proc. MT Summit XII, 2009 (http://www.mt-archive.info/MTS-2009-TOC.htm!MTSummitProceedings).
+"Phrase-based Machine Translation in a Computer-assisted Translation Environment" by Michel Simard and Pierre Isabelle. Proc. MT Summit XII, 2009 [MTSummitProceedings).]((http://www.mt-archive.info/MTS-2009-TOC.htm.md)
 
 One of the most promising applications of SMT technology is making human translators more productive. Currently, many translators are uncomfortable with SMT, for two reasons: it hasn't been integrated into a computer-assisted translation (CAT) environment, and it wastes the translator's time by often proposing bad translations. This paper tackles both objections to SMT by merging it with a translation memory (TM) - a tool most translators are comfortable with - and by providing a component that filters out SMT-generated translations that are unlikely to be useful. The experiment shows that the merged SMT-TM system outperforms the pure TM on all data sets that were tried, and that the filtering component is very effective at suppressing unhelpful translations. 
 
 ### Ueffing and Ney 2005
-"Word-Level Confidence Estimation for Machine Translation using Phrase-Based Translation Models" by Nicola Ueffing and Hermann Ney. Proc. HLT-EMNLP, 2005 (http://aclweb.org/anthology-new/H/H05/!HLT-EMNLP05Proceedings).
+"Word-Level Confidence Estimation for Machine Translation using Phrase-Based Translation Models" by Nicola Ueffing and Hermann Ney. Proc. HLT-EMNLP, 2005 [HLT-EMNLP05Proceedings).]((http://aclweb.org/anthology-new/H/H05/.md)
 
 This paper describes several different ways of assigning a confidence score to each word in a translation output by a phrase-based SMT system. Several different methods for finding the confidence are studied experimentally. The most effective proves to be a confidence measure estimated from the phrase table of the SMT system.
 
 ### Zens and Ney 2004
-"Improvements in phrase-based statistical machine translation" by Richard Zens and Hermann Ney.  Proc. HLT-NAACL, 2004 (http://aclweb.org/anthology-new/N/N04/#1000!HLT-NAACL04Proceedings).
+"Improvements in phrase-based statistical machine translation" by Richard Zens and Hermann Ney.  Proc. HLT-NAACL, 2004 [HLT-NAACL04Proceedings).]((http://aclweb.org/anthology-new/N/N04/#1000.md)
 
 Describes RWTH's phrase-based system as it was in 2004. Apart from the "relative frequency" estimates of the forward and backward conditional phrase probabilities P(s|t) and P(t|s) based on the counts of co-occurrences of s and t in the training data (where s = source-language phrase, t=target-language phrase), this system incorporates:
 * A word penalty feature (count of number of words in a target-language hypothesis)
@@ -353,7 +353,7 @@ The paper describes experiments in which a monotone search strategy (in which th
 The aspect of this paper that's important for understanding today's PORTAGE shared system is the idea of lexical estimates for P(s|t) and P(t|s). The phrases s and t may only have occurred a few times in the training data; thus, the "relative frequency" estimates of P(s|t) and P(t|s) based on the count of s, the count of t, and the count of co-occurrences of s and t may be quite unreliable. However, if s or t are multi-word phrases, one can also estimate P(s|t) and P(t|s) from the co-occurrence counts of the individual words that make up s and t. This paper proposes a "noisy-or" lexical estimate for P(s|t) and P(t|s); the default setting for PORTAGE shared typically uses this Zens-Ney lexical estimate, as defined in this 2004 paper. 
 
 ### Zens and Ney 2006
-"N-Gram Posterior Probabilities for Statistical Machine Translation" by Richard Zens and Hermann Ney. Proc. SMT Workshop, 2006 (http://aclweb.org/anthology-new/W/W06/#3100!WMT06Proceedings).
+"N-Gram Posterior Probabilities for Statistical Machine Translation" by Richard Zens and Hermann Ney. Proc. SMT Workshop, 2006 [WMT06Proceedings).]((http://aclweb.org/anthology-new/W/W06/#3100.md)
 
 Given an N-best list of translation hypotheses output by an SMT system, one can
 estimate language models and sentence length distributions on the list. The resulting posterior probabilities are then used to reorder the hypotheses in the list, or to do a second pass of translation. Instead of an N-best list, a word graph could also have been used. Note that this procedure favours hypotheses that look as much like the other hypotheses as possible - thus, the use of posterior probabilities favours the consensus.The authors claim impressive gains for a Chinese-English task: well over one BLEU percentage point.
@@ -376,7 +376,7 @@ The part of the Hopkins & May paper that's directly relevant to today's PORTAGE 
 
 "Batch Tuning Strategies for Statistical Machine Translation" by Colin Cherry and George Foster, NAACL 2012, Montréal, Canada (http://www.aclweb.org/anthology/N12-1047.pdf).
 
-We discuss this paper a second time here to add a focus on elements of it implemented in Portage''''II 3.0. (See also PORTAGE_sharedAnnotatedBibliography!_Cherry_andFoster2012#CherryandFoster2012 above.)
+We discuss this paper a second time here to add a focus on elements of it implemented in Portage''''II 3.0. (See also [Cherry_andFoster2012#CherryandFoster2012](PORTAGE_sharedAnnotatedBibliography.md) above.)
 
 The work described in this paper may eventually be seen as one of the most important contributions of NRC's team to statistical machine translation (SMT). SMT systems utilize several different information sources, traditionally called "features", to tell them which possible translations of a given source-language sentence into the target language are good and which are bad. Each of the features contributes to the overall score of a translation hypothesis. Since some features provide very accurate information about translation quality, and others only weak information, the features are assigned fixed weights before translation starts. To perform well, the assignment of weights to features must reflect the quality of the information from each feature.
 
@@ -388,7 +388,7 @@ In addition to describing PORTAGE shared's tuning algorithm, batch lattice MIRA,
 
 Here is the paper's description of the sparse features - the so-called "Hopkins-May" features - that are added to the 18 features in the Medium set to create the Big set (section 4.2):
 
-"The Big set adds sparse Boolean features to Medium, for a maximum of 6,848 features. We used sparse feature templates that are equivalent to the PBMT set described in (PORTAGE_sharedAnnotatedBibliography!Hopkins_andMay2011#HopkinsandMay2011): ''tgt unal'' picks out each of the 50 most frequent target words to appear unaligned in the phrase table; ''count bin'' uniquely bins joint phrase pair counts with upper bounds 1,2,4,8,16,32,64,128,1k,10k,1; ''word pair'' fires when each of the 80 most frequent words in each language appear aligned 1-1 to each other, to some other word, or not 1-1; and ''length bin'' captures each possible phrase length and length pair".
+"The Big set adds sparse Boolean features to Medium, for a maximum of 6,848 features. We used sparse feature templates that are equivalent to the PBMT set described in [Hopkins_andMay2011#HopkinsandMay2011):]((PORTAGE_sharedAnnotatedBibliography.md) ''tgt unal'' picks out each of the 50 most frequent target words to appear unaligned in the phrase table; ''count bin'' uniquely bins joint phrase pair counts with upper bounds 1,2,4,8,16,32,64,128,1k,10k,1; ''word pair'' fires when each of the 80 most frequent words in each language appear aligned 1-1 to each other, to some other word, or not 1-1; and ''length bin'' captures each possible phrase length and length pair".
 
 The "hopmay" features in the PORTAGE shared code are defined exactly the same way as these Hopmay-May features in the Big Set.  Note that PORTAGE shared has another set of sparse features that enable an advanced form of lexicalized distortion, DHDM, as described in "Improved Reordering for Phrase-Based Translation using Sparse Features" by Colin Cherry. See the description of this paper elsewhere in this bibliography. Ideally, these two papers, the Cherry & Foster 2012 paper and the Cherry 2013 paper, should be read together.
 
@@ -481,6 +481,6 @@ In a BOLT Arabic > English setting, we evaluated the packed NNJM against a versi
 
 --------
 
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedProgrammingGuidelines!_ProgrammingGuidelines
-Next: TrainingEuroparl!RequirementsForTrainingAMidSizeSystem
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [ProgrammingGuidelines](PORTAGE_sharedProgrammingGuidelines.md)
+Next: [RequirementsForTrainingAMidSizeSystem](TrainingEuroparl.md)

@@ -1,5 +1,5 @@
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedProgrammerReference!_ForProgrammers
-Next: PORTAGE_sharedMakeNotes!_UsingMake
+Up: [PortageII](PortageMachineTranslation.md) / [ForProgrammers](PORTAGE_sharedProgrammerReference.md)
+Next: [UsingMake](PORTAGE_sharedMakeNotes.md)
 
 -------------------------
 
@@ -22,7 +22,7 @@ If you want to override this default, you can specify the `INSTALL_DIR` variable
 
 When you type ''make install'' or the above command line from `PortageII/src`, ''make'' will put everything where it belongs.  Subdirectories `lib` and `bin` will be created in the install directory if they don't already exist.  To use the programs in a custom `INSTALL_DIR`, however, you will have to update your environment variables accordingly.
 
-See PORTAGE_sharedMakeNotes!MakeNotes for other useful options, such as turning on debugging or doing parallel compiling.
+See [MakeNotes](PORTAGE_sharedMakeNotes.md) for other useful options, such as turning on debugging or doing parallel compiling.
 
 ### Where to put your new code
 
@@ -59,5 +59,5 @@ PORTAGE shared licensees, if your PORTAGE shared license agreement has clauses t
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedProgrammerReference!_ForProgrammers
-Next: PORTAGE_sharedMakeNotes!_UsingMake
+Up: [PortageII](PortageMachineTranslation.md) / [ForProgrammers](PORTAGE_sharedProgrammerReference.md)
+Next: [UsingMake](PORTAGE_sharedMakeNotes.md)

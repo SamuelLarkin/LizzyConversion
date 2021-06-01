@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedTrainingModels!_Models
-Previous: PORTAGE_sharedTrainingOtherModels!_TrainingOtherModels
-Next: PORTAGE_sharedTrainingOptimizingWeights!_OptimizingWeights
+Up: [PortageII](PortageMachineTranslation.md) / [Models](PORTAGE_sharedTrainingModels.md)
+Previous: [TrainingOtherModels](PORTAGE_sharedTrainingOtherModels.md)
+Next: [OptimizingWeights](PORTAGE_sharedTrainingOptimizingWeights.md)
 
 ----
 
@@ -15,7 +15,7 @@ This technology is especially well suited for use in a translation server.  When
 Memory requirements on the server are fairly small in this mode of operation since the tightly-packed models are quite compact.
 The construction of these models requires a good amount of memory, as the whole model has to be stored in memory during the conversion process from the text representations, but their use does not require much memory.  On a multi-core system serving many request in parallel, the memory footprint of each process is further reduced because the memory is shared between all processes using the same models.
 
-Such a server setting is exactly what is implemented in the PortageLiveManual!PortageLive system, which is now run-time server and  demonstration platform we use for PORTAGE shared.
+Such a server setting is exactly what is implemented in the [PortageLive](PortageLiveManual.md) system, which is now run-time server and  demonstration platform we use for PORTAGE shared.
 
 ### File structure
 
@@ -25,14 +25,14 @@ Tightly-packed models are stored on disk as a directory containing several files
 
 * Presentation on TPT's by Uli Germann:
 Memory_mapping_Tightly_Packed_Tries_and_Suffix_Arrays.pdf.
-* PORTAGE_sharedAnnotatedBibliography!_Germann_et_al_2009#Germannetal2009, SETQA-NLP paper on TPT's.
-* PORTAGE_sharedAnnotatedBibliography!_Paul_et_al2009#Pauletal2009, MT Summit XII technology showcase paper about ''PortageLiveManual!PortageLive.
-* Building PORTAGE_sharedTrainingLanguageModels!_TPLM_s#TheTPLMformat with `arpalm2tplm.sh`.
-* Building PORTAGE_sharedTrainingOtherModels!_TPPT_s#TheTPPTformat with `textpt2tppt.sh`.
-* Building PORTAGE_sharedTrainingOtherModels!_TPLDM_s#LexicalizedDistortionModels with `textldm2tpldm.sh`.
+* [Germann_et_al_2009#Germannetal2009,](PORTAGE_sharedAnnotatedBibliography.md) SETQA-NLP paper on TPT's.
+* [Paul_et_al2009#Pauletal2009,](PORTAGE_sharedAnnotatedBibliography.md) MT Summit XII technology showcase paper about [PortageLive.](''PortageLiveManual.md)
+* Building [TPLM_s#TheTPLMformat](PORTAGE_sharedTrainingLanguageModels.md) with `arpalm2tplm.sh`.
+* Building [TPPT_s#TheTPPTformat](PORTAGE_sharedTrainingOtherModels.md) with `textpt2tppt.sh`.
+* Building [TPLDM_s#LexicalizedDistortionModels](PORTAGE_sharedTrainingOtherModels.md) with `textldm2tpldm.sh`.
 
 ----
 
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedTrainingModels!_Models
-Previous: PORTAGE_sharedTrainingOtherModels!_TrainingOtherModels
-Next: PORTAGE_sharedTrainingOptimizingWeights!_OptimizingWeights
+Up: [PortageII](PortageMachineTranslation.md) / [Models](PORTAGE_sharedTrainingModels.md)
+Previous: [TrainingOtherModels](PORTAGE_sharedTrainingOtherModels.md)
+Next: [OptimizingWeights](PORTAGE_sharedTrainingOptimizingWeights.md)

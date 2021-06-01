@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedPerformanceConsiderations!_Performance
-Next: PortageLiveManual!PortageLive
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [Performance](PORTAGE_sharedPerformanceConsiderations.md)
+Next: [PortageLive](PortageLiveManual.md)
 
 -----------------------
 
@@ -35,6 +35,6 @@ Here in4 will contain the first lines of `yourFile.txt` and out4 is going to be 
 
 -----------------------
 
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedPerformanceConsiderations!_Performance
-Next: PortageLiveManual!PortageLive
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [Performance](PORTAGE_sharedPerformanceConsiderations.md)
+Next: [PortageLive](PortageLiveManual.md)

@@ -1,17 +1,17 @@
-Up: PortageMachineTranslation!_PortageII
+Up: [PortageII](PortageMachineTranslation.md)
 Previous: PortageLiveCustomizationPlugins
-Down: PORTAGE_sharedWritingCode!_WritingCode
+Down: [WritingCode](PORTAGE_sharedWritingCode.md)
 
 -------------------------
 
 
-* PORTAGE_sharedWritingCode!_WritingCode
-* PORTAGE_sharedMakeNotes!_UsingMake (detailed notes)
-* PORTAGE_sharedProgrammingGuidelines!_ProgrammingGuidelines
+* [WritingCode](PORTAGE_sharedWritingCode.md)
+* [UsingMake](PORTAGE_sharedMakeNotes.md) (detailed notes)
+* [ProgrammingGuidelines](PORTAGE_sharedProgrammingGuidelines.md)
 
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII
+Up: [PortageII](PortageMachineTranslation.md)
 Previous: PortageLiveCustomizationPlugins
-Down: PORTAGE_sharedWritingCode!_WritingCode
+Down: [WritingCode](PORTAGE_sharedWritingCode.md)

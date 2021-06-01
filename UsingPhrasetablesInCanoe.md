@@ -1,6 +1,6 @@
-Up PortageMachineTranslation!_PortageII / PORTAGE_sharedTranslating!_Translating
-Previous: PORTAGE_sharedDecoderSearchAlgorithmsAndDataStructures!_DecoderAlgorithms
-Next: PORTAGE_sharedEvaluation!_Evaluation
+Up [PortageII](PortageMachineTranslation.md) / [Translating](PORTAGE_sharedTranslating.md)
+Previous: [DecoderAlgorithms](PORTAGE_sharedDecoderSearchAlgorithmsAndDataStructures.md)
+Next: [Evaluation](PORTAGE_sharedEvaluation.md)
 
 -------------------------
 
@@ -84,7 +84,7 @@ As documented in `canoe -h`, they can also include a "4th column" with adirectio
 
 These scores are separate models whose weights are set using the `-weight-a` or `-atm` option to canoe.  Their presence does not affect how pruning is performed or how the forward and backward scores are interpreted.
 
-PORTAGE shared does not currently include software to generate this 4th column, but the format is easy to generate if you have your own features A(s,t) you wish to use.  See PORTAGE_sharedAnnotatedBibliography!_Chen_et_al2009#Chenetal2009 for examples of such features.
+PORTAGE shared does not currently include software to generate this 4th column, but the format is easy to generate if you have your own features A(s,t) you wish to use.  See [Chen_et_al2009#Chenetal2009](PORTAGE_sharedAnnotatedBibliography.md) for examples of such features.
 
 ### TPPT''''s (Tightly Packed Phrase Tables)
 
@@ -98,6 +98,6 @@ the weights for the multi-prob phrase tables come first, then those for the TPPT
 
 -------------------------
 
-Up PortageMachineTranslation!_PortageII / PORTAGE_sharedTranslating!_Translating
-Previous: PORTAGE_sharedDecoderSearchAlgorithmsAndDataStructures!_DecoderAlgorithms
-Next: PORTAGE_sharedEvaluation!_Evaluation
+Up [PortageII](PortageMachineTranslation.md) / [Translating](PORTAGE_sharedTranslating.md)
+Previous: [DecoderAlgorithms](PORTAGE_sharedDecoderSearchAlgorithmsAndDataStructures.md)
+Next: [Evaluation](PORTAGE_sharedEvaluation.md)

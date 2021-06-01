@@ -1,19 +1,19 @@
-Up: PortageMachineTranslation!_PortageII
+Up: [PortageII](PortageMachineTranslation.md)
 Previous: TMXProcessing
-Next: PORTAGE_sharedWordAlignmentFormats!_WordAlignmentFormats
+Next: [WordAlignmentFormats](PORTAGE_sharedWordAlignmentFormats.md)
 
 -------------------------
 
 ## Text File Formats
 
-* PORTAGE_sharedFileFormats!_PlainText#PlainText
-* PORTAGE_sharedFileFormats!_TokenizedText#TokenizedText
-* PORTAGE_sharedFileFormats!_MarkedUpText#MarkedUpText
-* PORTAGE_sharedFileFormats!_AlignedText#AlignedText
+* [PlainText#PlainText](PORTAGE_sharedFileFormats.md)
+* [TokenizedText#TokenizedText](PORTAGE_sharedFileFormats.md)
+* [MarkedUpText#MarkedUpText](PORTAGE_sharedFileFormats.md)
+* [AlignedText#AlignedText](PORTAGE_sharedFileFormats.md)
 
 ### Plain Text
 
-This is just normal text, as in a plain text file without special control characters. It may include some simple markup required by the tokenization and alignment programs, as described in PORTAGE_sharedTextProcessing!_TextProcessing. For encoding information, see PORTAGE_sharedTextProcessing!_EncodingConsiderations#EncodingConsiderations (summary: use utf-8).
+This is just normal text, as in a plain text file without special control characters. It may include some simple markup required by the tokenization and alignment programs, as described in [TextProcessing.](PORTAGE_sharedTextProcessing.md) For encoding information, see [EncodingConsiderations#EncodingConsiderations](PORTAGE_sharedTextProcessing.md) (summary: use utf-8).
 
 Example:
   On December 23rd, 2004, it was warm and rainy. The next 
@@ -46,6 +46,6 @@ Aligned text is text in which sentences in two translated files are put into cor
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII
+Up: [PortageII](PortageMachineTranslation.md)
 Previous: TMXProcessing
-Next: PORTAGE_sharedWordAlignmentFormats!_WordAlignmentFormats
+Next: [WordAlignmentFormats](PORTAGE_sharedWordAlignmentFormats.md)

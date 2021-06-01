@@ -1,5 +1,5 @@
-Up PortageMachineTranslation!_PortageII / PORTAGE_sharedTranslating!_Translating
-Next: PORTAGE_sharedTranslatingRescoringNbestLists!_RescoringNbestLists
+Up [PortageII](PortageMachineTranslation.md) / [Translating](PORTAGE_sharedTranslating.md)
+Next: [RescoringNbestLists](PORTAGE_sharedTranslatingRescoringNbestLists.md)
 
 -------------------------
 
@@ -14,12 +14,12 @@ If you are translating French text that is already preprocessed, sentence-split 
 See UsingPhrasetablesInCanoe for more information on using multiple phrasetables in canoe.
 
 If the source file contains
-PORTAGE_sharedFileFormats!_MarkedUpText#MarkedUpText, then any translations specified in markup are used instead of those provided by the translation model, unless the `-bypass-marked` switch is given to canoe, in which case the two are combined.  (If you use rules, don't use `canoe-escapes.pl`; your rule-creating software should escape any `<`, `>` and `\` meant to be interpreted literally.)
+[MarkedUpText#MarkedUpText,](PORTAGE_sharedFileFormats.md) then any translations specified in markup are used instead of those provided by the translation model, unless the `-bypass-marked` switch is given to canoe, in which case the two are combined.  (If you use rules, don't use `canoe-escapes.pl`; your rule-creating software should escape any `<`, `>` and `\` meant to be interpreted literally.)
 
 Running canoe on the untuned model will yield very bad results, so don't do it unless you're working on a new optimization technique. The tuning procedure described in
-PORTAGE_sharedTrainingOptimizingWeights!_OptimizingWeights#TrainingOptimizingWeights sets optimized value for all the model weights. In general, the remaining parameters such as `beam-threshold` and `ttable-limit` control the trade-off between accuracy and speed: they should be set to values that give a good compromise between quality and speed for your application.
+[OptimizingWeights#TrainingOptimizingWeights](PORTAGE_sharedTrainingOptimizingWeights.md) sets optimized value for all the model weights. In general, the remaining parameters such as `beam-threshold` and `ttable-limit` control the trade-off between accuracy and speed: they should be set to values that give a good compromise between quality and speed for your application.
 
 -------------------------
 
-Up PortageMachineTranslation!_PortageII / PORTAGE_sharedTranslating!_Translating
-Next: PORTAGE_sharedTranslatingRescoringNbestLists!_RescoringNbestLists
+Up [PortageII](PortageMachineTranslation.md) / [Translating](PORTAGE_sharedTranslating.md)
+Next: [RescoringNbestLists](PORTAGE_sharedTranslatingRescoringNbestLists.md)

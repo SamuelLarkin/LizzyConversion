@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedFileFormats!_TextFileFormats
-Next: PORTAGE_sharedTrainingModels!_ConstructingModels
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [TextFileFormats](PORTAGE_sharedFileFormats.md)
+Next: [ConstructingModels](PORTAGE_sharedTrainingModels.md)
 
 -------------------------
 
@@ -163,6 +163,6 @@ Warning: this format does not contain all alignment information.
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII
-Previous: PORTAGE_sharedFileFormats!_TextFileFormats
-Next: PORTAGE_sharedTrainingModels!_ConstructingModels
+Up: [PortageII](PortageMachineTranslation.md)
+Previous: [TextFileFormats](PORTAGE_sharedFileFormats.md)
+Next: [ConstructingModels](PORTAGE_sharedTrainingModels.md)

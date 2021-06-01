@@ -14,36 +14,36 @@ See file RELEASES for full details. See also `doc/PortageAPIComparison.pdf` for 
 
 ## User Manual
 
-* PORTAGE_sharedOverview!_Background
-* PORTAGE_sharedKnowledgePrerequisites!_RequiredPriorKnowledge
-* PORTAGE_sharedWhereToFindThings!_WhereToFindThings
-* PORTAGE_sharedTextProcessing!_TextProcessing
-** TMXProcessing!_Extracting_corpora_from_a_TMX
+* [Background](PORTAGE_sharedOverview.md)
+* [RequiredPriorKnowledge](PORTAGE_sharedKnowledgePrerequisites.md)
+* [WhereToFindThings](PORTAGE_sharedWhereToFindThings.md)
+* [TextProcessing](PORTAGE_sharedTextProcessing.md)
+** [Extracting_corpora_from_a_TMX](TMXProcessing.md)
 * File Formats
-** PORTAGE_sharedFileFormats!_TextFileFormats
-** PORTAGE_sharedWordAlignmentFormats!_WordAlignmentFormats
+** [TextFileFormats](PORTAGE_sharedFileFormats.md)
+** [WordAlignmentFormats](PORTAGE_sharedWordAlignmentFormats.md)
 * Training
-** PORTAGE_sharedTrainingModels!_ConstructingModels
-*** PORTAGE_sharedTrainingLanguageModels!_LanguageModels
-*** PORTAGE_sharedTrainingOtherModels!_OtherModels
+** [ConstructingModels](PORTAGE_sharedTrainingModels.md)
+*** [LanguageModels](PORTAGE_sharedTrainingLanguageModels.md)
+*** [OtherModels](PORTAGE_sharedTrainingOtherModels.md)
 *** TightlyPackedTries
-** PORTAGE_sharedTrainingOptimizingWeights!_OptimizingWeights 
-* PORTAGE_sharedTranslating!_Translating
-** PORTAGE_sharedTranslatingDecoding!_Decoding
-** PORTAGE_sharedTranslatingRescoringNbestLists!_RescoringNbestLists
-** PORTAGE_sharedTranslatingPostprocessing!_Postprocessing
-** Detailed notes on PORTAGE_sharedDecoderSearchAlgorithmsAndDataStructures!_TheDecoderSearchAlgorithmsAndDataStructures
+** [OptimizingWeights](PORTAGE_sharedTrainingOptimizingWeights.md) 
+* [Translating](PORTAGE_sharedTranslating.md)
+** [Decoding](PORTAGE_sharedTranslatingDecoding.md)
+** [RescoringNbestLists](PORTAGE_sharedTranslatingRescoringNbestLists.md)
+** [Postprocessing](PORTAGE_sharedTranslatingPostprocessing.md)
+** Detailed notes on [TheDecoderSearchAlgorithmsAndDataStructures](PORTAGE_sharedDecoderSearchAlgorithmsAndDataStructures.md)
 ** Notes about UsingPhrasetablesInCanoe
-* PORTAGE_sharedEvaluation!_Evaluation
+* [Evaluation](PORTAGE_sharedEvaluation.md)
 * ConfidenceEstimation
-* PORTAGE_sharedPerformanceConsiderations!_PerformanceConsiderations
-* PORTAGE_sharedMagicStreams!_MagicStreams
+* [PerformanceConsiderations](PORTAGE_sharedPerformanceConsiderations.md)
+* [MagicStreams](PORTAGE_sharedMagicStreams.md)
 * PortageLiveManual
 * PortageLiveCustomizationPlugins
-* PORTAGE_sharedProgrammerReference!_ProgrammerReference
-** PORTAGE_sharedWritingCode!_WritingCode
-** PORTAGE_sharedMakeNotes!_UsingMake (detailed notes)
-** PORTAGE_sharedProgrammingGuidelines!_ProgrammingGuidelines
-* PORTAGE_sharedAnnotatedBibliography!_AnnotatedBibliography
-* TrainingEuroparl!RequirementsForTrainingAMidSizeSystem
-* PORTAGE_sharedFAQ!FrequentlyAskedQuestions
+* [ProgrammerReference](PORTAGE_sharedProgrammerReference.md)
+** [WritingCode](PORTAGE_sharedWritingCode.md)
+** [UsingMake](PORTAGE_sharedMakeNotes.md) (detailed notes)
+** [ProgrammingGuidelines](PORTAGE_sharedProgrammingGuidelines.md)
+* [AnnotatedBibliography](PORTAGE_sharedAnnotatedBibliography.md)
+* [RequirementsForTrainingAMidSizeSystem](TrainingEuroparl.md)
+* [FrequentlyAskedQuestions](PORTAGE_sharedFAQ.md)

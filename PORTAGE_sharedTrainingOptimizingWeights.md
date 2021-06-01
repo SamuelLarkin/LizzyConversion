@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII
+Up: [PortageII](PortageMachineTranslation.md)
 Previous: TightlyPackedTries
-Next: PORTAGE_sharedTranslating!_Translating
+Next: [Translating](PORTAGE_sharedTranslating.md)
 
 -------------------------
 
@@ -10,16 +10,16 @@ Next: PORTAGE_sharedTranslating!_Translating
 
 Optimizing weights means tuning a relatively small set of parameters that control the contributions from various components like language and translation models. Translation quality tends to be very sensitive to these settings. Here are the parameter tuning steps for PORTAGE shared:
 
-* PORTAGE_sharedTrainingOptimizingWeights!_OptimizingDecodingWeights#OptimizingWeightsforCanoeDecoding
-* PORTAGE_sharedTrainingOptimizingWeights!_OptimizingRescoringWeights#OptimizingWeightsforRescoring
-** PORTAGE_sharedTrainingOptimizingWeights!_RescoringScript#RescoringScript
+* [OptimizingDecodingWeights#OptimizingWeightsforCanoeDecoding](PORTAGE_sharedTrainingOptimizingWeights.md)
+* [OptimizingRescoringWeights#OptimizingWeightsforRescoring](PORTAGE_sharedTrainingOptimizingWeights.md)
+** [RescoringScript#RescoringScript](PORTAGE_sharedTrainingOptimizingWeights.md)
 
 ### Optimizing Weights for Canoe Decoding
 
 PORTAGE shared supports a variety of weight tuning algorithms.  The old `cow.sh` has been replaced by `tune.py`, which supports MERT (using Powell's algorithm, the only method `cow.sh` supported), MIRA, lattice MIRA, PRO, SVM, and "expsb" (an experimental idea).
 See Cherry and Foster (NAACL 2012) for a comparison of these methods.
 
-See PORTAGE_sharedOverview!_DecoderModelTraining#DecoderModelTraining for a detailed description of our original MERT algorithm.
+See [DecoderModelTraining#DecoderModelTraining](PORTAGE_sharedOverview.md) for a detailed description of our original MERT algorithm.
 Most of the new algorithms follow a similar batch-decode/batch-optimize loop, but some use lattices instead of n-best lists, and the optimizer used varies.
 
 The `tune.py` script takes a marked-up version of the src, `dev1_ch.rules`, and a set of files `dev1_en.ref[123]` containing tokenized reference translations, as well as an input `canoe.ini` file indicating what decoder features and options are to be used, and produces `canoe.ini.cow` file with the best weights founds.
@@ -61,19 +61,19 @@ Notes about using `tune.py`:
 It is sometimes beneficial to "rescore" the output from the decoder by having it produce n-best lists instead of single translation hypotheses, then using a richer log-linear model to choose the best hypothesis for each source sentence from the corresponding n-best list. 
 
 See also:
-* PORTAGE_sharedOverview!_RescoringModelTraining#RescoringModelTraining -- detailed description of the algorithm used to 
+* [RescoringModelTraining#RescoringModelTraining](PORTAGE_sharedOverview.md) -- detailed description of the algorithm used to 
 learn rescoring weights,
 * `doc/README.rescoring` (or `src/rescoring/README`) -- overview of the rescoring software, and
 * RescoringOverview.pdf and OchLineMax.pdf (also in `doc/`) -- implementation information.
 
 To train a rescoring model, you need:
 * A source text;
-* A version of the source text containing either PORTAGE_sharedFileFormats!_translation_rules#MarkedUpText, or, if rules are not used, a version with the special characters escaped; 
+* A version of the source text containing either [translation_rules#MarkedUpText,](PORTAGE_sharedFileFormats.md) or, if rules are not used, a version with the special characters escaped; 
 * One or more reference translations for the source text (preferably more than one), line-aligned with the source text;
 * A canoe configuration file containing learned weights (e.g., `canoe.ini.cow`, as output by `tune.py`); and
 * A "rescoring model" file that specifies the desired features (typically this includes all features used for decoding, plus a number of additional features) in the syntax described by `rescore_train -h`, taken from the list given by `rescore_train -H`.
 
-The source and reference files should be PORTAGE_sharedFileFormats!_tokenized#TokenizedText and PORTAGE_sharedFileFormats!_aligned#AlignedText.
+The source and reference files should be [tokenized#TokenizedText](PORTAGE_sharedFileFormats.md) and [aligned#AlignedText.](PORTAGE_sharedFileFormats.md)
 
 #### Rescoring Script
 
@@ -177,6 +177,6 @@ Here are some detailed notes on using `rescore.py`:
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII
+Up: [PortageII](PortageMachineTranslation.md)
 Previous: TightlyPackedTries
-Next: PORTAGE_sharedTranslating!_Translating
+Next: [Translating](PORTAGE_sharedTranslating.md)

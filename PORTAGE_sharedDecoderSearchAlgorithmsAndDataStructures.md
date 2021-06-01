@@ -1,6 +1,6 @@
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedTranslating!_Translating
-Previous: PORTAGE_sharedTranslatingPostprocessing!_Postprocessing
-Next: UsingPhrasetablesInCanoe!_UsingPhrasetables
+Up: [PortageII](PortageMachineTranslation.md) / [Translating](PORTAGE_sharedTranslating.md)
+Previous: [Postprocessing](PORTAGE_sharedTranslatingPostprocessing.md)
+Next: [UsingPhrasetables](UsingPhrasetablesInCanoe.md)
 
 -------------------------
 ## Caveat
@@ -11,13 +11,13 @@ This page was written before the cube pruning decoder was written.  It describes
 
 Author: Ghada Badr
 
-The decoder's main job is to find the translation that is most likely according to a set of weighted feature/model scores. The features or models evaluate the quality of the translation according to various criteria (PORTAGE_sharedTrainingModels!_here#TrainingConstructingModels is a description of some models); the weights are learned in an optimization step as described in the
-PORTAGE_sharedTrainingOptimizingWeights!_COW#OptimizingWeightsforCanoeDecoding
+The decoder's main job is to find the translation that is most likely according to a set of weighted feature/model scores. The features or models evaluate the quality of the translation according to various criteria [here#TrainingConstructingModels]((PORTAGE_sharedTrainingModels.md) is a description of some models); the weights are learned in an optimization step as described in the
+[COW#OptimizingWeightsforCanoeDecoding](PORTAGE_sharedTrainingOptimizingWeights.md)
 section.
 
 ## Search Algorithms 
 
-The search space of the possible translations is extremely large. Thus, the decoder must use heuristic search techniques to decide which portion of this huge search space to explore.  Excluding parts of the search space from the search is called pruning.  The main problem associated with any pruning technique is that of finding a tuning of the parameters that yields a suitable tradeoff between accuracy and speed. Our decoder employs a well-known pruning technique called beam search; beam search is a http://en.wikipedia.org/wiki/Heuristic!heuristic http://en.wikipedia.org/wiki/Search_algorithm!search algorithm. 
+The search space of the possible translations is extremely large. Thus, the decoder must use heuristic search techniques to decide which portion of this huge search space to explore.  Excluding parts of the search space from the search is called pruning.  The main problem associated with any pruning technique is that of finding a tuning of the parameters that yields a suitable tradeoff between accuracy and speed. Our decoder employs a well-known pruning technique called beam search; beam search is a [heuristic](http://en.wikipedia.org/wiki/Heuristic.md) [search](http://en.wikipedia.org/wiki/Search_algorithm.md) algorithm. 
 
 
 Beam search unfolds only the most promising nodes. There are two possible criteria for selecting the most promising nodes:
@@ -110,9 +110,9 @@ The hypothesis stack should have all states pushed into it before any states are
 
 -------------------------
 
-Up: PortageMachineTranslation!_PortageII / PORTAGE_sharedTranslating!_Translating
-Previous: PORTAGE_sharedTranslatingPostprocessing!_Postprocessing
-Next: UsingPhrasetablesInCanoe!_UsingPhrasetables
+Up: [PortageII](PortageMachineTranslation.md) / [Translating](PORTAGE_sharedTranslating.md)
+Previous: [Postprocessing](PORTAGE_sharedTranslatingPostprocessing.md)
+Next: [UsingPhrasetables](UsingPhrasetablesInCanoe.md)
 
 
 
