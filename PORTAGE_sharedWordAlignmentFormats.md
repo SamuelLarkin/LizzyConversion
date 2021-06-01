@@ -4,7 +4,7 @@ Next: PORTAGE_sharedTrainingModels!_ConstructingModels
 
 -------------------------
 
-!! Using Word Alignments
+## Using Word Alignments
 
 When using the framework to train PORTAGE shared systems, you will see the word alignments stored in `*.align.gz` files in directory `models/wal`. These will be stored in the `sri` format (see below) which is most common in the SMT community. We used to recalculate alignments on the fly each time we needed them, because IBM1 and IBM2 alignments are quick to generate. But with HMM and IBM4 alignments, that strategy is no longer reasonable.
 
@@ -20,7 +20,7 @@ The program `gen_phrase_tables` can read `GIZA++` alignment files, as an alterna
 
 The program `word_align_phrasepairs` produces word alignments that are consistent with a given phrase alignment (as generated during decoding, for example).
 
-!! Word Alignment Formats
+## Word Alignment Formats
 
 We illustrate the formats produced by `align-words` with an example.  This example is found in `test-suite/unit-testing/word_align_tool` (run `make` to generate all the output formats).
 
@@ -33,7 +33,7 @@ French input:
 `L' Alliance canadienne tente depuis des années d' obtenir que l' ancien ministre des Finances traite les municipalités avec respect .`
 
 
-!!! Format: `aachen`
+### Format: `aachen`
 
  SENT: 0
  S 0 0
@@ -61,7 +61,7 @@ French input:
  S 20 18
 
 
-!!! Format: `hwa`
+### Format: `hwa`
 
 (Output is in a file, `aligned.NNN`.)
 
@@ -90,7 +90,7 @@ French input:
  20  18  (., .)
 
 
-!!! Format: `matrix`
+### Format: `matrix`
 
  |F|y|t|C|A|h|a|t|g|t|f|f|m|t|t|m|w|r|.|
  |o|e|h|a|l|a|t|o|e|h|o|i|i|o|r|u|i|e| |
@@ -132,29 +132,29 @@ French input:
 
 
 
-!!! Format: `compact`
+### Format: `compact`
 
  0       1;2;3;7;4,6;5;7;8;9;9;10;11,12;13;12;13;15;14;16;17;18;19;
 
 
-!!! Format: `ugly`
+### Format: `ugly`
 
 Warning: this format does not contain all alignment information.
 
 `L'/For Alliance/years canadienne/the tente/attempted depuis/Canadian depuis/has des/Alliance années/attempted d'/to obtenir/get que/get l'/the ancien/former ancien/finance ministre/minister des/finance Finances/minister traite/treat les/to municipalités/municipalities avec/with respect/respect ./. `
 
 
-!!! Format: `green`
+### Format: `green`
 
 `0 1 2 6 3,5 4 6 7 8 8 9 10,11 12 11 12 14 13 15 16 17 18`
 
 
-!!! Format: `sri`
+### Format: `sri`
 
 `0-0 1-1 2-2 3-6 4-3 4-5 5-4 6-6 7-7 8-8 9-8 10-9 11-10 11-11 12-12 13-11 14-12 15-14 16-13 17-15 18-16 19-17 20-18 `
 
 
-!!! Fromat: `uli`
+### Fromat: `uli`
 
 `1 0:0:unspec 1:1:unspec 2:2:unspec 3,6:6:unspec 4:3,5:unspec 5:4:unspec 7:7:unspec 8,9:8:unspec 10:9:unspec 11,13:10,11:unspec 12,14:12:unspec 15:14:unspec 16:13:unspec 17:15:unspec 18:16:unspec 19:17:unspec 20:18:unspec`
 

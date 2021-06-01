@@ -4,19 +4,19 @@ Next: PORTAGE_sharedProgrammerReference!_ForProgrammers
 
 -----------------------
 
-!! Portage''''Live Customization using Plugins
+## Portage''''Live Customization using Plugins
 
 Portage''''Live supports many customizations to handle situations that are specific to a given system correctly. These customizations are enabled through seven plugins that can be installed with each deployed system.
 
 The default plugins have changed significantly in versions 2.2 and 3.0 of PORTAGE shared. `doc/PortageAPIComparison.pdf` contains a comparison chart documenting the recent improvements to the plugins. If you have custom plugins, even if provided by the NRC, we strongly recommend you review the new default plugins and consider using them instead. The 3.0 plugins roll in most custom processing we've provided in response to client requests in the past and should work well for most situations.
 
-!!! Installing custom plugins
+### Installing custom plugins
 
 The default version of these plugins already does some processing. If you want to turn on or off a particular aspect, you need to 
 # make a copy of the plugin into the trained system's `plugins` directory: `framework/plugins/` during training, `/opt/PortageII/models/`''context''`/plugins/` in a deployed system. The default plugins are found in PORTAGE shared's bin/ directory.
 # edit the copy to change what processing it actually performs.
 
-!!! The main plugins
+### The main plugins
 
 Here are the four main plugins, in the order Portage''''Live calls them:
 
@@ -25,14 +25,14 @@ Here are the four main plugins, in the order Portage''''Live calls them:
 # `postdecode_plugin` is a place-holder for future use; don't use it.
 # `postprocess_plugin` is used to make changes to the final output, just before returning it to the user. By default, it inserts '''non-breaking spaces''' where appropriate in French output (disable this feature by commenting out "`ADD_FR_NBSP=1`"). It can optionally fix the '''formatting of numbers in French''', as an alternative to the rule-based option mentioned above: uncomment the line "`fix-en-fr-numbers.pl |`" to enable this. It can also insert '''non-breaking hyphens''' in selected patterns, such as in short hyphenated codes: this is more complicated because it depends on how your application represents these, but the default plugin includes commented-out sample code for several options we're aware of.
 
-!!! Tokenization plugins
+### Tokenization plugins
 
 The PORTAGE shared tokenizer and detokenizer supports French, English, Spanish, and Danish. For other languages, three additional plugins required:
 # `sentsplit_plugin` is used to perform sentence splitting on a source-language paragraph. It supports Arabic and Chinese by default.
 # `tokenize_plugin` is used to perform tokenization of source language text. It works on Chinese out of the box. It supports Arabic with some additional installation work; ask us if you need this.
 # `detokenize_plugin` is used to perform detokenization of target language output.
 
-!!! Fixed Terms
+### Fixed Terms
 
 Starting with version 2.2, PORTAGE shared can handle a list of fixed terms, which are used to bypass the translation system for fixed expressions that should not be translated statistically.
 

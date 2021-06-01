@@ -6,7 +6,7 @@ Next: TightlyPackedTries
 
 '''Note:''' this section of the user manual presents all the different models you can use, but not how best to use them. The steps required to train PORTAGE shared following our current recommendations are automated in our experimental framework.  See `tutorial.pdf` in `framework` for details.
 
-!! Training: Constructing Other Models
+## Training: Constructing Other Models
 
 * PORTAGE_sharedTrainingOtherModels!_TranslationModels#TranslationModels
 ** PORTAGE_sharedTrainingOtherModels!_Phrase_tables_based_on_IBM2_word_alignment_models#PhrasetablesbasedonIBM2wordalignmentmodels
@@ -21,9 +21,9 @@ Next: TightlyPackedTries
 * PORTAGE_sharedTrainingOtherModels!_TruecasingModels#TruecasingModels
 * PORTAGE_sharedTrainingOtherModels!_Adding_a_lexicon_to_a_System#AddingALexiconToASystem
 
-!!! Translation Models
+### Translation Models
 
-!!!! Phrase tables based on IBM2 word alignment models
+#### Phrase tables based on IBM2 word alignment models
 
 Training translation models is done in two steps: first train IBM models
 in both directions, then generate phrase tables using the models. Assuming
@@ -50,7 +50,7 @@ The `log.*` files contain information about the training process.
 
 Markup in the text files is not allowed at this point.  The input should be non-marked-up, tokenized, sentence-aligned text.
 
-!!!! Phrase tables based on HMM word alignment models
+#### Phrase tables based on HMM word alignment models
 
 Starting with version 1.3, we also support using HMM word alignment models to produce phrase tables.  The `-hmm` and `-mimic` switches to `train_ibm` enable training HMM word alignment models.  `gen_phrase_tables` will automatically treat its input models as HMM if they were trained as such.  
 The recommended practice is to use phrase tables trained using IBM2 models combined with another set trained using HMM models, and let `cow.sh` (see next section) tune their respective weights.
@@ -69,19 +69,19 @@ Notes:
 # We implemented a lot of variants on the HMM word alignment models.  Top level variants are selected via the `-mimic` switch, and a lot of switches further affect the model.  See `train_ibm -h` for details.
 # For more information on training HMM word alignment models, including parallelized training and combining them with IBM2 models, follow the example in directory `framework`.
 
-!!!! Phrase tables based on IBM4 word alignment models
+#### Phrase tables based on IBM4 word alignment models
 
 In PORTAGE shared, we support easy integration of IBM4 word alignments produced by an external package, such as `MGiza++`.  Our experiments show that we can get best results by combining counts from IBM4, HMM and IBM2 alignments, and that this approach gives better results than using only the best alignments, or only the best two of these.  The three alignment techniques probably make different errors, so that combining phrase pairs extracted from the three exploits the strengths of each.
 
 To simplify the integration of both different alignment models and alignment software, we have modified the pipeline described above to save the aligned corpus, and run phrase phrase extraction (`gen_phrase_tables`) using the saved alignment file instead of re-calculating the alignment using the models.  We do this for all methods, ours included.  And we use the standard SRI word alignment format, for easiest interoperability with other packages.  As usual, see the framework and its tutorial for more details.
 
-!!!! Merged phrase tables
+#### Merged phrase tables
 
 There are many ways to merge the phrase tables produced using the HMM, IBM2 and IBM4 models.  You can tally the counts together and then estimate probabilities using the merged counts.  You can also use indicator features to keep track of which alignment proposed which phrase pairs.  You can keep the relative frequency feature from each original alignment and combine with a global relative frequency feature and a global lexical smoothing feature.  You can also perform a linear combination of phrase tables that come from different corpora.  All these options are supported by the software, and some of them are automated in our framework.  See the framework and tutorial for details, as well as the help message from `joint2cond_phrase_tables`, `joint2multi_cpt`, and `train_tm_mixture`,.
 
 In our framework, the default is to merge the counts from the HMM and IBM2 CPT''''s, which are generated using `gen-jpt-parallel.sh`, and then estimate the model parameters using `joint2cond_phrase_tables`.
 
-!!!! The TPPT format
+#### The TPPT format
 
 You can convert your multi-prob phrase tables into the TPPT (Tightly Packed Phrase Table) format using this command:
 
@@ -89,7 +89,7 @@ You can convert your multi-prob phrase tables into the TPPT (Tightly Packed Phra
 
 This will create directory `phrases.fr2en.tppt` which will contain several files that constitute the TPPT and must be kept together.  The TPPT can be used in canoe using the `[ttable-tppt]` option.  See UsingPhrasetablesInCanoe for details.
 
-!!! Lexicalized Distortion Models
+### Lexicalized Distortion Models
 
 Moses style lexicalized distortion models are trained using `dmcount` and `dmestm`.  `dmcount` counts reordering events over a parallel training corpus, while `dmestm` estimates the model parameters from these counts.
 
@@ -109,21 +109,21 @@ The file `ldm.fr2en.gz` is the trained lexicalized distortion model, which can b
 Your LDM can be converted to the TPLDM format with this command:
 |   textldm2tpldm.sh ldm.fr2en.gz tpldm.fr2en
 
-!!! Hierarchical Lexicalized Distortion Models
+### Hierarchical Lexicalized Distortion Models
 
 HLDM''''s are built with the same software as
 LDM''''s, but with the additional `-hier` switch given to `dmcount`.
 HLDM''''s give much more interesting results, and should be considered for regular use.  You should at least test them with your data, to see if they help.
 
 
-!!! Sparse Models
+### Sparse Models
 
 With PORTAGE shared 3.0, we introduce sparse models, including the original sparse features of PORTAGE_sharedAnnotatedBibliography!_Hopkins_andMay2011#HopkinsandMay2011 as adapted for Portage by PORTAGE_sharedAnnotatedBibliography!_Cherry_andFoster2012#CherryandFoster2012revisited,
 as well as the Discriminative Reodering model of PORTAGE_sharedAnnotatedBibliography!_Cherry2013#Cherry2013, which helps PORTAGE shared make better choices in word ordering during the decoding process.
 
 Sparse features contribute a significant improvement to the quality of the translations produced by PORTAGE shared and should always be used. See `tutorial.pdf` in `framework` for instructions on how to train them.
 
-!!! Neural Network Joint Models
+### Neural Network Joint Models
 
 In the last couple years, deep learning and neural networks have been shaking the world of natural language processing, including SMT. PORTAGE_sharedAnnotatedBibliography!_Devlin_et_al2014#Devlinetal2014 presents the first successful attempt at improving SMT output using neural networks. The NRC has reproduced the results in the Research version of Portage (see PORTAGE_sharedAnnotatedBibliography!_Foster2016_addeddum_toDevlin#Foster2016addendumtoDevlin) and is continuing leading-edge research in the uses of deep learning to improve SMT.
 
@@ -131,7 +131,7 @@ The main model that has come out of this work so far is the Neural Network Joint
 
 With PORTAGE shared 3.0, we include the NNJM decoder feature, which allows users to incorporate NNJM''''''s trained at the NRC in their systems. We also include pre-trained NNJM''''''s for English-French translation in either direction as part of our updated Generic Model 2.0. We plan to release the training software for NNJM''''''s in a future release of PORTAGE shared.
 
-!!! Truecasing Models
+### Truecasing Models
 
 Truecasing is the process of restoring normal letter case conventions to lowercase target text produced by canoe. It is performed by treating normal text as an HMM state sequence to be recovered from observed lowercase text. The two steps in model training are thus to estimate state-transition probabilities from normal text (this is in fact a regular LM), and to estimate output probabilities from normal text mapped to lowercase.
 
@@ -146,11 +146,11 @@ Assuming that `corp-tc.en.gz` is a compressed truecased tokenized corpus, we tra
 
 The resulting truecasing model is the file pair `corp-tc.en.map.gz/corp-tc.binlm.gz` (fastest) or the file pair `corp-tc.en.map.gz/corp-tc.lm.gz`.
 
-!!!! Truecasing Models using source information
+#### Truecasing Models using source information
 
 We have improved our truecasing system with version 1.4.3.  We now transfer casing information from the source text to the output, and we handle the beginning of the sentence better.  To do so, several more models are trained, beside the casemap and LM described above, and these two models are created in a slightly different way.  See `truecase.pl -h`, the framework and the tutorial for details.
 
-!!! Adding A Lexicon To A System
+### Adding A Lexicon To A System
 
 There are three ways to add a bitext lexicon to a system.
 # Add your bilingual lexicon to the end of the corpus used for training phrase tables, then train phrase tables on this new corpus.  This simply means concatenating the parallel lexicon at the end of your training corpus, making sure you preserve line-alignment in the process.  In effect, you pretend that each entry in your lexicon is a sentence, aligned with its translation.  We have found this method to work fairly well in most situations.

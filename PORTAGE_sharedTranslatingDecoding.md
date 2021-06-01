@@ -3,7 +3,7 @@ Next: PORTAGE_sharedTranslatingRescoringNbestLists!_RescoringNbestLists
 
 -------------------------
 
-!! Translating: Decoding
+## Translating: Decoding
 
 The command `canoe -h` describes how to run the decoder. Here we assume you already trained your models and tuned them, with the results of `tune.py` available in model file `canoe.ini.cow`.
 

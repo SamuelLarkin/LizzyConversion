@@ -6,7 +6,7 @@ Down: PORTAGE_sharedTrainingLanguageModels!_LanguageModels
 
 '''Note:''' this section of the user manual presents all the different models you can use, but not how best to use them. The steps required to train PORTAGE shared following our current recommendations are automated in our experimental framework.  See `tutorial.pdf` in `framework` for details.
 
-!! Training: Constructing Models
+## Training: Constructing Models
 
 Here are the models you need to build to run PORTAGE shared:
 

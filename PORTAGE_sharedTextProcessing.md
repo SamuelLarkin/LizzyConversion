@@ -6,7 +6,7 @@ Down: TMXProcessing
 
 '''Note:''' Except for the extraction of text from TMX files and sentence alignment, all the steps described here are automated in our experimental framework. Please read `tutorial.pdf` in `framework` for details.
 
-!! Text Processing
+## Text Processing
 
 Text processing is necessary in order to turn raw source and target text into a format suitable for model training, and also to prepare new source text for translation. Here are the steps:
 
@@ -20,7 +20,7 @@ Text processing is necessary in order to turn raw source and target text into a 
 
 The first two steps must be performed in this order, but the order of later steps can vary depending on the application. The PORTAGE_sharedFileFormats!_FileFormats section describes the input and output formats for all steps.
 
-!!! Preprocessing
+### Preprocessing
 
 This is a cleaning step to convert raw text into a normalized
 PORTAGE_sharedFileFormats!_PlainText#PlainText format that later steps can handle. Preprocessing tends to be specific to each corpus, so if you need to preprocess a new corpus you will probably have to write your own program, but you can use the ones below as examples.
@@ -35,7 +35,7 @@ If your corpus is stored in a translation memory of some kind, export it to the 
 
 If your corpus exists as a complex collection of documents in various formats, you might consider acquiring commercial alignment tools, many of which can create translation memories from a large number of document formats, and then export them in the TMX format. This is by far the easiest way to build your training corpus for PORTAGE shared.
 
-!!! Tokenizing
+### Tokenizing
 
 Tokenizing converts PORTAGE_sharedFileFormats!_PlainText#PlainText into 
 PORTAGE_sharedFileFormats!_TokenizedText#TokenizedText by splitting running text into whitespace-separated tokens, and identifying sentence boundaries. For English and French, this mostly means separating punctuation from words.
@@ -49,7 +49,7 @@ Similarly, our detokenizer (`udetokenize.pl`) knows English, French, Spanish and
 
 As mentioned above, the tokenizer can do sentence boundary identification. It has several modes to accommodate common input types: use `-ss -paraline` for one-paragraph-per-line (i.e., the newline character marks the paragraph break, as is most common); use `-ss` alone for wrapped text, where the newline is just a space and paragraphs are separated by a blank line. If your data is already split into sentences, use the `-noss` option to turn off sentence splitting and preserve all existing newlines.
 
-!!! Aligning
+### Aligning
 
 Given sentence-split, PORTAGE_sharedFileFormats!_TokenizedText#TokenizedText (possibly containing markup) in two languages, sentence alignment identifies correspondences between translated sentences, and writes the results as PORTAGE_sharedFileFormats!_AlignedText#AlignedText.
 
@@ -69,7 +69,7 @@ If you use `ssal`, it can be beneficial to leave some matching markup in these f
 
 See `ssal -h` and `ssal -H` for more information.
 
-!!! Lowercasing
+### Lowercasing
 
 Applied to tokenized text, e.g., to avoid treating ''the'' and ''The'' as different words.  This is usually done in order to reduce data sparseness.
 
@@ -78,7 +78,7 @@ Example for utf-8 data:
 or, if you have ICU:
 |   utf8_casemap file.tok file.lc
 
-!!! Marking Up
+### Marking Up
 
 Various entities in the text can be encoded as Portage_sharedFileFormats!_MarkedUpText#MarkedUpText. There are three uses for markup in the system:
 
@@ -89,7 +89,7 @@ During decoding, translations listed in the markup can be used to augment automa
 
 PORTAGE shared includes software to use such markup to reliably translate numbers between French and English using a rule-based approach, but they can be used for many other purposes too. Our default `predecode_plugin` for use with Portage''''''Live uses marked-up text to encode the result of rule-based translation of numbers between English and French (in either direction) and to process fixed terms, if they are used. (See PortageLiveCustomizationPlugins for details.)
 
-!!! Encoding Considerations
+### Encoding Considerations
 
 Use utf-8. Period.
 

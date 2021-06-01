@@ -4,7 +4,7 @@ Next: ConfidenceEstimation
 
 -------------------------
 
-!! Evaluation
+## Evaluation
 
 '''Evalation should be done on a corpus distinct from the one used for training and rescoring'''. The standard metric is
 BLEU (WER and PER are also supported), which compares MT output to one or more ''reference'' translations produced by humans. Assuming that `test_en.out` contains raw canoe output and `test_en.ref1`, `test_en.ref2`, and `test_en.ref3` contain
@@ -27,7 +27,7 @@ The `-n` argument(s) specifies the size of the nbest list(s) that `bestbleu` use
 
 Another useful tool is `bleucompare`, which uses bootstrap resampling to determine whether the differences in BLEU scores among two or more translations (of the same source file) are significant.
 
-!!! Variants of the BLEU formula
+### Variants of the BLEU formula
 
 The are several different formulas used by different systems to calculate BLEU.  They differ in how the brevity penalty is calculated, in the use of smoothing, and in tokenization.
 

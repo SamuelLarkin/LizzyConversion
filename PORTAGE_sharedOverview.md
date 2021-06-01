@@ -26,11 +26,11 @@ The contents of this page are as follows:
 
 ------------
 
-!! History
+## History
 
 The Portage project began in the fall of 2004, and had produced a working baseline system by the end of that year. In 2005, the Portage system was mature enough to achieve reasonably good results in the NIST MT evaluation (general information: http://www.nist.gov/speech/tests/mt , specific information about 2005 evaluation: http://www.nist.gov/speech/tests/mt/2005/doc/mt05eval_official_results_release_20050801_v3.html) and the ACL WPT evaluation (http://www.statmt.org/wpt05). Results for the same two evaluations in 2006 were considerably better, both in absolute terms and relative to other SMT systems participating (http://www.nist.gov/speech/tests/mt/, http://www.statmt.org/wmt06/shared-task/). Language pairs supported by the end of 2005 included English/French (both directions); and Chinese, Arabic, and several European languages into English. Also in 2005, the Portage system began to participate in the massive GALE project funded by DARPA (the U.S. Defense Advanced Research Projects Agency), as part of the Nightingale consortium led by SRI International. Since then, Portage has taken part in four GALE evaluations (July 2006, June 2007, December 2007, and November 2008). In these evaluations, Portage formed part of a combination of several systems; though it is difficult to evaluate its contribution separately, there are strong indications that it contributed significantly to the successful final result. In addition, the system participated in the June 2007 WMT shared task, and in the Jan./Feb. 2008 NIST Chinese-English evaluation. In the former, a Portage-SYSTRAN hybrid system was ranked first by human evaluators and second by the automatic BLEU metric for the English-French Europarl task, and was ranked second by human evaluators and first by the BLEU metric for the News task. In the latter, a combination of Portage and systems from Microsoft and SRI placed first of 20 systems (by itself, Portage would have ranked 8th of 20). Ongoing research topics include Chinese preprocessing, adaptation, significance testing of phrase table entries, and smoothing.
 
-!! How Portage Translates Text
+## How Portage Translates Text
 
 Translation is done in two passes: in the first pass (which is called ''decoding''), a small set of information sources is used to generate a short ''N-best'' list of highly-probable target sentences. In a second pass called ''rescoring'', a larger set of information sources is applied to choose the final output. Here is a  diagram illustrating the translation of a single source-language sentence:
 
@@ -48,13 +48,13 @@ Note that the diagram shows the small set as being a subset of the large set. Th
 Detail on using the Canoe decoder is given in PORTAGE_sharedTranslating!_Translating.
 
 
-!! How Portage is Trained
+## How Portage is Trained
 
 overview_train.gif
 
 The diagram above shows how the main components of the Portage SMT system are trained. The four green ovals in the diagram are the outputs: the ''phrase translation model'', the target ''language model'', the ''weights on the small set'' of information sources used by the decoder, and the ''weights on the large set'' of information sources used by the rescorer. The diagram does NOT show how models other than the ''phrase translation model'' and the target ''language model'' are trained.
 
-!!! Translation Model Training
+### Translation Model Training
 
 The ''phrase translation model'' is trained on parallel texts, which are documents that exist in both source and target language versions. These cannot be used in their raw form, but must be preprocessed; typically, the preprocessing for the source-language text is different from the preprocessing for the target-language text. Preprocessing culminates in a ''sentence alignment'' process that establishes translation correspondences at the sentence level (thus, a sentence on the source or target side will be thrown out if it doesn't have a matching sentence in the other language). The resulting clean, sentence-aligned parallel corpus is input to a multi-stage training process that generates a set of phrase pairs. 
 
@@ -65,14 +65,14 @@ These IBM word-word alignments for the parallel corpus are a necessary precursor
 The Portage programs for translation model training are described in 
 PORTAGE_sharedTrainingModels!_ConstructingModels#TranslationModels.
 
-!!! Language Model Training
+### Language Model Training
 
 Another essential step is to train a ''language model'' on target-language text. The ''language model'' specifies which sequences of words in the target language are most likely. To explain things in grossly over-simplified terms, the role of the ''phrase translation model'' is to suggest words and short word sequences that may occur somewhere in the target sentence (because they are translations of words and short word sequences in the source), while the role of the ''language model'' is to arrange them in an order that looks natural in the target language. In Portage (and most other SMT systems) the language model evaluates the probability of a sequence of target-language words, based on estimates derived from N-gram counts. For instance, if N=3 the probability that a word w3 will occur is modeled as a function of the two preceding words: the preceding word w2, and the word preceding w2, w1. Roughly speaking, the conditional probability P(w3|w1 w2) is estimated as the ratio of the count of the word sequence (w1, w2, w3) to the count of the word sequence (w1, w2) in some huge corpus. As the diagram shows, this training corpus typically includes the target-language portion of the clean, aligned parallel corpus, and often additional target-language texts.
 
 Programs for language model training are described in 
 PORTAGE_sharedTrainingModels!_ConstructingModels.
 
-!!! Decoder Model Training
+### Decoder Model Training
 
 Although the diagram above only shows one phrase translation model and one language model, we frequently use several different parallel corpora to train several phrase translation models, and also frequently use several target-language corpora to train several language models. Other information sources may also be included - for instance, a model of word reordering across the two languages involved (often called a ''distortion model''), a model predicting the probability of the length of a target sentence given the length of the source sentence, and others. These other information sources will not be enumerated here because the list is constantly changing, and may differ from one language pair to another. What these information sources have in common is that all of them yield a numerical score to a target-language hypothesis, given the source (in the case of the language models and possibly some of the other information sources, that score is independent of the source, i.e., depends solely on the target hypothesis). Some of these information sources are more reliable than others, so the global score for a given target hypothesis is a weighted combination of the scores assigned to it by the various components. The mathematical details are given below.
 
@@ -98,7 +98,7 @@ Clearly, COW is not guaranteed to improve the BLEU score monotonically - after e
 
 The Portage programs for decoder-model training are described in PORTAGE_sharedTrainingOptimizingWeights!_OptimizingWeights.
 
-!!! Rescoring Model Training
+### Rescoring Model Training
 
 Once the weights on the "small" set of information sources have been determined by COW, the weights on the "large" set used by the rescorer are found. This step of weight training is called "rescoring", and is shown below:
 
@@ -108,7 +108,7 @@ This step is much less costly than COW, since the list of D N-best hypotheses is
 
 The Portage programs for rescoring training are described in PORTAGE_sharedTrainingOptimizingWeights!_OptimizingWeights.
 
-!! Metrics for Evaluating MT System Performance
+## Metrics for Evaluating MT System Performance
 
 How does one tell whether an MT system is producing good translations? In principle, evaluating the quality of translations should be done by human beings, preferably by professional translators. Two traditional measures of translation quality are ''adequacy'' - how accurately the translation conveys the information contained in the source text - and ''fluency'' - how natural the translation into the target language sounds. Adequacy can only be judged by a human being who is bilingual in the source and target languages, and fluency can only be judged by a human being who is extremely fluent in (ideally, a native speaker of) the target language.
 
@@ -121,7 +121,7 @@ Arguing about the details of the best automatic metric to use is a popular pasti
 Automatic evaluation of Portage's translation output is described in
 PORTAGE_sharedEvaluation!_Evaluation.
 
-!! The Mathematics of SMT
+## The Mathematics of SMT
 
 overview_math.gif
 

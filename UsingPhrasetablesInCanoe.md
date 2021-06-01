@@ -4,7 +4,7 @@ Next: PORTAGE_sharedEvaluation!_Evaluation
 
 -------------------------
 
-!! Using phrase tables in canoe
+## Using phrase tables in canoe
 
 Canoe allows the simultaneous use of two kinds of phrase tables on disk:
 
@@ -15,7 +15,7 @@ Canoe allows the simultaneous use of two kinds of phrase tables on disk:
 Each kind of phrase table contains a set of phrase pairs, and
 associates one or more probabilities or scores with each pair.
 
-!!! Text phrase tables (obsolete)
+### Text phrase tables (obsolete)
 
 The old single-prob text phrase table format is obsolete, and no longer supported.  We keep the description here because the description of the multi-prob phrase table builds on the information in this subsection.
 
@@ -48,7 +48,7 @@ Each line in a forward phrase table follows this format:
 Each line in a backward phrase table follows this format:
 | source ||| target ||| p(source|target)
 
-!!! Multi-prob phrase tables
+### Multi-prob phrase tables
 
 A problem with single-prob text phrase tables was that they were highly
 redundant: specifying forward and backward probabilities for
@@ -76,7 +76,7 @@ If one table is missing a phrase pair that is provided by another, the table whe
 Each line in a multi-prob phrase table follows this format, where `s` is the source phrase and `t` is the target phrase:
 | s ||| t ||| P_1(s|t) .. P_n(s|t) P_1(t|s) .. P_n(t|s)
 
-!!! Adirectional scores ("4th column")
+### Adirectional scores ("4th column")
 
 Multi-prob phrase tables normally have three columns, as shown above.
 As documented in `canoe -h`, they can also include a "4th column" with adirectional scores:
@@ -86,7 +86,7 @@ These scores are separate models whose weights are set using the `-weight-a` or 
 
 PORTAGE shared does not currently include software to generate this 4th column, but the format is easy to generate if you have your own features A(s,t) you wish to use.  See PORTAGE_sharedAnnotatedBibliography!_Chen_et_al2009#Chenetal2009 for examples of such features.
 
-!!! TPPT''''s (Tightly Packed Phrase Tables)
+### TPPT''''s (Tightly Packed Phrase Tables)
 
 The final kind of phrase tables are TPPT''''s,
 which are used directly on disk via memory-mapped IO for instant loading and fast access.  They contain the same contents as a multi-prob table, with ''n'' backward weights and ''n'' forward weights, for any ''n'' >= 1.

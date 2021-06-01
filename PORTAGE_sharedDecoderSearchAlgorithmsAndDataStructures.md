@@ -3,11 +3,11 @@ Previous: PORTAGE_sharedTranslatingPostprocessing!_Postprocessing
 Next: UsingPhrasetablesInCanoe!_UsingPhrasetables
 
 -------------------------
-!! Caveat
+## Caveat
 
 This page was written before the cube pruning decoder was written.  It describes the regular decoder.  The cube pruning decoder reuses most data structures and algorithms from the regular decoder, but changes how the search is performed and how the stacks are used.  See Huang and Chiang (ACL-2007) for a description of the cube pruning algorithm.
 
-!! Translating: The Decoder Search Algorithms And Data Structures 
+## Translating: The Decoder Search Algorithms And Data Structures 
 
 Author: Ghada Badr
 
@@ -15,7 +15,7 @@ The decoder's main job is to find the translation that is most likely according 
 PORTAGE_sharedTrainingOptimizingWeights!_COW#OptimizingWeightsforCanoeDecoding
 section.
 
-!! Search Algorithms 
+## Search Algorithms 
 
 The search space of the possible translations is extremely large. Thus, the decoder must use heuristic search techniques to decide which portion of this huge search space to explore.  Excluding parts of the search space from the search is called pruning.  The main problem associated with any pruning technique is that of finding a tuning of the parameters that yields a suitable tradeoff between accuracy and speed. Our decoder employs a well-known pruning technique called beam search; beam search is a http://en.wikipedia.org/wiki/Heuristic!heuristic http://en.wikipedia.org/wiki/Search_algorithm!search algorithm. 
 
@@ -54,7 +54,7 @@ Coverage pruning helps to avoid pruning that is too harsh. Consider the followin
 Coverage pruning reduces the time needed for maintaining the queues, since the queues will be smaller and thus easier to maintain. 
 In the current implementation, coverage pruning is applied after cardinality pruning; this implementation has bad worst-case runtime behaviour. It would be preferable to convert the priority queue (stack) into a heap of heaps, with each sub-heap representing a particular coverage. This would make coverage pruning more efficient at runtime, without changing the final output.
 
-!!Recombination
+##Recombination
 
 In order to keep the search space as small as possible it is crucial to perform a recombination of the search hypotheses. Every two hypotheses, which cannot be distinguished by any of the models (features) can be recombined. Only the hypothesis with the highest total score will represent a group of recombined hypotheses (as shown in the figure below). We extend only the best hypothesis that represents this group. Recombination considerably reduces the size of the search space and speeds up decoding.
 
@@ -65,7 +65,7 @@ The hypothesis with the best total score will be used to represent the group of 
 
 The information about recombined hypotheses which survive pruning is kept in the phrase graph described below. After search, an N-best list is extracted which can contain these recombined hypotheses.
 
-!!Data Structures
+##Data Structures
 
 Decoding is a sentence-based algorithm. For each sentence a new search graph is constructed, the so-called phrase graph (similar to word graphs in word-based translation systems or ASR). A node in the phrase graph is named a state; it represents a partial translation hypothesis. The graph is extended in a breadth-first manner. Extended states (hypotheses) at the same level (same number of words covered) will be stored in the same stack. The pruning strategies defined in the previous sections will be applied to each stack. Only states that pass the pruning criteria will be considered for further extension. The stacks will take care of both pruning and recombining states. Due to both pruning and recombination, it is possible that more states will be pushed into the stack than will be popped from the stack before it is empty. The stacks will take care of the cardinality pruning.
 
@@ -102,7 +102,7 @@ Two important classes are also defined in phrasefinder.h/cc. These classes are u
 
 *Range-Phrase-Finder: A class that inherits the Phrase-Finder class and finds phrases using a set of available ranges. This is the only phrase finder that should be used by the system. All the phrases found are stored and returned in the triangular array structure.
 
-!!Implementation Tricks
+##Implementation Tricks
 
 The path to each state in the phrase graph is not unique due to recombination. That is why a reference counter is used with each state to determine if this state is still in use or not after pruning. The Hypothesis-Stack (and the associate classes) must correctly use the reference counter of the Decoder-State. It should increment the count when a state is added via push, decrement it when a state is popped, and delete the state if its counter reaches zero. This is the case when the state is not referenced any more by another state due to pruning.  
 

@@ -6,7 +6,7 @@ Next: PORTAGE_sharedTranslating!_Translating
 
 '''Important note:''' these steps are automated following current best practice in our experimental framework.  See `tutorial.pdf` in `framework` for details.
 
-!! Training: Optimizing Weights
+## Training: Optimizing Weights
 
 Optimizing weights means tuning a relatively small set of parameters that control the contributions from various components like language and translation models. Translation quality tends to be very sensitive to these settings. Here are the parameter tuning steps for PORTAGE shared:
 
@@ -14,7 +14,7 @@ Optimizing weights means tuning a relatively small set of parameters that contro
 * PORTAGE_sharedTrainingOptimizingWeights!_OptimizingRescoringWeights#OptimizingWeightsforRescoring
 ** PORTAGE_sharedTrainingOptimizingWeights!_RescoringScript#RescoringScript
 
-!!! Optimizing Weights for Canoe Decoding
+### Optimizing Weights for Canoe Decoding
 
 PORTAGE shared supports a variety of weight tuning algorithms.  The old `cow.sh` has been replaced by `tune.py`, which supports MERT (using Powell's algorithm, the only method `cow.sh` supported), MIRA, lattice MIRA, PRO, SVM, and "expsb" (an experimental idea).
 See Cherry and Foster (NAACL 2012) for a comparison of these methods.
@@ -56,7 +56,7 @@ Notes about using `tune.py`:
 * When `tune.py` is done, it produces a file called `canoe.ini.cow` with the weights that produced the best BLEU score, for use in the next step, decoding new text and/or rescoring. (The default is `canoe.tune`, but our framework uses `-o canoe.ini.cow`, so we did the same in the example here for clarity.)
 
 
-!!! Optimizing Weights for Rescoring
+### Optimizing Weights for Rescoring
 
 It is sometimes beneficial to "rescore" the output from the decoder by having it produce n-best lists instead of single translation hypotheses, then using a richer log-linear model to choose the best hypothesis for each source sentence from the corresponding n-best list. 
 
@@ -75,7 +75,7 @@ To train a rescoring model, you need:
 
 The source and reference files should be PORTAGE_sharedFileFormats!_tokenized#TokenizedText and PORTAGE_sharedFileFormats!_aligned#AlignedText.
 
-!!!! Rescoring Script
+#### Rescoring Script
 
 For rescoring, we now support two tuning algorithms: our original Powell implementation (MERT), as well as n-best MIRA.  Specify `-a mira` if you want to use MIRA (recommended).
 

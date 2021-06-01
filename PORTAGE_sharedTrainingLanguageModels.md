@@ -5,7 +5,7 @@ Next: PORTAGE_sharedTrainingOtherModels!_OtherModels
 
 '''Note:''' this section of the user manual presents all the different language models you can use, but not how best to use them. The steps required to train PORTAGE shared following our current recommendations are automated in our experimental framework.  See `tutorial.pdf` in `framework` for details.
 
-!! Training: Constructing Language Models
+## Training: Constructing Language Models
 
 * PORTAGE_sharedTrainingLanguageModels!_Training_anLM_usingSRILM#TraininganLMusingSRILM
 * PORTAGE_sharedTrainingLanguageModels!_Training_anLM_usingMITLM#TraininganLMusingMITLM
@@ -20,7 +20,7 @@ Next: PORTAGE_sharedTrainingOtherModels!_OtherModels
 
 Language models can be trained using any language modeling toolkit that generates Doug Paul's ARPA LM file format.  If your licensing requirements permit it, we recommend SRILM, since that's the toolkit that works best for us.  If you can't use SRILM, MITLM works very well too.  IRSTLM also works reasonably well, but has yielded lower BLEU scores in our experiments.  We provide instructions for these three toolkits below, and more complete examples in the experimental framework in `framework`.  Follow the instructions of your own toolkit if you use a different one.
 
-!!! Training an LM using SRILM
+### Training an LM using SRILM
 
 SRILM's default is for the corpus to be contained in a single text file, so the easiest thing to do is concatenate everything.
 The format is standard PORTAGE_sharedFileFormats!_TokenizedText#TokenizedText - ''but without angle-bracket markup''!
@@ -42,7 +42,7 @@ To save space, just like with PORTAGE shared programs, simply add the `.gz` exte
 // If your corpora are very large, see 
 // PORTAGE_sharedVeryLargeLanguageModels!_VeryLargeLanguageModels for  // information on pushing the limits of SRILM.
 
-!!! Training an LM using MITLM
+### Training an LM using MITLM
 
 If your licencing requirements don't allow you to use SRILM, you can train your language models with MITLM instead, and get comparable machine translation results at the end.
 
@@ -51,7 +51,7 @@ This command builds a 4-grams LM using MITLM:
 
 Please refer to the MITLM manual for more details.
 
-!!! Training an LM using IRSTLM
+### Training an LM using IRSTLM
 
 Since PORTAGE shared only reads the ARPA LM text format, and not IRSTLM's quantized LM format, we can't take advantage of all the benefits of the work put into IRSTLM. But this toolkit can also generate a standard ARPA LM file, which can be used in PORTAGE shared.
 
@@ -63,7 +63,7 @@ This procedure builds a 4-grams LM using IRSTLM:
 
 Please refer to the IRSTLM manual for more details.
 
-!!! The Bin LM format
+### The Bin LM format
 
 PORTAGE shared supports a binary format for language models.  Models converted to this format can load almost an order of magnitude faster than standard ARPA LM files, so this is a good way to significantly speed up the loading of decoder models.  Note that although our Bin LM format might be similar in philosophy to SRILM's, IRSTLM's and Moses's binary LM file formats, it is based directly on our own in-memory structures, and is therefore incompatible with those formats.
 
@@ -74,7 +74,7 @@ or
 
 All programs in PORTAGE shared which use LM files support this format.  They are recognized as such automatically, regardless of file name or extension.  And they are written to and read from disk in such a way that you can keep them compressed, as are almost all files in PortageMachineTranslation!PORTAGE_shared.
 
-!!! The TPLM format
+### The TPLM format
 
 PORTAGE shared also supports the Tightly Packed Language Model (TPLM) format everywhere an LM file is accepted.
 
@@ -83,7 +83,7 @@ To convert an LM in ARPA format to the TPLM format:
 
 This creates the folder `lm.tplm` containing several files that must be kept together.  The TPLM should be referred to by the name of this folder in your `canoe.ini` or anywhere else you want to use it.
 
-!!! Dynamic Mapping LM
+### Dynamic Mapping LM
 
 It is possible to train language models that dynamically substitute certain classes of words for others internally before calculating probabilities. This can be a good way to treat entities like numbers, which are not a closed class, and which behave alike.  We currently have three kinds of dynamic mapping models implemented: simple number mapping, prefix number mapping and case mapping.
 
@@ -123,13 +123,13 @@ Note that there is nothing special about the LM file created and used here.  It 
 and it is up to the user to ensure that this prefix is appropriate
 (i.e., corresponds to the mapping used during training). The LM itself can be any kind of LM that PORTAGE shared supports, in ARPA or binary format, compressed or not.  It can also be a mixture model LM, should that actually make sense in your experiments, or even an embedded dynamic mapping LM specification.
 
-!!! Open-Vocabulary LM
+### Open-Vocabulary LM
 
 An open-vocabulary LM is one that includes an estimated probability for unseen words, i.e., OOV's.  In SRILM, the `-unk` switch can be used to generate such an LM.  In PORTAGE shared, these are now automatically detected and supported everywhere by default.  With closed-vocabulary LM's, PORTAGE shared assigns a very small probability to OOV's (`ALMOST_0`), whereas with simple open-voc ones, `p(<unk>)` is used as found in the LM itself.
 
 There are also "full" open-vocabulary LM's, which provide not only a unigram probability for `<unk>`, but also probabilities for `<unk>` in various contexts.  These are supported by the LM classes, but are not automatically detected nor used by any program in PORTAGE shared.  Currently, if you use one, it will be treated as a simple open-voc LM, i.e., the unigram probability it provides for `<unk>` will be used, but any other information it provides about `<unk>` will be ignored.  Should you need to use these properly, some coding changes will be required. Note that the dynamic mapping capability described in the previous section could also be used to support "full" open-vocabulary models.
 
-!!! Mixture Model LM
+### Mixture Model LM
 
 A dynamic mixture LM is a linear word-level mixture of regular ngram LM's adapted for translating a specific source text. The training procedure is as follows:
 # Split the parallel training corpus into "components", each corresponding to a source/target file pair. 
@@ -158,13 +158,13 @@ A frequently useful modification to the above procedure is to include the whole 
 
 There are many other ways to use mixture models within PORTAGE shared. See the `README` file in `src/adaptation` for details (or `doc/README.adaptation`), and PORTAGE_sharedAnnotatedBibliography!_Foster_andKuhn2007#FosterandKuhn2007 for a high-level description.
 
-!!! Coarse LM
+### Coarse LM
 
 The coarse LM is a new model introduced with PORTAGE shared 3.0 which can improve translations by taking into account longer distance information during decoding. Instead of modelling sequences of words, as regular LM''''''s do, they model sequences of word classes. Since word-class sequences are much less sparse than word sequences, we can reasonably train 8-gram coarse LM''''''s and maintain good decoding speed while getting a useful boost in quality (PORTAGE_sharedAnnotatedBibliography!_Stewart_et_al2014#Stewartetal2014).
 
 To train coarse LM''''''s, you must be using our framework. They are now enabled by default, with two models being trained: one 200-class coarse LM, and one 800-class coarse LM: we found empirically that combining these two granularities gives the best results.
 
-!!! Coarse Bi LM
+### Coarse Bi LM
 
 The coarse Bi''''''LM feature is a language model that takes into account both the source and target language, looking at coarse classes of words instead of individual words, potentially improving translation quality (PORTAGE_sharedAnnotatedBibliography!_Stewart_et_al2014#Stewartetal2014). Training of these models requires the framework, as it is fairly complex to do. With PORTAGE shared 3.0, we don't enable them by default, because they are fairly expensive and don't yield enough benefits. But you can still try them by uncommenting the line that read `USE_BILM = 1`.
 

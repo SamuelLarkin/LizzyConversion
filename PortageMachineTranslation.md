@@ -1,6 +1,6 @@
 Software for Statistical Machine Translation.
 
-!! PORTAGE shared 3.0
+## PORTAGE shared 3.0
 
 The PORTAGE shared series includes several leaps forward in NRC's SMT technology.
 
@@ -12,7 +12,7 @@ With version 1.0, we brought in significant improvements to translation engine t
 
 See file RELEASES for full details. See also `doc/PortageAPIComparison.pdf` for a series of tables showing the evolution of the API, the plugin architecture and the training configuration for PORTAGE shared versions 1.0, 2.0, 2.1, 2.2 and 3.0.
 
-!! User Manual
+## User Manual
 
 * PORTAGE_sharedOverview!_Background
 * PORTAGE_sharedKnowledgePrerequisites!_RequiredPriorKnowledge

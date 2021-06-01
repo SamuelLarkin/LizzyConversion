@@ -6,7 +6,7 @@ Down: PORTAGE_sharedTranslatingDecoding!_Decoding
 
 '''Note:''' this section does not reflect current best practice. The whole translation pipeline is now automated in our experimental framework for translation during training, and in script `translate.pl` for use in Portage''''''Live.  Please read `tutorial.pdf` in `framework` and the PortageLiveManual.
 
-!! Translating
+## Translating
 
 Source texts to be translated by PORTAGE shared must be in
 PORTAGE_sharedFileFormats!_TokenizedText#TokenizedText or

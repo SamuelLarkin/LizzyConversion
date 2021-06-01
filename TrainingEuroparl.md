@@ -6,7 +6,7 @@ Next: PORTAGE_sharedFAQ!FrequentlyAskedQuestions
 
 '''Warning''': this page is out of date, as the statistics were gathered years ago for Portage 1.4.2. Since then, machines are much faster, but PORTAGE shared is more complex. These statistics are still a potentially useful indication, but not necessarily reliable.
 
-!!Training a mid-size system (what kind of machine do I need)
+##Training a mid-size system (what kind of machine do I need)
 You can train a mid-size system using the corpora available from http://www.statmt.org/wmt09/translation-task.html.
 More precisely, download the following:
 * http://www.statmt.org/wmt09/training-parallel.tar
@@ -34,8 +34,8 @@ Rename your file appropriately and place them under corpora/ in the framework.  
 
 | L:6212874   W:157634884   C:994586516   s:0             l:668          m:25.37   sdev:15.37   TOTAL
 
-!! Without rescoring and Lexicalized Distortion Model
-!!! Changes to your Makefile.params
+## Without rescoring and Lexicalized Distortion Model
+### Changes to your Makefile.params
 Configure you `Makefile.params` located at the root of the framework as follow:
 |SRC_LANG ?= en
 |TGT_LANG ?= fr
@@ -54,12 +54,12 @@ Configure you `Makefile.params` located at the root of the framework as follow:
 | ICU = 1
 | #USE_LDM =
 
-!!! BLEU score
+### BLEU score
 You should obtain a `BLEU` similar to this:
 
 | Human readable value: 35.28 +/- 0.96
 
-!!! Resources Required
+### Resources Required
 You can find out how much resources that was required by running the following command from the root of the framework:
 | make summary
 
@@ -126,8 +126,8 @@ You can find out how much resources that was required by running the following c
 From the previous table, we see that, to train a system using Europarl's data we need 10.141G or more of memory.  It took 14 hours 31 minutes and 46 seconds on our multicore machine.  It would have taken close to 2 days 5 hours 30 minutes and 46 seconds to train the same system if we only had one core.  This mid-size system requires at least 7.3G of disk space.
 
 
-!! With rescoring and Lexicalized Distortion Model
-!!! Changes to your Makefile.params
+## With rescoring and Lexicalized Distortion Model
+### Changes to your Makefile.params
 Configure you `Makefile.params` located at the root of the framework as follow:
 |SRC_LANG ?= en
 |TGT_LANG ?= fr
@@ -146,13 +146,13 @@ Configure you `Makefile.params` located at the root of the framework as follow:
 | ICU = 1
 | USE_LDM = 1
 
-!!! BLEU score
+### BLEU score
 You should obtain a `BLEU` similar to this:
 
 | test2008.out.bleu:Human readable value: 34.87 +/- 0.94
 | test2008.rat.bleu:Human readable value: 34.82 +/- 0.94
 
-!!! Resources Required
+### Resources Required
 You can find out how much resources that was required by running the following command from the root of the framework:
 | make summary
 

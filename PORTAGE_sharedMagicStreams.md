@@ -4,7 +4,7 @@ Next: PortageLiveManual!PortageLive
 
 -----------------------
 
-!! Magic Streams
+## Magic Streams
 
 Almost all programs in the PORTAGE shared suite use what's known as a ''magic stream'', which transparently handles any of the following in place of a file name argument:
 * standard input or output (specified as "-")

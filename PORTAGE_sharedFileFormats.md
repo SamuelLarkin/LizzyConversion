@@ -4,14 +4,14 @@ Next: PORTAGE_sharedWordAlignmentFormats!_WordAlignmentFormats
 
 -------------------------
 
-!! Text File Formats
+## Text File Formats
 
 * PORTAGE_sharedFileFormats!_PlainText#PlainText
 * PORTAGE_sharedFileFormats!_TokenizedText#TokenizedText
 * PORTAGE_sharedFileFormats!_MarkedUpText#MarkedUpText
 * PORTAGE_sharedFileFormats!_AlignedText#AlignedText
 
-!!! Plain Text
+### Plain Text
 
 This is just normal text, as in a plain text file without special control characters. It may include some simple markup required by the tokenization and alignment programs, as described in PORTAGE_sharedTextProcessing!_TextProcessing. For encoding information, see PORTAGE_sharedTextProcessing!_EncodingConsiderations#EncodingConsiderations (summary: use utf-8).
 
@@ -19,13 +19,13 @@ Example:
   On December 23rd, 2004, it was warm and rainy. The next 
   day--Christmas Eve--it was -10 c. again.
 
-!!! Tokenized Text
+### Tokenized Text
 
 In tokenized text, each token is delimited by whitespace and each sentence is on a single line. Example:
   On December 23rd , 2004 , it was warm and rainy . 
   The next day -- Christmas Eve -- it was -10 c. again .
 
-!!! Marked Up Text
+### Marked Up Text
 
 This is tokenized text in which some entities, like numbers and dates, are explicitly identified using SGML-like markup. It is used for input to the decoder. Example:
   On <DATE std="23/12/2004">December 23rd , 2004</DATE> , it was warm and rainy . 
@@ -40,7 +40,7 @@ Rules of the mark-up language:
 * The tag may be called whatever you want, but must have a matching closing tag.
 * In the open tag, "target" and "english" are synonyms and provide the translations, surrounded by " and separated by |.  Literal ", |, <, > and \ must be escaped with \.  "prob" is optional, and can be used to provide their respective probabilities.  "prob" must come last if provided, no other properties are allowed.
 
-!!! Aligned Text
+### Aligned Text
 
 Aligned text is text in which sentences in two translated files are put into correspondence. This is represented by synchronizing lines, so that the ith line in an English file is the translation of the ith line in the corresponding French file. Two aligned files therefore always have the same number of lines. Note that alignment can necessitate putting more than a single sentence on a line, removing explicit sentence-boundary information.
 

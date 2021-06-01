@@ -4,13 +4,13 @@ Next: PORTAGE_sharedFileFormats!_TextFileFormats
 
 -------------------------
 
-!! The tmx-prepro module
+## The tmx-prepro module
 
 The steps described here, as well as the creation of train, dev and test files needed for training SMT systems using PORTAGE shared, are automated in the `tmx-prepro` module that you can find in the PORTAGE shared distribution.
 
 This page of the user manual can help you understand what that module does.
 
-!! The TMX file format
+## The TMX file format
 
 This section describes how to process a TMX file to extract corpora in a format usable by PORTAGE shared for training or testing.  TMX stands for Translation Memory Xchange format; it is the standard format for exporting data from a translation memory: see https://www.gala-global.org/resources/industry-standards!GALAIndustryStandards. Along with a fair amount of mark-up information, a TMX file contains sentences in one language (the source language) in parallel with their translations in one or more other language(s) (the target language(s)).
 
@@ -18,14 +18,14 @@ By contrast, PORTAGE shared requires all source-language sentences to be in one 
 
 Once you've extracted a parallel corpus from your TMX file, see PORTAGE_sharedTextProcessing!_TextProcessing for the rest of the processing pipeline.
 
-!! Extracting your parallel corpora
+## Extracting your parallel corpora
 
-!!! Convert your TMX to UTF-8
+### Convert your TMX to UTF-8
 
 If your TMX in is UTF-16 encoding, first convert it to UTF-8 so that our tools can read it:
 | iconv -c -f UTF-16 -t UTF-8 < TransMem.tmx.utf16 > TransMem.tmx
 
-!!! Perform extraction
+### Perform extraction
 To extract your corpus (in UTF-8 encoding) from your TMX, say `TransMem.tmx`, which contains segments in, say, EN-US & FR-CA, do the following:
 
 | tmx2lfl.pl -verbose -output=output_prefix -txt=.txt TransMem.tmx
@@ -45,8 +45,8 @@ If you didn't use the "-txt" option, you will only get the three files without t
 
 Here, the sentences in the two "EN-US" files are the sentences in the "EN-US" language found in the TMX file, and similarly for the "FR-CA" files. These files are line aligned, so that the n-th line in `output_prefix.EN-CA.txt` is a translation of the n-th line in `output_prefix.FR-CA.txt` (or vice versa). The only difference between the "*.txt" files and their counterparts without the ".txt" extension is that the former have been stripped of almost all markup. "`output_prefix.id`" records the `IDs` for documents from which the sentences were extracted, as identified by the `Txt::Document` property of each translation unit in the TMX.
 
-!! Extracting Specific Language Pairs
-!!! Find the src/tgt language identifiers
+## Extracting Specific Language Pairs
+### Find the src/tgt language identifiers
 
 If you have segments for more than two languages in your TMX, you will need to specify which two you want to extract.
 
@@ -72,12 +72,12 @@ where:
 
 The output is as described above.
 
-!! Dealing with messy output
+## Dealing with messy output
 
 The TMX format is not particularly strict with the actual contents of the translation units it contains.  The application that was used to create the TMX can store anything it wants, including XML code, rich-text format or whatever they use for their internal representation of text.  If the output is not clean text, you'll have to write post-processing scripts yourself to clean it up.
 
-!! What if my TMX has problems?
-!!! TMX Specification
+## What if my TMX has problems?
+### TMX Specification
 
 The TMX specification can be found here:
 * TMX Specification: https://www.gala-global.org/tmx-14b
@@ -88,7 +88,7 @@ The TMX specification can be found here:
 |   verified against the TMX DTD using a validating XML parser.
 The TMX DTD can be found here: https://www.gala-global.org/sites/default/files/uploads/pdfs/tmx14%20%281%29.dtd!tmx14.dtd.
 
-!!! XML Specification
+### XML Specification
 
 Following the XML specification, your TMX should not contain non-printing characters.
 http://www.w3.org/TR/1998/REC-xml-19980210.html#NT-Char!XML_Valid_Char
@@ -100,7 +100,7 @@ http://www.w3.org/TR/1998/REC-xml-19980210.html#NT-Char!XML_Valid_Char
 |   [2] Char ::= #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] |
 |   [#x10000-#x10FFFF]
 
-!!! Validating your TMX
+### Validating your TMX
 
 You should validate your TMX files.  At the time of writing, the current DTD for TMX can be found at:
 http://www.lisa.org/fileadmin/standards/tmx1.4/tmx14.dtd.txt!tmx14.dtd
@@ -117,7 +117,7 @@ If xmllint returns any warnings, fix them before retrying tmx2lfl.pl.
 // Explains perl's xml.
 // http://perl-xml.sourceforge.net/faq/#invalid_char_num
 
-!!! Cleaning a TMX with `tmx-prepro`
+### Cleaning a TMX with `tmx-prepro`
 
 In the past, we have encountered problems with TMX files having embedded ASCII control characters and various problems such as the ones described above. Our `tmx-prepro` module automates replacing ASCII control characters by legal XML characters before extracting text from TMX files. It also automates cleaning up the output text using `clean-utf8-text.pl`, to get results that are more usable.
 

@@ -5,10 +5,10 @@ Next: PortageLiveCustomizationPlugins
 -----------------------
 
 
-!! Portage''''Live User/Trainer Manual
+## Portage''''Live User/Trainer Manual
 
 
-!!! Overview
+### Overview
 
 This manual describes how to build a live translation server using PORTAGE shared, called "Portage''''Live". The rationale for doing this on virtual machines is laid out in PORTAGE_sharedAnnotatedBibliography!_Paul_et_al2009#Pauletal2009. Virtualization makes it possible to port PORTAGE shared to a variety of operating systems with little effort, and to run several instances of PORTAGE shared on the same machine. For instance, Portage Live can run concurrently on a single state-of-the-art desktop or laptop computer with other applications; it can also be used in a network for distributed translation processing.
 
@@ -19,23 +19,23 @@ To create a Portage''''Live application, one must obtain a bilingual,
 parallel corpus for the two languages of interest. The next step is to obtain the PORTAGE shared code, compile it, and install the executables. One then preprocesses the corpus and trains the models (phrase tables and LM''''s), and arranges the resulting files in a specified file layout. Then, one builds the virtual appliance; alternately, one can install the models on a physical machine. Finally, one arranges for one's application to call Portage Live (e.g., via SOAP). All these steps are described in more detail in the sections below.
 
 
-!!! Installing PORTAGE shared 
+### Installing PORTAGE shared 
 
 First, you need to compile and install PORTAGE shared. The instructions for this are in the "INSTALL" file on the CD.
 
 
-!!! Training PORTAGE shared in the Framework
+### Training PORTAGE shared in the Framework
 
 Once you have installed PORTAGE shared, you must train a system using your parallel corpora, preferably using our experimental framework.  The document `framework/tutorial.pdf` gives a tutorial on training models and decoding in the current framework; read this first, and then apply the same methods on your own data.  For background information, you can also read PORTAGE_sharedTextProcessing!_TextProcessing, which describes how to preprocess the bilingual and unilingual training data prior to model training; the section PORTAGE_sharedFileFormats!_TextFileFormats has helpful related information about file formats. Finally, PORTAGE_sharedTrainingModels!_ConstructingModels describes how to train the different kinds of models, and how to find a reasonable weight on each of these models. 
 
 
-!!! The Runtime File Layout
+### The Runtime File Layout
 
 Once you have trained the models, you need to create the correct file layout for building the virtual appliance - you need to strip down the list of files to just those needed and arrange them in the structure needed on the Portage''''Live server. These include: 1. the PORTAGE shared software 2. the trained models 3. the web service software.
 
 The `PortageLive` directory on the CD contains the files and scripts you need to prepare the runtime file layout.
 
-!!!! PORTAGE shared runtine software layout
+#### PORTAGE shared runtine software layout
 
 If you use virtual machines to deploy your translation servers, you want to minimize the size of the software installed on each one.  Most of the PORTAGE shared software is only needed while you're training models, so the runtime software structure is much smaller.
 
@@ -49,7 +49,7 @@ The `Makefile` in `PortageLive/bin` finds the programs where they are installed 
 This structure is created inside a directory call `rpm.build.root`.  In each of the three file layout steps described here, files are placed in a directory with that name, under which the full path to the final destination on the translation server is recreated.
 This is the standard mechanism for building RPM''''s, and it is helpful as a staging area even if you are planning to copy the files on the server manually.
 
-!!!! Trained models layout
+#### Trained models layout
 
 Again, many of the files created while you train a system are not needed on the translation server itself, so here we assemble the minimal set of files from the framework to actually perform translation.  The `portageLive` target in the framework is intended to assist you in doing so.  From your copy of the framework directory where you trained models, run 
 |   make portageLive
@@ -68,7 +68,7 @@ or simply, if the files are on the same machine:
 |   prep-file-layout.sh /path/to/trained/framework
 
 
-!!!! Web service software layout
+#### Web service software layout
 
 These files include some web pages, CGI scripts, and the WSDL definition for calling PORTAGE shared via SOAP.  They must ultimately find their way in the web server structure on your translation server, typically in `/var/www`.  The WSDL file must be edited to hard-code your IP address; if you use virtual machines, our instructions (see below) show how to dynamically do so each time the machine is booted.
 
@@ -76,7 +76,7 @@ To use the CGI scripts supplied, you may need to modify a few configuration vari
 
 In `PortageLive/www`, you can run `prep-file-layout.sh` to assemble the web service software layout we used for our demos.  As in the previous steps, the files will be copied under `rpm.build.root`, following the expected installation file structure.  You may have to modify the layout and the files to adjust to your web server settings, or to the way you intend to access Portage''''Live, or to support multiple contexts (see below).
 
-!!!! Making RPM''''s
+#### Making RPM''''s
 
 Before you build your virtual machines, you should make three RPM''''s.
 An RPM is like a zip file which embeds instructions on how and where to install software on a Linux machine.
@@ -97,7 +97,7 @@ and follow the instructions under "Installing Portage''''Live on a physical mach
 
 Caveat: with very large models, we have had difficulties packaging the models into an RPM.  In such cases, we skip the creation of `PortageLive-models-`''context'' and instead we rsync the model files directly to the VM after booting it, as described under "Installing Portage''''Live on a physical machine" below.
 
-!!!! Installing multiple contexts on the same machine
+#### Installing multiple contexts on the same machine
 
 Portage''''Live can be associated with multiple contexts. Each context consists of a system you trained, and therefore specifies a translation direction (e.g., English to French), a domain (e.g., parliamentary debates) and all the training parameters you have chosen. Typically, the models linked to a context are designed to work well in that context (e.g., the translation of parliamentary debates from English to French).
 
@@ -109,9 +109,9 @@ The instructions shown above all assume a single context is installed on a trans
 
 * The web service software we provide supports multiple contexts.  The CGI interface (`plive.cgi`) automatically detects which contexts are installed in `/opt/Portage/models/`, and uses a drop box to let the user pick among them.  The SOAP interface (`PortageLiveAPI.php` and `PortageLiveAPI.wsdl`) considers "context" to be the default context, but also has methods that accept a context label as and argument.
 
-!!! Installing the Portage''''Live server
+### Installing the Portage''''Live server
 
-!!!! Virtual or physical machines?
+#### Virtual or physical machines?
 
 As we've suggested earlier, Portage''''Live may run either on an actual physical machine, or on a virtual machine.
 The machine, physical or virtual, should be a server running Linux, with apache, mod_''''ssl, php and php-soap installed.  
@@ -129,14 +129,14 @@ Physical machines:
 # you don't need VM''''Ware
 or RPM''''s.
 
-!!!! Building the Virtual Appliance
+#### Building the Virtual Appliance
 
 A Virtual Machine with specialized software installed on it is often referred to as a Virtual Appliance, because it is not considered a general-purpose machine, but rather an appliance with a specific purpose.
 
 If you choose the Virtual Appliance option, instructions showing how to create it using VM''''Ware Studio are found in `PLiveVA.pdf` in `PortageLive/va`.
 The RPM''''s we created previously are installed on the virtual machine as part of its creation process.
 
-!!!! Installing Portage''''Live on a physical machine
+#### Installing Portage''''Live on a physical machine
 
 If you choose the physical machine option, you can manually copy the runtime file layout using `rsync`, `scp` or similar tools.  `rsync` is probably the easiest option, since it can reproduce the structure in a single command even if it already exists partially on the destination host:
 |   rsync -arzv rpm.build.root/* root@<host>:/
@@ -147,11 +147,11 @@ This command mimics the structure in `rpm.build.root` under `/` (the root direct
 Copy the three `rpm.build.root` structures to their destination on your physical server.  You can copy the PORTAGE shared and web service software once - you can probably even install all the PORTAGE shared software instead of the minimal layout described above, since space will likely be less limited than on virtual machines.  Then for each context you want to make available, copy the model files to an appropriate location, as suggested in the section on multiple contexts above.
 
 
-!!! Calling Portage''''Live from Your Application
+### Calling Portage''''Live from Your Application
 
 In our experiments and demos, we have used SOAP as well as PHP and CGI scripts to make the translation results available to client applications.
 
-!!!! SOAP API
+#### SOAP API
 
 The advantage of using SOAP is that it makes it feasible to call Portage''''Live directly from existing service-oriented applications.  We provide a SOAP API you can use for this task, which is part of the web service software layout described earlier.  The API is implemented in the PHP script `PortageLiveAPI.php`.  The associated WSDL, `PortageLiveAPI.wsdl`, serves both as interface definition for other languages, and contains the documentation of the API.  In the end, the PHP script calls PORTAGE shared via the `soap-translate.sh` script that is created when you train your models.
 
@@ -161,24 +161,24 @@ A sample PHP web page invoking this service, `soap.php`, is included with the AP
 
 The SOAP API has changed significantly with version 3.0. The changes over the versions of PORTAGE shared are documented in `doc/PortageAPIComparison.pdf`. Sample PHP code that you can port to your applications's language is provided in determine-version.php to automatically detect the version of Portage''''''Live installed on a particular server.
 
-!!!! CGI scripts (interactive web page)
+#### CGI scripts (interactive web page)
 
 An alternative solution uses CGI scripts to make the translation results available via a web page.  A pair of CGI scripts is installed as part of the web service software layout: `plive.cgi` (to submit translation requests) and `plive-monitor.cgi` (to monitor translation requests).  These CGI scripts work as follows: a text box is available to perform translation of short texts while the user waits, and a upload button is available to process long text or TMX files "offline": the text is submitted to the server, then the user is shown a monitoring page showing progress, and the result is available as a download at the end.
 
-!!!! Using SSH
+#### Using SSH
 
 A third solution is to SSH to the translation server and call `translate.pl` (or a wrapper script) directly.  The `translate.sh` script in the framework can be used to generate a wrapper script which calls `translate.pl` with appropriate options.  See for example the `soap-translate.sh` script we create for use by the SOAP API. This solution requires the use of DSS keys so you don't have to enter a password for every request.  The software integration will likely be simpler this way if you are working in a Linux environment, but more complicated in a Windows environment.
 
-!!!! REST API
+#### REST API
 
 We now have a prototype REST API that roughly follows the Google translate API, for integration in applications that already support the Google translate API. This REST API can be considered an alpha release, however. It is not documented or supported yet. Talk to us if you're interested in using it.
 
-!!!! How to choose
+#### How to choose
 
 The best choice will depend on what you are most familiar with and what tools are most accessible to you.  In the end, all methods are calling the same `translate.pl` script; it is just a matter of determining which way is easiest in your environment, which way satisfies your security requirements, etc.
 
 
-!!! Extending the API
+### Extending the API
 
 If you need to extend the function call, you can do so through our API.  You should modify `PortageLiveAPI.php` and `PortageLiveAPI.wsdl` to meet your needs.  You must be familiar with the creation of web services to do this.  Similarly, you can modify the actual call in the CGI script to suit your needs.  In all cases, you can get started by looking for the call to `translate.pl` or `soap-translate.sh`.
 

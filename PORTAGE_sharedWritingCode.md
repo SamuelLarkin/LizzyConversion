@@ -3,13 +3,13 @@ Next: PORTAGE_sharedMakeNotes!_UsingMake
 
 -------------------------
 
-!! Writing Code
+## Writing Code
 
 If you are going to modify the code, it is strongly recommended to you setup a local revision control repository (Git, SVN, CVS, or whichever you prefer).
 
 From this point, we assume you are working from a fresh copy of the code, up-to-date with respect to your own repository.
 
-!!! Compiling
+### Compiling
 
 To compile the code, go into the `PortageII/src` directory and type:
 |   make -j 5
@@ -24,7 +24,7 @@ When you type ''make install'' or the above command line from `PortageII/src`, '
 
 See PORTAGE_sharedMakeNotes!MakeNotes for other useful options, such as turning on debugging or doing parallel compiling.
 
-!!! Where to put your new code
+### Where to put your new code
 
 Once you've installed, the next step is to decide where to put your new code. Try to fit it in with one of the existing modules:
 
@@ -49,7 +49,7 @@ Once you've installed, the next step is to decide where to put your new code. Tr
 
 If your stuff is too distinct from any of these, create a new module by creating a new subdirectory under `src`. You will probably need a Makefile - see the examples in other subdirectories, which rely on the canned rules in `src/build/Makefile.incl`. You don't absolutely need to go this route, but if you don't you will have to supply actions for the targets in the top-level Makefile in `src`: `all`, `clean`, `new`, `install`, `new_install`, `doxy`, `docs`, and `export`.
 
-!!! Let us know about your changes
+### Let us know about your changes
 
 When you have made changes to the PORTAGE shared code, please let us (the NRC)
 know by sending us e-mail at `PORTAGE_shared@nrc-cnrc.gc.ca` so that we can arrange to
